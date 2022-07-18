@@ -12,3 +12,8 @@ nav.onclick = function(){
     console.log(dropLayout.getAttribute("class"));
 }
 
+fetch("https://localhost:44315/json").then(function(res) {
+    return res.json;
+}).then(function() {
+    console.log(res);
+})
