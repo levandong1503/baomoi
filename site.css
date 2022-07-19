@@ -10,6 +10,34 @@ a{
     color: inherit;
 }
 
+.of-hd{
+    overflow: hidden;
+}
+
+.ml-12{
+    margin-left: 12px;
+}
+
+.fs-13{
+    font-size: 13px;
+}
+
+.fs-19{
+    font-size: 19px;
+}
+
+.op-025{
+    opacity: 0.25;
+}
+
+.img{
+    width: 100%;
+}
+
+.text-hover:hover{
+    color: #2fa1b3;
+}
+
 /*hieu ung zoom hinh anh*/
 .img-hover-zoom img{   transition-duration:1s ;  }
 .img-hover-zoom:hover img{
@@ -505,6 +533,9 @@ display: inline-block; }
     font-size: 15px;
     color: #2fa1b3;
 }
+.bm_title:hover{
+    color: #1c616b;
+}
 
 .bm_SC{
 
@@ -554,6 +585,10 @@ display: inline-block; }
     width: 29px;
 }
 
+.bm_boxNews{
+    margin-bottom: 30px;
+}
+
 .bm_News_T{
     color: #db562b;
     font-size: 36px;
@@ -577,9 +612,9 @@ display: inline-block; }
     bottom: 10px;
 }
 
-.bm_News_c-container{
+.bm_card_News_photo-container{
     padding: 15px 15px 8px;
-    background-color: #f7f7f7;
+    background-color: #fcf2ee;
 }
 
 .bm_News_c:not(:first-child){
@@ -602,6 +637,7 @@ display: inline-block; }
     margin-left: 10px;
     font-weight: 600;
     font-size: 19px;
+    color: #212529;
 }
 .bm_News_c-b_t:hover{
     color: #2fa1b3;
@@ -620,3 +656,69 @@ display: inline-block; }
     margin-left: 12px;
     opacity: 0.25;
 }
+
+.bm_card_News-video_container{
+    background-color: #eef8f9;
+    padding: 15px; 
+}
+
+/* card video right page 2+3 */
+.bm_News_c-container{
+    padding: 15px 15px 8px;
+    background-color: #f7f7f7;
+}
+.bm_card_video{
+    flex-direction: column; 
+}
+
+.bm_card_video:not(:first-child){
+    margin-top: 15px;
+
+}
+
+.bm_card_video_c{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.bm_card_video_img{
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bm_card_video_c_logo img{
+    height: 16px;
+    width: auto; 
+}
+
+/* photo */
+.bm_News_c_photo{
+    flex-direction: column;
+}
+
+.photo_img1{
+    float: left;
+    width: 190px;
+    height: 135px;
+}
+
+.photo_img2{
+    float: right;
+    height: 84px;
+    width: 108px;
+}
+
+.photo_img3{
+    float: right;
+    height: calc(135px - 84px);
+    width: 108px;
+
+}
+.bm_News_c_t{
+    margin-top: 10px;
+}
+
+.bm_News_c_photo:not(:first-child){
+    padding-top: 11px;
+}
+
