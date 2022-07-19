@@ -1,9 +1,12 @@
 *{
     font-family: baomoi,AvenirNextCondensed-Medium,HelveticaNeue-CondensedBold,"sans-serif-condensed",Calibri,Corbel,Liberation Sans Narrow,Lohit Odia,sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 .header{
@@ -171,3 +174,69 @@ a{
     
 }
 */
+
+
+/* DN */
+.d-flex{
+    display: flex;
+}
+
+.video-container{ 
+    padding: 15px 0;
+}
+
+.bm{
+    width: 970px;
+    margin: auto;
+}
+
+.bmv_title{
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #2fa1b3;
+}
+
+.bmv_SC{ 
+}
+
+.bmv_L{ 
+    width: 625px; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bmv_R{ 
+    width: 330px;
+    background: #fff;
+    margin-left: 15px;
+}
+
+.bmv_card{
+    width: 196px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.bmv_card_img{
+    height: 130px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.bmv_card_img span a img {
+    width: 100%;
+}
+
+.bmv_card_c_title {
+    font-weight: 600;
+    font-size: 22px;
+    color: #212529;
+    margin-top: 5px;
+}
+
+.bmv_card_c_logo {
+    height: 20px;
+}
+.bmv_card_c_logo img {
+    width: 29px;
+}

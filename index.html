@@ -1,118 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="site.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+      rel="stylesheet"
+    />
     <title>Trang chu</title>
-</head>
-<body>
-    <div class="header">
-        <a href="#"><img src="./Images/bm-logo.png" width="100px"></a>
+  </head>
 
-        <form method="get"  action="#" class="Search-content">
-            <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
-            <button type="submit"><i class="fa fa-search" ></i></button>
-        </form>
-  <div class="icon">
-    <i class="fa-thin fa-user"></i>
-    <i class="fa-solid fa-mobile-button"></i>
-  </div>
+  <body>
+    <div class="header">
+      <a href="#"><img src="./Images/bm-logo.png" width="100px" /></a>
+
+      <form method="get" action="#" class="Search-content">
+        <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div class="icon">
+        <i class="fa-thin fa-user"></i>
+        <i class="fa-solid fa-mobile-button"></i>
+      </div>
     </div>
     <div class="nav-container">
-        <nav class="navbar">
-            <ul class="ul-nav">
-                <li ><a class="btn-square" href="#">NÓNG</a></li>
-                <li ><a class="btn-square" href="#">MỚI</a></li>
-                <li><a class="btn-square" href="#">VIDEO</a></li>
-                <li><a class="btn-square" href="#">CHỦ ĐỀ</a></li>
-                <li><a class="btn-square" href="#">NÓNG</a></li>   
-                <li ><a class="btn-radius" href="#" >Năng lượng tích cực</a></li>
-                <li ><a class="btn-radius" href="#" >Khám phá Việt Nam</a></li>
-                <li ><a class="btn-radius" href="#" >Khám phá thế giới</a></li>
-                <li class="icon-dropdown" id="dropdown"><i class="fa fa-block-quote "></i></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <ul class="ul-nav">
+          <li><a class="btn-square" href="#">NÓNG</a></li>
+          <li><a class="btn-square" href="#">MỚI</a></li>
+          <li><a class="btn-square" href="#">VIDEO</a></li>
+          <li><a class="btn-square" href="#">CHỦ ĐỀ</a></li>
+          <li><a class="btn-square" href="#">NÓNG</a></li>
+          <li><a class="btn-radius" href="#">Năng lượng tích cực</a></li>
+          <li><a class="btn-radius" href="#">Khám phá Việt Nam</a></li>
+          <li><a class="btn-radius" href="#">Khám phá thế giới</a></li>
+          <li class="icon-dropdown" id="dropdown">
+            <i class="fa fa-block-quote"></i>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="nav-supper dropsupport"> 
-        <div class="nav-area ">
-            <div class="nav-path">
-                <span class="header-path">THẾ GIỚI</span>
-                <ul class="ul-nav-path">
-                    
-                </ul>
-            </div>
-            
-            <div class="nav-path">
-                <span class="header-path">XÃ HỘI</span>
-                <ul class="ul-nav-path">
-                    <li><a class="a-nav-path">Thời sự</a></li>
-                    <li><a class="a-nav-path">Giao thông</a></li>
-                    <li><a class="a-nav-path">Môi trường - Khí hậu</a></li>
-                </ul>
-            </div>
-    
-            <div class="nav-path">
-                <span class="header-path">VĂN HÓA</span>
-                <ul class="ul-nav-path">
-                    <li><a class="a-nav-path">Nghệ thuật</a></li>
-                    <li><a class="a-nav-path">Ẩm thực</a></li>
-                    <li><a class="a-nav-path">Du lịch</a></li>
-                </ul>
-            </div>
-    
-            <div class="nav-path">
-                <span class="header-path">KINH TẾ</span>
-                <ul class="ul-nav-path">
-                    <li><a class="a-nav-path">Lao động - Việc làm</a></li>
-                    <li><a class="a-nav-path"></a>Tài chính</li>
-                    <li><a class="a-nav-path"></a>Chứng khoán</li>
-                    <li><a class="a-nav-path">Kinh doanh</a></li>
-                </ul>
-            </div>
-    
-            <div class="nav-path">
-                <span class="header-path">GIÁO DỤC</span>
-                <ul class="ul-nav-path">
-                    <li><a class="a-nav-path">Học bổng - Du lịch</a></li>
-                    <li><a class="a-nav-path">Đào tạo - Thi cử</a></li>
-                </ul>
-            </div>
-    
-            <div class="nav-path">
-                <span class="header-path">THỂ THAO</span>
-                <ul class="ul-nav-path">
-                    <li><a class="a-nav-path">Bóng đá quốc tế</a></li>
-                    <li><a class="a-nav-path">Bóng đá Việt Nam</a></li>
-                    <li><a class="a-nav-path">Quần vợt</a></li>
-                    <li><a class="a-nav-path">Lịch thi đấu</a></li>
-                </ul>
-            </div>
-    
-            <div class="nav-path">
-                <span class="header-path">GIẢI TRÍ</span>
-                <ul class="ul-nav-path">
-                    <li><a class="a-nav-path">Âm nhạc</a></li>
-                    <li><a class="a-nav-path">Thời trang</a></li>
-                    <li><a class="a-nav-path">Điện ảnh - Truyền hình</a></li>
-                </ul>
-            </div>
-    
-            <div class="nav-path">
-                <span class="header-path">THẾ GIỚI</span>
-                <ul class="ul-nav-path">
-                    <li><a class="a-nav-path"></a></li>
-                </ul>
-            </div>
-                
-                
-           <div style="clear: both;"></div>
+    <div class="nav-supper dropsupport">
+      <div class="nav-area">
+        <div class="nav-path">
+          <span class="header-path">THẾ GIỚI</span>
+          <ul class="ul-nav-path"></ul>
         </div>
+
+        <div class="nav-path">
+          <span class="header-path">XÃ HỘI</span>
+          <ul class="ul-nav-path">
+            <li><a class="a-nav-path">Thời sự</a></li>
+            <li><a class="a-nav-path">Giao thông</a></li>
+            <li><a class="a-nav-path">Môi trường - Khí hậu</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-path">
+          <span class="header-path">VĂN HÓA</span>
+          <ul class="ul-nav-path">
+            <li><a class="a-nav-path">Nghệ thuật</a></li>
+            <li><a class="a-nav-path">Ẩm thực</a></li>
+            <li><a class="a-nav-path">Du lịch</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-path">
+          <span class="header-path">KINH TẾ</span>
+          <ul class="ul-nav-path">
+            <li><a class="a-nav-path">Lao động - Việc làm</a></li>
+            <li><a class="a-nav-path"></a>Tài chính</li>
+            <li><a class="a-nav-path"></a>Chứng khoán</li>
+            <li><a class="a-nav-path">Kinh doanh</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-path">
+          <span class="header-path">GIÁO DỤC</span>
+          <ul class="ul-nav-path">
+            <li><a class="a-nav-path">Học bổng - Du lịch</a></li>
+            <li><a class="a-nav-path">Đào tạo - Thi cử</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-path">
+          <span class="header-path">THỂ THAO</span>
+          <ul class="ul-nav-path">
+            <li><a class="a-nav-path">Bóng đá quốc tế</a></li>
+            <li><a class="a-nav-path">Bóng đá Việt Nam</a></li>
+            <li><a class="a-nav-path">Quần vợt</a></li>
+            <li><a class="a-nav-path">Lịch thi đấu</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-path">
+          <span class="header-path">GIẢI TRÍ</span>
+          <ul class="ul-nav-path">
+            <li><a class="a-nav-path">Âm nhạc</a></li>
+            <li><a class="a-nav-path">Thời trang</a></li>
+            <li><a class="a-nav-path">Điện ảnh - Truyền hình</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-path">
+          <span class="header-path">THẾ GIỚI</span>
+          <ul class="ul-nav-path">
+            <li><a class="a-nav-path"></a></li>
+          </ul>
+        </div>
+
+        <div style="clear: both"></div>
+      </div>
     </div>
 
+    
+<!-- 
+    <div class="test"></div> -->
+<!-- 
+    <script>
+      let test = document.querySelector(".test");
+      let json = [
+        {
+          postTitle:
+            "Tổng Bí thư Nguyễn Phú Trọng: 'Tình đoàn kết Việt Nam - Lào là tài sản chung vô giá'",
+          postLink:
+            "/tong-bi-thu-nguyen-phu-trong-tinh-doan-ket-viet-nam-lao-la-tai-san-chung-vo-gia/c/43199351.epi",
+        },
+
+        {
+          postTitle:
+            "Vì sao giá vàng trong nước lao dốc không phanh xuống 62 triệu đồng/lượng?",
+          postLink:
+            "/vi-sao-gia-vang-trong-nuoc-lao-doc-khong-phanh-xuong-62-trieu-dong-luong/c/43200576.epi",
+        },
+
+        {
+          postTitle:
+            "Cử tri Ấn Độ bắt đầu đi bỏ phiếu bầu cử Tổng thống thứ 15",
+          postLink:
+            "/cu-tri-an-do-bat-dau-di-bo-phieu-bau-cu-tong-thong-thu-15/c/43199990.epi",
+        },
+
+        {
+          postTitle: "Xác minh clip bé gái cầm vô lăng lái ôtô trên đường",
+          postLink:
+            "/xac-minh-clip-be-gai-cam-vo-lang-lai-oto-tren-duong/c/43200645.epi",
+        },
+
+        {
+          postTitle:
+            "TP.HCM sắp khởi công các dự án 'giải cứu' kẹt xe khu vực sân bay Tân Sơn Nhất",
+          postLink:
+            "/tp-hcm-sap-khoi-cong-cac-du-an-giai-cuu-ket-xe-khu-vuc-san-bay-tan-son-nhat/c/43200696.epi",
+        },
+
+        {
+          postTitle: "Triển khai ứng dụng định danh điện tử vào cuộc sống",
+          postLink:
+            "/trien-khai-ung-dung-dinh-danh-dien-tu-vao-cuoc-song/c/43201091.epi",
+        },
+
+        {
+          postTitle:
+            "Xác cá voi nặng 10 tấn dạt vào rừng ngập mặn ở Quảng Ninh",
+          postLink:
+            "/xac-ca-voi-nang-10-tan-dat-vao-rung-ngap-man-o-quang-ninh/c/43200220.epi",
+        },
+
+        {
+          postTitle: "Nhiều trẻ béo phì mắc sốt xuất huyết bị biến chứng nặng",
+          postLink:
+            "/nhieu-tre-beo-phi-mac-sot-xuat-huyet-bi-bien-chung-nang/c/22342451.epi",
+        },
+
+        {
+          postTitle:
+            "Lào Cai: Sáng tạo từ mô hình 'Zalo an ninh' của Công an huyện Bắc Hà",
+          postLink:
+            "/lao-cai-sang-tao-tu-mo-hinh-zalo-an-ninh-cua-cong-an-huyen-bac-ha/c/43200738.epi",
+        },
+
+        {
+          postTitle: "Tham nhũng, tiêu cực nhất định sẽ bị ngăn chặn, đẩy lùi",
+          postLink:
+            "/tham-nhung-tieu-cuc-nhat-dinh-se-bi-ngan-chan-day-lui/c/43036810.epi",
+        },
+
+        {
+          postTitle:
+            "TP.HCM: Gần 13.000 người lao động nhận tiền hỗ trợ thuê nhà",
+          postLink:
+            "/tp-hcm-gan-13-000-nguoi-lao-dong-nhan-tien-ho-tro-thue-nha/c/43201291.epi",
+        },
+
+        {
+          postTitle:
+            "Hoa hậu Thùy Tiên gây bão YouTube, nhận nút bạc chỉ sau 11 ngày",
+          postLink:
+            "/hoa-hau-thuy-tien-gay-bao-youtube-nhan-nut-bac-chi-sau-11-ngay/c/43201205.epi",
+        },
+
+        {
+          postTitle: "3.000 chim cốc đen xuất hiện ở hồ tại Quảng Nam",
+          postLink:
+            "/3-000-chim-coc-den-xuat-hien-o-ho-tai-quang-nam/c/43201275.epi",
+        },
+
+        {
+          postTitle: "Các bước đăng ký nhận trợ cấp thất nghiệp trực tuyến",
+          postLink:
+            "/cac-buoc-dang-ky-nhan-tro-cap-that-nghiep-truc-tuyen/c/43201249.epi",
+        },
+
+        {
+          postTitle: "Bắc Ninh: Hiệu trưởng trường Chính trị làm Giám đốc Sở",
+          postLink:
+            "/bac-ninh-hieu-truong-truong-chinh-tri-lam-giam-doc-so/c/43201165.epi",
+        },
+
+        {
+          postTitle:
+            "Tòa án điện tử: Niềm tin vào công lý của người dân sẽ rất cao",
+          postLink:
+            "/toa-an-dien-tu-niem-tin-vao-cong-ly-cua-nguoi-dan-se-rat-cao/c/43201144.epi",
+        },
+      ]
+       
+
+      let str = json
+        .map(
+          (data, index) =>
+            `<a href=${data.postLink}>
+                ${data.postTitle}    
+            </a>`
+        )
+        .join();
+
+      test.innerHTML = str;
+    </script> -->
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
