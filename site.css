@@ -8,6 +8,32 @@ a{
     text-decoration: none;
 }
 
+/*hieu ung zoom hinh anh*/
+.img-hover-zoom img{   transition-duration:1s ;  }
+.img-hover-zoom:hover img{
+    transform: scale(1.1,1.1);
+}
+.img-radius{ border-radius: 5px;
+display: inline-block; }
+
+
+/*set thanh footer cho moi bai viet*/
+.post-footer {   /*can chinh thanh footer*/
+    display: flex;
+    margin-right: 10px;
+    align-items: flex-end
+}
+.post-footer a,.post-footer span,.post-footer i{
+    margin-right: 10px;
+}
+.post-footer span{ color:#959494;
+    font-size: 13px; 
+}
+
+.img-news{
+    height: 16px;   /* kich thuoc anh ben trai (hinh co quan viet bao) */
+}
+
 
 /*Code cho phan header tieu de cua trang web*/
 .header{
@@ -18,9 +44,7 @@ a{
     align-items: center;
     margin: 0 auto;
 }
-.header a{
-    display: block;
-}
+
 
 .Search-content input{
     font-size: 14px;
@@ -134,8 +158,6 @@ a{
     float: left;
 }
 
-
-
 .nav-path{
     width: 194px;
     height:140px;
@@ -173,7 +195,6 @@ a{
 }
 
 
-
 /*Toan bo phan noi dung */
 .content-layout{
     width: 970px;
@@ -191,15 +212,7 @@ a{
 
 
 /*Mot bai viet ben trai*/
-
-.img-hover-zoom:hover img{transition-duration:1s ;
-    transition-property: width height;
-    
-}
-.img-hover-zoom:hover img{
-    transform: scale(1.1,1.1);
-}
-
+.main-content{ margin-bottom: 10px; }
 .main-content a{
     text-decoration: none;
     color: rgb(21, 20, 20);
@@ -211,7 +224,6 @@ a{
 
 .img-hover-big{
     overflow: hidden;
-    
     border-radius: 5px;
     width: 625px;
     height: 340px;
@@ -220,20 +232,59 @@ a{
 
 
 /* bai viet tren thanh ngang ben trai*/
+.row-infor{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px ;
+    border-bottom: 1px solid #e9ecef;
+}
 .row-element{
     width: 198px;
-
+    
 }
-.row-element > img {
+.row-element > a.img-hover-zoom{
     width: 198px;
+    height: 125px;
+    overflow: hidden;
+    display: inline-block;
+    border-radius:5px ;
+}
+.img-row-element{
+    width:  198px;
 }
 .title-element{
     margin: 5px 0;
+    font-size: 20px;
 }
 
-/*mot bai viet ben phai*/
+
+/*noi dung bai viet ben trai dang cot*/
+.col-infor{
+    margin: 20px 0;
+    padding-bottom: 10px ;
+    border-bottom: 1px solid #e9ecef;
+}
+.img-col-title-infor{
+    width: 155px;
+    height: 100px;
+}
+.col-infor-contrainer{
+    width: 155px;
+    height: 100px;
+}
+.col-infor-contrainer a{
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+}
+
+/*noi dung bai viet ben phai*/
+.right-new{
+    margin-bottom: 20px;
+}
+
 .post-article{
-    width: 330px;
+    
     padding-bottom: 10px;
     display: flex;
     border-bottom: 1px solid #e9ecef;
@@ -247,6 +298,7 @@ a{
 }
 .anchor-post-p{
     font-size: 18px;
+    line-height: 30px;
     color: rgb(21, 20, 20);
     
 }
@@ -257,34 +309,15 @@ a{
     
     height: 60px;
 }
-.img-news{
-    
-    height: 16px;
-
-}
-.img-radius{ border-radius: 5px; }
-.post-footer {
-    display: flex;
-    margin-right: 10px;
-    align-items: flex-end
-}
-.post-footer a,.post-footer span,.post-footer i{
-    margin-right: 10px;
-}
-.post-article p{
-    font-size: 18px;
-}
-
 
 .post-img-container{
     height: 60px;
     width: 60px;
-    
 }
 .post-img-container a{
     overflow: hidden;
     display: block;
-    overflow: hidden;
+    
     width: 60px;
     height: 60px;
     border-radius: 5px;
@@ -307,5 +340,11 @@ a{
     z-index: 1;
     width: 200px;
     
+}
+
+
+
+.header a{
+    display: block;
 }
 */
