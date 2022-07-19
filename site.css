@@ -2,6 +2,7 @@
     font-family: baomoi,AvenirNextCondensed-Medium,HelveticaNeue-CondensedBold,"sans-serif-condensed",Calibri,Corbel,Liberation Sans Narrow,Lohit Odia,sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 a{
@@ -285,7 +286,9 @@ display: inline-block; }
     margin: 5px 0;
     font-size: 20px;
 }
-
+.title-element:hover{
+    color:#2fa1b3;
+}
 
 /*noi dung bai viet ben trai dang cot*/
 .col-infor{
@@ -318,6 +321,7 @@ display: inline-block; }
     display: flex;
     border-bottom: 1px solid #e9ecef;
     align-items: flex-start;
+    margin-bottom: 15px;
 }
 .post-title{
     margin-left: 10px;
@@ -327,7 +331,7 @@ display: inline-block; }
 }
 .anchor-post-p{
     font-size: 18px;
-    line-height: 30px;
+    line-height: 25px;
     color: rgb(21, 20, 20);
     
 }
@@ -355,6 +359,135 @@ display: inline-block; }
     display: flex;
     justify-content: space-between;
 }
+
+
+/*slide animation cho cac to bao doi tac*/
+.newspaper-show{
+    margin:10px;
+    border: 1px solid #e9ecef;
+    position: relative;
+    padding: 10px;
+}
+.slide-container{
+    position: relative;
+    overflow: hidden;
+    height: 78px;
+}
+.element-slide{
+    margin-right: 10px;
+    
+}
+.slide{
+    display: flex;
+    position: absolute; 
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-name: slide-bar;
+    animation-iteration-count: infinite;
+}
+.anchor-slide{
+    display: inline-block;
+    padding: 5px 8px ;
+    border: 1px solid #e9ecef;
+    
+    width: 68px;
+    height: 43px;
+    
+}
+.slide:hover{
+    animation-play-state:paused ;
+}
+@keyframes slide-bar {
+    0%{left: 0;}
+    100%{left: -1630px;}
+    
+}
+.img-slide{
+    display: block;
+    width: auto;
+    width: 78px;
+    height: 46px;
+    
+}
+
+/*tiện ích - nhiệt độ*/
+
+.utility-option,.temp_{
+    background-color: #ececec;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.temp_{
+    margin-bottom: 1px;
+}
+.utility-temp-today{
+
+    display: flex;
+    justify-content: space-between
+}
+.utility-temp-today > img{
+    width: 60px;
+}
+.t-tb{
+    font-size: 38px;
+    display: block;
+}
+.t-around{
+    font-size: 13px;
+}
+.infor-weather{
+    border-left: 1px solid #b7b7b7;
+    padding:0 10px;
+}
+.infor-weather span{
+    display: block;
+}
+
+.weather-nextday{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.3rem;
+}
+.wtnd-element img{
+    width: 40px;
+    height:40px;
+    display: block;
+    margin: 10px auto;
+}
+.wtnd-element span{
+    display: block;
+    text-align: center;
+    
+}
+.wtnd-element{
+    padding: 0 5px; 
+    margin: 5px 0 ;
+    width: 72px;
+    box-sizing: content-box;
+}
+.bd-r{
+    border-right: 1px solid #c2c2c2;
+}
+
+.u-col-1,.u-col-2{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+.u-col-1 a,.u-col-2 a{
+    display: block;
+    box-sizing: content-box;
+    padding: 4px 0px ;
+    font-size: 14px;
+}
+.u-col-1 a:hover,.u-col-2 a:hover{
+    color: #2b94a5;
+}
+
+/*tiên ích khác lịch, ngoại tệ... */
+
 
 /*
 
@@ -404,7 +537,8 @@ display: inline-block; }
     color: #1c616b;
 }
 
-.bm_SC{ 
+.bm_SC{
+
 }
 
 .bm_L{ 
