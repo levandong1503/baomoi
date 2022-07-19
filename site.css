@@ -6,6 +6,7 @@
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 /*hieu ung zoom hinh anh*/
@@ -344,7 +345,144 @@ display: inline-block; }
 
 
 
+
 .header a{
     display: block;
 }
 */
+
+
+
+/* DN */
+.d-flex{
+    display: flex;
+}
+
+.bm-container{ 
+    padding: 15px 0;
+}
+
+.bm{
+    width: 970px;
+    margin: auto;
+}
+
+.bm_title{
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #2fa1b3;
+}
+
+.bm_SC{ 
+}
+
+.bm_L{ 
+    width: 625px; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bm_R{ 
+    width: 330px;
+    background: #fff;
+    margin-left: 15px;
+}
+
+.bm_card{
+    width: 196px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.bm_card_c_title:hover{
+    color: #2fa1b3;
+}
+.bm_card_img{
+    height: 130px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.bm_card_img span a img {
+    width: 100%;
+}
+
+.bm_card_c_title {
+    font-weight: 600;
+    font-size: 22px;
+    color: #212529;
+    margin-top: 5px;
+}
+
+.bm_card_c_logo {
+    height: 20px;
+}
+.bm_card_c_logo img {
+    width: 29px;
+}
+
+.bm_News_T{
+    color: #db562b;
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.bm_News_T > span{
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    padding-right: 15px;
+}
+
+.bm_News_T:before{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #db562b;
+    position: absolute;
+    bottom: 10px;
+}
+
+.bm_News_c-container{
+    padding: 15px 15px 8px;
+    background-color: #f7f7f7;
+}
+
+.bm_News_c:not(:first-child){
+    padding-top: 12px;
+    margin-top: 8px;
+    border-top: 1px solid #e9ecef;
+}
+
+.bm_News_c-b_img{
+    width: 60px;
+    height: auto;
+}
+
+.bm_News_c-b_img img{
+    width: 60px;
+    border-radius: 5px;
+}
+
+.bm_News_c-b_t{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.bm_News_c-b_t:hover{
+    color: #2fa1b3;
+}
+.bm_News_c-b_logo a{
+    height: 17px;
+}
+
+.bm_News_c-b_logo a img{
+    height: 100%;
+    width: auto;
+}
+
+.nlg{
+    font-size: 13px;
+    margin-left: 12px;
+    opacity: 0.25;
+}
