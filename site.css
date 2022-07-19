@@ -10,6 +10,10 @@ a{
     color: inherit;
 }
 
+.fix{
+    position: fixed;
+}
+
 .of-hd{
     overflow: hidden;
 }
@@ -104,7 +108,10 @@ display: inline-block; }
     background-color: #2fa1b3;
     overflow: hidden;
     height: 40px;
-    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .navbar{
