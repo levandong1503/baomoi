@@ -1,0 +1,173 @@
+*{
+    font-family: baomoi,AvenirNextCondensed-Medium,HelveticaNeue-CondensedBold,"sans-serif-condensed",Calibri,Corbel,Liberation Sans Narrow,Lohit Odia,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*Code cho phan header tieu de cua trang web*/
+.header{
+    width: 970px;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.header a{
+    display: block;
+}
+
+.Search-content input{
+    font-size: 14px;
+    border: 1px solid #e9ecef;
+    width: 456px;
+    padding: 10px;
+    
+    
+}
+
+.Search-content input:hover,.Search-content input:focus{
+    border: 1px solid #2fa1b3;
+    color: #2fa1b3;
+    outline:    none;
+}
+
+
+.icon:last-child {
+    font-size: 20px;
+    padding-left: 30px;
+    color:#2fa1b3;
+}
+
+
+/*code su dung cho navbar thanh dieu huong*/
+.nav-container{
+    background-color: #2fa1b3;
+    overflow: hidden;
+    height: 40px;
+    
+}
+
+.navbar{
+    width: 970px;
+    margin: 0 auto;
+}
+
+.ul-nav{
+    margin: 0; padding: 0;
+    list-style-type: none;
+    display: flex;
+    
+    align-items: center;
+}
+
+.btn-square{
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid #8ac7d1;
+    padding:10px;
+    display: inline-block;
+}
+
+.btn-radius{
+    font-size: 13px;
+    color: white;
+    border: 1px solid #8ac7d1;
+    border-radius: 14px;
+    padding: 0 5px;
+    margin:10px;
+    
+
+}
+
+.icon-dropdown{
+    color: white;
+    margin-left: auto;
+    border-left: 1px solid #8ac7d1;
+    border-right: 1px solid #8ac7d1;
+    background-color: #2b94a5;
+    width:40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icon-dropdown:hover{background-color: #237784;}
+.btn-square:hover{
+    background-color: #2b94a5;
+}
+
+.btn-radius:hover{
+    background-color: #3fd4eb;
+}
+
+
+
+/*code su dung cho khung lien ket 3 gach*/
+.nav-supper{
+    background-color: #f3f3f3;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-duration: 500ms;
+    
+    
+}
+.nav-area{
+    
+    width: 970px;
+    margin: 20px auto;
+    z-index: 1;
+    background-color: #f3f3f3;
+    
+}
+.nav-path{
+    width: 194px;
+    float: left;
+}
+
+
+
+.nav-path{
+    width: 194px;
+    height:140px;
+}
+.header-path{
+    color: #2b94a5;
+    border-left: 3px solid #2b94a5;
+    padding-left: 3px;
+    display: inline-block;
+    margin-bottom:  10px;
+    padding-left: 5px;
+}
+
+.ul-nav-path{
+    margin:0;
+    padding:0;
+}
+.ul-nav-path li{
+    list-style-type: none;
+    margin: 5px 0;
+    font-size: 13px;
+    color: rgb(32, 32, 32);
+}
+
+.ul-nav-path li:hover{
+    color:#2b94a5;
+    cursor: pointer;
+}
+
+.dropsupport{
+    display: none;
+    width: 0;
+    transition-duration: 500ms;
+
+}
