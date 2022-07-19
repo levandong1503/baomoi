@@ -266,9 +266,15 @@ a{
     bottom: 10px;
 }
 
-.bm_News_c{
+.bm_News_c-container{
     padding: 15px 15px 8px;
     background-color: #f7f7f7;
+}
+
+.bm_News_c:not(:first-child){
+    padding-top: 12px;
+    margin-top: 8px;
+    border-top: 1px solid #e9ecef;
 }
 
 .bm_News_c-b_img{
