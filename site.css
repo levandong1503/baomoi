@@ -655,7 +655,11 @@ display: inline-block; }
 
 .bm_News_c-b_img{
     width: 60px;
-    height: auto;
+    height: 60px;
+}
+
+.bm_News_c-b_img figure{
+    border-radius: 5px;
 }
 
 .bm_News_c-b_img img{
