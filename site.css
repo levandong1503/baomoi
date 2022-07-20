@@ -10,6 +10,57 @@ a{
     color: inherit;
 }
 
+.fix{
+    position: fixed;
+}
+
+.of-hd{
+    overflow: hidden;
+}
+
+.ml-12{
+    margin-left: 12px;
+}
+
+.fs-13{
+    font-size: 13px;
+}
+
+.fs-19{
+    font-size: 19px;
+}
+
+.op-025{
+    opacity: 0.25;
+}
+
+.img{
+    width: 100%;
+}
+
+.text-hover:hover{
+    color: #2fa1b3;
+}
+
+/* css icon search */
+
+#search-icon{
+    position: absolute;
+    right: 12px;
+    padding: 0 11px;
+    font-weight: 300;
+    top: 15px; 
+    width: 17px;
+    height: 17px; 
+}
+
+
+#search-icon:hover{
+    font-weight: 700; 
+}
+    
+
+
 /*hieu ung zoom hinh anh*/
 .img-hover-zoom{
     overflow: hidden;
@@ -59,6 +110,10 @@ display: inline-block; }
 }
 
 
+.Search-content{
+    position: relative;
+}
+
 .Search-content input{
     font-size: 14px;
     border: 1px solid #e9ecef;
@@ -87,7 +142,10 @@ display: inline-block; }
     background-color: #2fa1b3;
     overflow: hidden;
     height: 40px;
-    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .navbar{
@@ -613,6 +671,9 @@ display: inline-block; }
     font-size: 15px;
     color: #2fa1b3;
 }
+.bm_title:hover{
+    color: #1c616b;
+}
 
 .bm_SC{
 
@@ -662,6 +723,10 @@ display: inline-block; }
     width: 29px;
 }
 
+.bm_boxNews{
+    margin-bottom: 30px;
+}
+
 .bm_News_T{
     color: #db562b;
     font-size: 36px;
@@ -685,9 +750,9 @@ display: inline-block; }
     bottom: 10px;
 }
 
-.bm_News_c-container{
+.bm_card_News_photo-container{
     padding: 15px 15px 8px;
-    background-color: #f7f7f7;
+    background-color: #fcf2ee;
 }
 
 .bm_News_c:not(:first-child){
@@ -698,7 +763,11 @@ display: inline-block; }
 
 .bm_News_c-b_img{
     width: 60px;
-    height: auto;
+    height: 60px;
+}
+
+.bm_News_c-b_img figure{
+    border-radius: 5px;
 }
 
 .bm_News_c-b_img img{
@@ -710,6 +779,7 @@ display: inline-block; }
     margin-left: 10px;
     font-weight: 600;
     font-size: 19px;
+    color: #212529;
 }
 .bm_News_c-b_t:hover{
     color: #2fa1b3;
@@ -729,7 +799,10 @@ display: inline-block; }
     opacity: 0.25;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 75adf301ca6f71a5d5848185d9927fa83ed52e69
 .bm_card_News-video_container{
     background-color: #eef8f9;
     padding: 15px; 
@@ -793,4 +866,9 @@ display: inline-block; }
 
 .bm_News_c_photo:not(:first-child){
     padding-top: 11px;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 75adf301ca6f71a5d5848185d9927fa83ed52e69

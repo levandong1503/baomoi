@@ -12,10 +12,17 @@ nav.onclick = function(){
     console.log(dropLayout.getAttribute("class"));
 }
 
-fetch("https://localhost:44315/json")
-.then(function(res) {
-    
-    return res.json();
-}).then(function(jsonres) {
-    console.log(jsonres);
-})
+// fix nav
+let elNav = document.querySelector('.nav-container'); 
+ 
+ 
+function fixNav() {
+    if( window.scrollY >elNav.offsetTop){
+        elNav.setAttribute("class","nav-container fix"); 
+    }else {
+        elNav.setAttribute('class','nav-container'); 
+    }
+
+}
+ 
+window.addEventListener('scroll',fixNav)
