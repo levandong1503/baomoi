@@ -17,10 +17,10 @@ let elNav = document.querySelector('.nav-container');
  
  
 function fixNav() {
-    if(Math.floor(window.scrollY) > elNav.offsetTop){
-        elNav.setAttribute("class","nav-container fix");
-    }else{
-        elNav.setAttribute('class','nav-container');
+    if( window.scrollY >elNav.offsetTop){
+        elNav.setAttribute("class","nav-container fix"); 
+    }else {
+        elNav.setAttribute('class','nav-container'); 
     }
 
 }
