@@ -11,6 +11,10 @@ a{
 }
 
 /*hieu ung zoom hinh anh*/
+.img-hover-zoom{
+    overflow: hidden;
+    display: inline-block;
+}
 .img-hover-zoom img{   transition-duration:1s ;  }
 .img-hover-zoom:hover img{
     transform: scale(1.1,1.1);
@@ -30,13 +34,20 @@ display: inline-block; }
 }
 .post-footer span{ color:#959494;
     font-size: 13px; 
+    line-height: 13px;
 }
 
 .img-news{
     height: 16px;   /* kich thuoc anh ben trai (hinh co quan viet bao) */
 }
 
-
+.post-footer a{
+    display: flex;
+    justify-content: space-between;
+}
+.post-footer i{
+    font-size: 13px;
+}
 /*Code cho phan header tieu de cua trang web*/
 .header{
     width: 970px;
@@ -247,8 +258,7 @@ display: inline-block; }
 .row-element > a.img-hover-zoom{
     width: 198px;
     height: 125px;
-    overflow: hidden;
-    display: inline-block;
+    
     border-radius:5px ;
 }
 .img-row-element{
@@ -266,7 +276,7 @@ display: inline-block; }
 .col-infor{
     margin: 20px 0;
     padding-bottom: 10px ;
-    border-bottom: 1px solid #e9ecef;
+    
 }
 .img-col-title-infor{
     width: 155px;
@@ -282,6 +292,98 @@ display: inline-block; }
     display: block;
 }
 
+/*noi dung thanh hinh anh ben trai*/
+.img-bar-container{
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 15px;
+}
+
+.img-bar > a{
+    width: 155px;
+    height: 100px;
+    float: left;
+    margin-right:1px;
+}
+.img-bar-t{
+    width: 155px;
+    height: 100px;
+}
+.img-bar-container div.post-footer{
+    margin: 7px 0;
+}
+.img-bar{
+    margin-bottom: 5px ;
+    overflow: hidden;
+}
+/*Noi dung theo loai Kham pha viet nam*/
+.article-group-title{
+    font-size: 24px;
+    color:#db562b ;
+    line-height: 24px;
+    margin: 10px 0;
+    display: block;
+}
+/* .article-group-img-container{
+    float: left;
+} */
+.article-group-img-container{
+    background-image: url(./Images/bg-bao-moi.png) ;
+    background-position: 0 0;
+}
+.article-group-img-container a.img-hover-zoom{
+    width: 155px;
+    height: 100px;
+}
+.ar-gr-img{
+    width: 155px;
+    height: 100px;
+}
+.ar-gr-ele{
+    font-size: 18px;
+    position: relative;
+    border-bottom: 1px solid #e9ecef;
+    padding: 0 12px 12px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+.ar-gr-ele:hover{
+    color: #2fa1b3;
+}
+.ar-gr-ele::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #2fa1b3;
+    position: absolute;
+    top:22px;
+    left:2px;
+}
+.article-group-post{
+    position: relative;
+    margin-left:15px;
+}
+.article-body{
+    display: flex;
+}
+.ar-gr-ele-end::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-image:linear-gradient(to bottom,transparent,rgba(255, 255, 255, 0.126),
+    rgba(255, 255, 255, 0.51),rgba(255, 255, 255, 0.911),white, white) ;
+    width: 100%;
+    height: 100%;
+    top:0; left: 0;
+}
+.ar-gr-full{
+    color: #2fa1b3;
+    position: absolute;
+    bottom: 5px;
+    z-index: 2;
+}
+.ar-gr-full:hover{
+    text-decoration: underline;
+}
 /*noi dung bai viet ben phai*/
 .right-new{
     margin-bottom: 20px;
@@ -291,7 +393,7 @@ display: inline-block; }
     
     padding-bottom: 10px;
     display: flex;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef; 
     align-items: flex-start;
     margin-bottom: 15px;
 }
@@ -327,10 +429,7 @@ display: inline-block; }
     height: 60px;
     border-radius: 5px;
 }
-.post-footer a{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 
 /*slide animation cho cac to bao doi tac*/
@@ -339,30 +438,36 @@ display: inline-block; }
     border: 1px solid #e9ecef;
     position: relative;
     padding: 10px;
+    background-image:url(./Images/bg-newspaper.png) ;
+    background-origin   : border-box;
+    background-repeat: no-repeat;
 }
 .slide-container{
     position: relative;
     overflow: hidden;
     height: 78px;
+    
+
 }
 .element-slide{
     margin-right: 10px;
+    
     
 }
 .slide{
     display: flex;
     position: absolute; 
-    animation-duration: 20s;
+    animation-duration: 23s;
     animation-timing-function: linear;
     animation-name: slide-bar;
     animation-iteration-count: infinite;
 }
 .anchor-slide{
-    display: inline-block;
+    display: block;
     padding: 5px 8px ;
     border: 1px solid #e9ecef;
-    
-    width: 68px;
+    box-sizing: content-box;
+    width: 80px;
     height: 43px;
     
 }
@@ -386,20 +491,23 @@ display: inline-block; }
 
 .utility-option,.temp_{
     background-color: #ececec;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     overflow: hidden;
 }
 .temp_{
     margin-bottom: 1px;
+    box-sizing: border-box;
 }
-.utility-temp-today{
+
+.utility-weather-today{
 
     display: flex;
     justify-content: space-between
 }
-.utility-temp-today > img{
+.utility-weather-today > img{
     width: 60px;
+    height: 60px;
 }
 .t-tb{
     font-size: 38px;
@@ -411,6 +519,7 @@ display: inline-block; }
 .infor-weather{
     border-left: 1px solid #b7b7b7;
     padding:0 10px;
+    font-size: 15px;
 }
 .infor-weather span{
     display: block;
@@ -419,8 +528,7 @@ display: inline-block; }
 .weather-nextday{
     display: flex;
     justify-content: center;
-    font-size: 14px;
-    line-height: 1.3rem;
+    font-size: 12px;
 }
 .wtnd-element img{
     width: 40px;
@@ -428,13 +536,9 @@ display: inline-block; }
     display: block;
     margin: 10px auto;
 }
-.wtnd-element span{
-    display: block;
-    text-align: center;
-    
-}
+
 .wtnd-element{
-    padding: 0 5px; 
+    padding: 0 2px; 
     margin: 5px 0 ;
     width: 72px;
     box-sizing: content-box;
@@ -442,7 +546,11 @@ display: inline-block; }
 .bd-r{
     border-right: 1px solid #c2c2c2;
 }
-
+.wtnd-element span{
+    display: block;
+    text-align: center;
+    
+}
 .u-col-1,.u-col-2{
     width: 50%;
     box-sizing: border-box;
@@ -619,4 +727,70 @@ display: inline-block; }
     font-size: 13px;
     margin-left: 12px;
     opacity: 0.25;
+}
+
+
+.bm_card_News-video_container{
+    background-color: #eef8f9;
+    padding: 15px; 
+}
+
+/* card video right page 2+3 */
+.bm_News_c-container{
+    padding: 15px 15px 8px;
+    background-color: #f7f7f7;
+}
+.bm_card_video{
+    flex-direction: column; 
+}
+
+.bm_card_video:not(:first-child){
+    margin-top: 15px;
+
+}
+
+.bm_card_video_c{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.bm_card_video_img{
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bm_card_video_c_logo img{
+    height: 16px;
+    width: auto; 
+}
+
+/* photo */
+.bm_News_c_photo{
+    flex-direction: column;
+}
+
+.photo_img1{
+    float: left;
+    width: 190px;
+    height: 135px;
+}
+
+.photo_img2{
+    float: right;
+    height: 84px;
+    width: 108px;
+}
+
+.photo_img3{
+    float: right;
+    height: calc(135px - 84px);
+    width: 108px;
+
+}
+.bm_News_c_t{
+    margin-top: 10px;
+}
+
+.bm_News_c_photo:not(:first-child){
+    padding-top: 11px;
 }
