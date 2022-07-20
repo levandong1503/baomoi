@@ -799,10 +799,6 @@ display: inline-block; }
     opacity: 0.25;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 75adf301ca6f71a5d5848185d9927fa83ed52e69
 .bm_card_News-video_container{
     background-color: #eef8f9;
     padding: 15px; 
@@ -866,9 +862,5 @@ display: inline-block; }
 
 .bm_News_c_photo:not(:first-child){
     padding-top: 11px;
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> 75adf301ca6f71a5d5848185d9927fa83ed52e69
