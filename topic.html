@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="./site.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="#"><img src="./Images/bm-logo.png" width="100px"></a>
+
+        <form method="get" action="#" class="Search-content">
+            <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
+            <button type="submit"><i id="search-icon" class="fa fa-search"></i></button>
+        </form>
+        <div class="icon">
+            <i class="fa-thin fa-user"></i>
+            <i class="fa-solid fa-mobile-button"></i>
+        </div>
+    </div>
+    <div class="nav-container">
+        <nav class="navbar">
+            <ul class="ul-nav">
+                <li><a class="btn-square" href="#">NÓNG</a></li>
+                <li><a class="btn-square" href="./newNews.html">MỚI</a></li>
+                <li><a class="btn-square" href="./videoPage.html">VIDEO</a></li>
+                <li><a class="btn-square" href="./topic.html">CHỦ ĐỀ</a></li>
+
+                <li><a class="btn-radius" href="#">Năng lượng tích cực</a></li>
+                <li><a class="btn-radius" href="#">Khám phá Việt Nam</a></li>
+                <li><a class="btn-radius" href="#">Khám phá thế giới</a></li>
+                <li class="icon-dropdown" id="dropdown"><i class="fa fa-block-quote "></i></li>
+            </ul>
+        </nav>
+        <div class="nav-supper dropsupport">
+            <div class="nav-area ">
+                <div class="nav-path">
+                    <span class="header-path">THẾ GIỚI</span>
+                    <ul class="ul-nav-path">
+
+                    </ul>
+                </div>
+
+                <div class="nav-path">
+                    <span class="header-path">XÃ HỘI</span>
+                    <ul class="ul-nav-path">
+                        <li><a class="a-nav-path">Thời sự</a></li>
+                        <li><a class="a-nav-path">Giao thông</a></li>
+                        <li><a class="a-nav-path">Môi trường - Khí hậu</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-path">
+                    <span class="header-path">VĂN HÓA</span>
+                    <ul class="ul-nav-path">
+                        <li><a class="a-nav-path">Nghệ thuật</a></li>
+                        <li><a class="a-nav-path">Ẩm thực</a></li>
+                        <li><a class="a-nav-path">Du lịch</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-path">
+                    <span class="header-path">KINH TẾ</span>
+                    <ul class="ul-nav-path">
+                        <li><a class="a-nav-path">Lao động - Việc làm</a></li>
+                        <li><a class="a-nav-path"></a>Tài chính</li>
+                        <li><a class="a-nav-path"></a>Chứng khoán</li>
+                        <li><a class="a-nav-path">Kinh doanh</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-path">
+                    <span class="header-path">GIÁO DỤC</span>
+                    <ul class="ul-nav-path">
+                        <li><a class="a-nav-path">Học bổng - Du lịch</a></li>
+                        <li><a class="a-nav-path">Đào tạo - Thi cử</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-path">
+                    <span class="header-path">THỂ THAO</span>
+                    <ul class="ul-nav-path">
+                        <li><a class="a-nav-path">Bóng đá quốc tế</a></li>
+                        <li><a class="a-nav-path">Bóng đá Việt Nam</a></li>
+                        <li><a class="a-nav-path">Quần vợt</a></li>
+                        <li><a class="a-nav-path">Lịch thi đấu</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-path">
+                    <span class="header-path">GIẢI TRÍ</span>
+                    <ul class="ul-nav-path">
+                        <li><a class="a-nav-path">Âm nhạc</a></li>
+                        <li><a class="a-nav-path">Thời trang</a></li>
+                        <li><a class="a-nav-path">Điện ảnh - Truyền hình</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-path">
+                    <span class="header-path">THẾ GIỚI</span>
+                    <ul class="ul-nav-path">
+                        <li><a class="a-nav-path"></a></li>
+                    </ul>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="bm-container">
+            <div class="bm">
+                <div class="bm_title d-flex">
+                    <a href="#">CHỦ ĐỀ</a>
+                </div>
+
+                <div class="topic_container d-flex">
+                    <div class="topic_card">
+                        <div class="topic_card_title d-flex text">
+                            <a href="#">
+                                <h3 class="text-hover">NĂNG LƯỢNG TÍCH CỰC</h3>
+                            </a>
+                            <a class="topic_icon" href="#">
+                                <i class="fa-light fa-star"></i>
+                            </a>
+                        </div>
+                        <div class="topic_content d-flex">
+                            <div class="topic_content_col3 text-hover">
+                                <div class="topic_content_col3_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_21_15_43228302/f8a02764f82611784837.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col3_title fs-19">
+                                     <a href="#">
+                                        <h4 > Phi công Anh 16 tuổi lái máy bay tới Việt Nam trong hành trình vòng quanh thế giới</h4>
+                                     </a>
+                                </div>
+                                <div class="bm_card_video_c_logo d-flex">
+                                    <a href="#"><img
+                                            src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                            alt=""></a>
+                                    <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+        
+                                </div>
+                            </div>
+                            <div class="topic_content_col3 text-hover">
+                                <div class="topic_content_col3_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_21_15_43228302/f8a02764f82611784837.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col3_title fs-19">
+                                     <a href="#">
+                                        <h4 > Phi công Anh 16 tuổi lái máy bay tới Việt Nam trong hành trình vòng quanh thế giới</h4>
+                                     </a>
+                                </div>
+                                <div class="bm_card_video_c_logo d-flex">
+                                    <a href="#"><img
+                                            src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                            alt=""></a>
+                                    <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+        
+                                </div>
+                            </div>
+                            <div class="topic_content_col3 text-hover">
+                                <div class="topic_content_col3_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_21_15_43228302/f8a02764f82611784837.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col3_title fs-19">
+                                     <a href="#">
+                                        <h4 > Phi công Anh 16 tuổi lái máy bay tới Việt Nam trong hành trình vòng quanh thế giới</h4>
+                                     </a>
+                                </div>
+                                <div class="bm_card_video_c_logo d-flex">
+                                    <a href="#"><img
+                                            src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                            alt=""></a>
+                                    <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+        
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="topic_card">
+                        <div class="topic_card_title d-flex text">
+                            <a href="#">
+                                <h3 class="text-hover">NĂNG LƯỢNG TÍCH CỰC</h3>
+                            </a>
+                            <a class="topic_icon" href="#">
+                                <i class="fa-light fa-star"></i>
+                            </a>
+                        </div>
+                        <div class="topic_content d-flex">
+                            <div class="topic_content_col2 d-flex text-hover">
+                                <div class="topic_content_col2_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_21_293_43226792/629c3d7fe23d0b63522c.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col2_title fs-19">
+                                     <a href="#">
+                                        <h4 > Ghé thăm ngôi làng có nhiều chùa nhất ở cao nguyên Lâm Đồng</h4>
+                                     </a>
+                                     <div class="bm_card_video_c_logo d-flex">
+                                        <a href="#"><img
+                                                src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                                alt=""></a>
+                                        <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+            
+                                    </div>
+                                </div>
+                                
+                            </div><div class="topic_content_col2 d-flex text-hover">
+                                <div class="topic_content_col2_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_21_293_43226792/629c3d7fe23d0b63522c.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col2_title fs-19">
+                                     <a href="#">
+                                        <h4 > Ghé thăm ngôi làng có nhiều chùa nhất ở cao nguyên Lâm Đồng</h4>
+                                     </a>
+                                     <div class="bm_card_video_c_logo d-flex">
+                                        <a href="#"><img
+                                                src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                                alt=""></a>
+                                        <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+            
+                                    </div>
+                                </div>
+                                
+                            </div><div class="topic_content_col2 d-flex text-hover">
+                                <div class="topic_content_col2_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_21_293_43226792/629c3d7fe23d0b63522c.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col2_title fs-19">
+                                     <a href="#">
+                                        <h4 > Ghé thăm ngôi làng có nhiều chùa nhất ở cao nguyên Lâm Đồng</h4>
+                                     </a>
+                                     <div class="bm_card_video_c_logo d-flex">
+                                        <a href="#"><img
+                                                src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                                alt=""></a>
+                                        <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+            
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="topic_content_col2 d-flex text-hover">
+                                <div class="topic_content_col2_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_21_293_43226792/629c3d7fe23d0b63522c.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col2_title fs-19">
+                                     <a href="#">
+                                        <h4 > Ghé thăm ngôi làng có nhiều chùa nhất ở cao nguyên Lâm Đồng</h4>
+                                     </a>
+                                     <div class="bm_card_video_c_logo d-flex">
+                                        <a href="#"><img
+                                                src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                                alt=""></a>
+                                        <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+            
+                                    </div>
+                                </div>
+                                
+                            </div><div class="topic_content_col2 d-flex text-hover">
+                                <div class="topic_content_col2_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_21_293_43226792/629c3d7fe23d0b63522c.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col2_title fs-19">
+                                     <a href="#">
+                                        <h4 > Ghé thăm ngôi làng có nhiều chùa nhất ở cao nguyên Lâm Đồng</h4>
+                                     </a>
+                                     <div class="bm_card_video_c_logo d-flex">
+                                        <a href="#"><img
+                                                src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                                alt=""></a>
+                                        <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+            
+                                    </div>
+                                </div>
+                                
+                            </div><div class="topic_content_col2 d-flex text-hover">
+                                <div class="topic_content_col2_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_21_293_43226792/629c3d7fe23d0b63522c.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col2_title fs-19">
+                                     <a href="#">
+                                        <h4 > Ghé thăm ngôi làng có nhiều chùa nhất ở cao nguyên Lâm Đồng</h4>
+                                     </a>
+                                     <div class="bm_card_video_c_logo d-flex">
+                                        <a href="#"><img
+                                                src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                                alt=""></a>
+                                        <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+            
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="topic_card">
+                        <div class="topic_card_title d-flex text">
+                            <a href="#">
+                                <h3 class="text-hover">NĂNG LƯỢNG TÍCH CỰC</h3>
+                            </a>
+                            <a class="topic_icon" href="#">
+                                <i class="fa-light fa-star"></i>
+                            </a>
+                        </div>
+
+                        <div class="topic_content d-flex  ">
+                            <div class="toppic_content_col1 d-flex text-hover">
+                                <div class="topic_content_col1_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_21_293_43226792/629c3d7fe23d0b63522c.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col1_title fs-19">
+                                    <a href="#">
+                                       <h4 > Ghé thăm ngôi làng có nhiều chùa nhất ở cao nguyên Lâm Đồng</h4>
+                                    </a>
+                                    <div class="bm_card_video_c_logo d-flex">
+                                       <a href="#"><img
+                                               src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                               alt=""></a>
+                                       <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+           
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="toppic_content_col1 d-flex">
+                                <div class="topic_content_col1_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_21_293_43226792/629c3d7fe23d0b63522c.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col1_title fs-19">
+                                    <a href="#">
+                                       <h4 > Ghé thăm ngôi làng có nhiều chùa nhất ở cao nguyên Lâm Đồng</h4>
+                                    </a>
+                                    <div class="bm_card_video_c_logo d-flex">
+                                       <a href="#"><img
+                                               src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                               alt=""></a>
+                                       <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+           
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="toppic_content_col1 d-flex">
+                                <div class="topic_content_col1_img">
+                                    <a href="#">
+                                        <figure class="img-hover-zoom">
+                                            <img class="img" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_21_293_43226792/629c3d7fe23d0b63522c.jpg" alt="">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="topic_content_col1_title fs-19">
+                                    <a href="#">
+                                       <h4 > Ghé thăm ngôi làng có nhiều chùa nhất ở cao nguyên Lâm Đồng</h4>
+                                    </a>
+                                    <div class="bm_card_video_c_logo d-flex">
+                                       <a href="#"><img
+                                               src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                               alt=""></a>
+                                       <span class="ml-12 fs-13 op-025 ">10 phút</span> 
+           
+                                   </div>
+                               </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>

@@ -12,12 +12,17 @@
     font-family: baomoi,AvenirNextCondensed-Medium,HelveticaNeue-CondensedBold,"sans-serif-condensed",Calibri,Corbel,Liberation Sans Narrow,Lohit Odia,sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
 }
 
 a{
     text-decoration: none;
     color: inherit;
+}
+
+figure{
+    border-radius: 4px;
 }
 
 .fix{
@@ -46,6 +51,8 @@ a{
 
 .img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .text-hover:hover{
@@ -879,9 +886,10 @@ display: inline-block; }
 
 
 
-/* DN */
-.d-flex{  
-    display: flex;
+/* DN */ 
+.d-flex{
+    display: flex; 
+ 
 }
 
 .bm-container{ 
@@ -1099,3 +1107,90 @@ display: inline-block; }
     padding-top: 11px;
 }
 
+/* topic page*/
+
+.topic_container{
+    min-width: 1020px;
+    margin: 0 -20px;
+    flex-wrap: wrap;
+}
+
+.topic_card{
+    width: 50%;
+    padding: 10px 20px 20px;
+}
+.topic_card:hover{
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+.topic_card_title{
+    
+    padding-bottom: 2px;
+    margin-bottom: 13px;
+}
+
+.topic_card_title h3{
+    display: inline;
+    font-size: 22px;
+    font-weight: 500;
+}
+.topic_card_title::before {
+    content: "";
+    height: 22px;
+    background: #2fa1b3;
+    width: 7px;
+    margin: 0 15px 3px 0;
+    -webkit-transform-origin-x: center; 
+    transform: skew(-10deg);
+}
+.topic_card_title .topic_icon{ 
+    margin: auto 0;
+    margin-left: 7px;
+}
+
+.topic_content{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topic_content_col3{
+    width:  147px;
+}
+ 
+.topic_content_col3_title h4{
+    font-weight: 400;
+}
+
+.topic_content_col2{
+    width: calc(50% - 5px);
+    margin-bottom: 20px;
+}
+
+.topic_content_col2_title{
+    margin-left: 10px;
+    
+}
+
+.topic_content_col2_title h4{
+    font-weight: 400;
+}
+
+.topic_content_col2_img figure {
+    width:  60px;
+    height: 60px;
+}
+
+.topic_content_col1{
+    width: 100%;
+}
+
+.topic_content_col1_img{
+    width: 180px;
+    height: 120px;
+}
+.topic_content_col1_title h4 {
+    font-weight: 400;
+}
+.topic_content_col1_title {
+    margin-left: 20px; 
+}
