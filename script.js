@@ -30,3 +30,19 @@ function fixNav() {
 }
  
 window.addEventListener('scroll',fixNav)
+
+//modal
+
+const topicCards = document.querySelectorAll('.topic_card');
+const closeIcon = document.querySelector('.close-icon'); 
+const elModal = document.querySelector('.modal');
+
+function showDetailTopic(){
+    elModal.classList.add('open')
+}
+
+for (const card of topicCards) {
+    card.addEventListener('click', showDetailTopic)
+}
+
+closeIcon.addEventListener('click',() => elModal.classList.remove('open'))
