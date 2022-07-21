@@ -16,13 +16,15 @@ nav.onclick = function(){
 // fix nav
 let elNav = document.querySelector('.nav-container'); 
 let layout_drop = document.querySelector('.nav-supper');
+
 function fixNav() {
+    let clsLayout = layout_drop.getAttribute("class");
     if( window.scrollY >elNav.offsetTop){
         elNav.setAttribute("class","nav-container fix"); 
-        layout_drop.setAttribute("class","nav-supper fix")
+        layout_drop.setAttribute("class", clsLayout.indexOf("fix")==-1?clsLayout+" fix":clsLayout);
     }else {
         elNav.setAttribute('class','nav-container'); 
-        layout_drop.setAttribute("class","nav-supper")
+        layout_drop.setAttribute("class", clsLayout.replace(" fix",""));
     }
 
 }
