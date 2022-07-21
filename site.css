@@ -12,7 +12,7 @@
     font-family: baomoi,AvenirNextCondensed-Medium,HelveticaNeue-CondensedBold,"sans-serif-condensed",Calibri,Corbel,Liberation Sans Narrow,Lohit Odia,sans-serif;
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
 a{
@@ -21,10 +21,10 @@ a{
 }
 
 .fix{
-    position: fixed;
+    position: fixed !important;
 }
 
-.of-hd{
+.of-hd{/*ẩn nội dung trong phần photo ảnh số 3*/
     overflow: hidden;
 }
 
@@ -230,7 +230,7 @@ display: inline-block; }
     transform: translateX(-50%);
     transition-duration: 500ms;
     width: 100%;
-    position: fixed;
+    
 }
 .nav-area{
     
@@ -1073,6 +1073,7 @@ display: inline-block; }
     flex-direction: column;
 }
 
+/*pix side three images in photo news*/
 .photo_img1{
     float: left;
     width: 190px;
@@ -1099,3 +1100,28 @@ display: inline-block; }
     padding-top: 11px;
 }
 
+/* topic page*/
+
+.topic_card{
+    width: 50%;
+    padding: 10px 20px 20px;
+}
+
+.topic_card_title h3{
+    display: inline;
+    font-size: 22px;
+    font-weight: 300;
+}
+.topic_card_title::before {
+    content: "";
+    height: 22px;
+    background: #2fa1b3;
+    width: 7px;
+    margin: 0 15px 3px 0;
+    -webkit-transform-origin-x: center; 
+    transform: skew(-10deg);
+}
+.topic_card_title .topic_icon{ 
+    margin: auto 0;
+    margin-left: 7px;
+}
