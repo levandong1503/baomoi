@@ -999,6 +999,45 @@ display: inline-block; }
         font-size: 18px;
         line-height: 22px;
     }
+    
+
+/*Trang chi tiết nội dụng bài báo*/
+.link-news{
+    color: #237784;
+}
+.link-news:hover{
+    color: black;
+}
+.img-cnt-l{
+    width: 55px;
+}
+.register-img-cnt-l.fa-star{
+    color: #0cf;
+    font-size: 16px;
+}
+.main-infor-news{
+    font-weight: 700;
+    background-color: whitesmoke;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.infor-news,.img-explan{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 22px ;
+}
+.img-explan{
+    font-style: italic;
+    text-align: center;
+}
+.img-infor-news{
+    width: 100%;
+}
+.author{
+    font-size: 24px;
+    text-align: right;
+}
 /*
 
 .Search-content button{
