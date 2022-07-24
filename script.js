@@ -45,4 +45,7 @@ for (const card of topicCards) {
     card.addEventListener('click', showDetailTopic)
 }
 
-closeIcon.addEventListener('click',() => elModal.classList.remove('open'))
+// closeIcon.addEventListener('click',() => elModal.classList.remove('open'))
+
+
+

@@ -1,0 +1,102 @@
+@media only screen and (max-width:970px) {
+
+    /*chặn hover ảnh*/
+    .img-hover-zoom  img:hover{
+        transform: scale(1,1);
+    }
+
+
+    .content-layout{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .navbar{
+        width: 80%; 
+        margin: 0 auto;
+    }
+
+    .header{
+        width:100%;
+    }
+    .content-left{
+        float: none;
+        width: 100%;
+    }
+
+
+    .col-infor-contrainer,.row-element > a.img-hover-zoom,.img-bar > a:not(:nth-child(4)){
+        width: 33% !important;
+        height: auto !important;
+        display: block;
+    }
+    .row-infor{
+        flex-direction: column;
+        border-bottom: none     ;
+    }
+    .img-hover-big{
+        width: 100%;
+        height: auto;
+    }
+    .img-hover-big a img,.img-hover-zoom img,.img-col-title-infor{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .row-element{
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 15px;
+        border-bottom:1px solid #e9ecef;
+        padding-bottom: 15px;
+    }
+    .row-element > a.img-hover-zoom{
+        flex-shrink: 0;
+    }
+    .row-element-rb {
+        margin-left:15px ;
+        
+    }
+
+
+    .article-body::after,.article-group-img-container,.responsive-hidden-img,.content-right{
+        display: none;
+    }
+    .article-body{
+        flex-direction: column;
+    }
+    .display-none{
+        display: block !important;
+    }
+    .col-infor-contrainer{ flex-shrink: 0; margin-right: 15px;}
+    .ar-gr-ele,.article-group-post{ padding-left: 0; margin-left: 0;}
+    .ar-gr-ele::before{display: none;}
+
+
+
+    .img-bar-container{
+        flex-direction: row-reverse;
+    }
+}
+
+
+@media only screen and (max-width:923px) {
+
+    .ul-nav li:nth-last-child(2){ display: none;}
+    
+}
+
+@media only screen and (max-width:730px) {
+    .ul-nav li:nth-last-child(2),.ul-nav li:nth-last-child(3){ display: none;}
+
+    
+}
+
+@media only screen and (max-width:569px){
+    .ul-nav li:nth-last-child(2),.ul-nav li:nth-last-child(3),.ul-nav li:nth-last-child(4){ display: none;}
+}
+
+@media only screen and (max-width:410px) {
+    .ul-nav li:nth-last-child(2),.ul-nav li:nth-last-child(3),.ul-nav li:nth-last-child(4),.ul-nav li:nth-last-child(5){ display: none;}
+}
