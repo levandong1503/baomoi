@@ -7,14 +7,16 @@
     font-display: swap;
 }
 
-
 *{
     font-family: baomoi,"sans-serif-condensed",Calibri,Corbel,Liberation Sans Narrow,Lohit Odia,sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+.mgt-3{
+    margin-top: 3px;
+}
+.display-none{display: none !important;}
 a{
     text-decoration: none;
     color: inherit;
@@ -84,8 +86,8 @@ figure{
     overflow: hidden;
     display: inline-block;
 }
-.img-hover-zoom img,.img-hover-zoom video{   transition-duration:1s ;  }
-.img-hover-zoom:hover img,.img-hover-zoom:hover video{
+.img-hover-zoom img,.img-hover-zoom video{   transition-duration:1s ; width: 100%; height: 100%; }
+.img-hover-zoom:hover img{
     transform: scale(1.1,1.1);
 }
 .img-radius{ border-radius: 5px;
@@ -96,12 +98,14 @@ display: inline-block; }
 .post-footer {   /*can chinh thanh footer*/
     display: flex;
     margin-right: 10px;
-    align-items: center
+    align-items: center;
+    overflow: hidden;
 }
-.post-footer a,.post-footer span,.post-footer i{
+.post-footer>a,.post-footer>span,.post-footer>i{
     margin-right: 10px;
+    flex-shrink: 0;
 }
-.post-footer span{ color:#959494;
+.post-footer>span{ color:#959494;
     font-size: 13px; 
     line-height: 13px;
 }
@@ -110,11 +114,11 @@ display: inline-block; }
     height: 16px;   /* kich thuoc anh ben trai (hinh co quan viet bao) */
 }
 
-.post-footer a{
+.post-footer>a{
     display: flex;
     justify-content: space-between;
 }
-.post-footer i{
+.post-footer>i{
     font-size: 13px;
 }
 /*Code cho phan header tieu de cua trang web*/
@@ -222,8 +226,9 @@ display: inline-block; }
     color: white;
     font-size: 18px;
     border-right: 1px solid #8ac7d1;
-    padding:6px 10px;
+    padding: 0  10px;
     display: inline-block;
+    
 }
 .btn-choose{
     background-color: #2b94a5;
@@ -234,7 +239,7 @@ display: inline-block; }
     border: 1px solid #8ac7d1;
     border-radius: 14px;
     padding: 0 5px;
-    margin:10px;
+    margin-left: 5px;
     
 
 }
@@ -359,17 +364,20 @@ display: inline-block; }
     height: 340px;
     
 }
-
+.img-hover-big a img{
+    width:625px;
+}
 
 /* bai viet tren thanh ngang ben trai*/
 .row-infor{
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     padding-bottom: 10px ;
     border-bottom: 1px solid #e9ecef;
 }
 .row-element{
     width: 198px;
+    flex-direction: column;
     
 }
 .row-element > a.img-hover-zoom{
@@ -402,6 +410,9 @@ display: inline-block; }
 .col-infor-contrainer{
     width: 155px;
     height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
 }
 .col-infor-contrainer a{
     border-radius: 5px;
@@ -416,6 +427,7 @@ display: inline-block; }
 .img-bar-container{
     border-bottom: 1px solid #e9ecef;
     margin: 15px 0;
+    flex-direction: column;
 }
 
 .img-bar > a{
@@ -451,7 +463,18 @@ display: inline-block; }
     line-height: 24px;
     margin: 10px 0;
     display: block;
+    position: relative;
 }
+.article-group-title a{ margin-left: 8px; }
+ .article-group-title::before{
+    content: "|";
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: -4px;
+    color: inherit;
+}
+
 .article-group-title:hover{
     color: black;
 }
@@ -534,10 +557,8 @@ display: inline-block; }
 }
 .post-title{
     margin-left: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    flex-direction: column;
+    
+    position: relative;
 }
 .anchor-post-p{
     line-height: 25px;
@@ -706,7 +727,7 @@ display: inline-block; }
 /*tiện ích - nhiệt độ*/
 /*tiên ích khác lịch, ngoại tệ... */
 .utility-option,.temp_{
-    background-color: #ececec;
+    background-color: #f7f7f7;
     padding: 15px;
     box-sizing: border-box;
     overflow: hidden;
@@ -788,7 +809,7 @@ display: inline-block; }
     box-sizing: border-box;
     padding:15px;
     text-align:  center;
-    background-color: #ececec;
+    background-color: #f7f7f7;
 }
 .trend a{
     display: inline-block;
@@ -876,8 +897,11 @@ display: inline-block; }
     color: #5bb83e ;
 }
 
-
-
+/*NÓNG 24H Trang chu*/
+.hot-new-24h-container{ 
+    background-color: #f7f7f7;
+    padding: 15px;
+}
 
 /*trang tin địa phương*/
 .local-news{
@@ -900,10 +924,78 @@ display: inline-block; }
 
 
 
+/*
+-phần footer trang web xem tại news-ltv.html
+*/
+.footer{
+    width: 100%;
+    height: 56px;
+    background-color: #2fa1b3;
+}
+.footer-align{
+    display: flex;
+    width: 970px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+.logo-white{
+    width: 120px;
+    height: 36px;
+}
+.logo-white a{
+    background-image:url(./Images/logo-bao-moi.png) ;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    justify-content: space-around;
 
+}
 
-/*trang năng lượng tích cực*/
-.bg-img{
+.list-item-footer{
+    width: 970px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list-item-footer span::before{
+    content:  "●";
+    padding: 5 3px;
+    font-size: 8px;
+    color: #ccc;    
+
+}
+.list-item-footer span{
+    margin-right: 10px;
+    font-size: 14px;
+    color: #6c757d;
+
+}
+
+.contact-other-license{
+    width: 970px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between
+}
+.contact ul,.other ul{
+    list-style-type: none;
+}
+.license p span{
+    font-size: 12px;
+    display: block;
+}
+.license p{
+    direction: rtl;
+}
+/*trang năng lượng tích cực positive-energy.html*/
+.bg-img-pe{
     background-image: url(./Images/bg-positive-energy.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -917,8 +1009,10 @@ display: inline-block; }
     align-items: center;
     padding: 10px  15px;
     color: white;
-    background-color: #86756d;
     margin-top: 100px;
+}
+.bg-cl-h-pe{
+    background-color: rgba(54, 25, 12, 0.6);
 }
 .header-cnt-l a:first-child{
     font-weight: 600;
@@ -969,6 +1063,10 @@ display: inline-block; }
         box-shadow: 0px 0px 10px 1px black;
         margin-left: 15px;
         margin-bottom: 20px;
+    }
+    .small-cnt-pe div.img-hover-zoom{
+        height: 120px;
+        overflow: hidden;
     }
     .small-cnt-pe div.img-hover-zoom img{
         width: 207px;
@@ -1037,6 +1135,32 @@ display: inline-block; }
 .author{
     font-size: 24px;
     text-align: right;
+}
+
+.relation{
+    background-color: gainsboro;
+    line-height: 2rem;
+    font-size: 16px;
+    color: #86756d;
+    padding: 15px;
+    user-select: none;
+}
+.relation a:hover{
+    color: #39d;
+}
+
+
+
+
+
+/*trang khám phá việt nam giống năng lượng tích cực 99%*/
+.bg-img-vd{
+    background-image: url(./Images/bg-vietnam-discovery.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.bg-cl-h-vnd{
+     background-color: rgba(32, 117, 131, 0.6);;
 }
 /*
 
@@ -1238,9 +1362,10 @@ display: inline-block; }
 .bm_card_video_img{ /*bo góc và ẩn vien khi hover*/
     border-radius: 5px;
     width: 300px;
-    
+    height: 150px;
     overflow: hidden;
 }
+
 
 .bm_card_video_c_logo img{ /*chỉ định post-footer tương tự class post-footer*/
     height: 16px;
