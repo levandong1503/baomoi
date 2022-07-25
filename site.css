@@ -1601,8 +1601,7 @@ button.close-icon:hover {
 }
 
 .footer_mb {
-    padding: 16px;
-    background: #f8f9fa;
+    padding: 16px; 
     display: none;
 }
 
