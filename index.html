@@ -1,125 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site.css" type="text/css">
-    <link rel="stylesheet" href="./site-responsive.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./site-responsive.css" type="text/css">
     <title>Trang chu</title>
 </head>
- 
 <body id="app">
- 
+
 
     <div class="header">
         <a href="#"><img src="./Images/bm-logo.png" width="100px"></a>
 
-        <form method="get" action="#" class="Search-content">
+        <form method="get"  action="#" class="Search-content">
             <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
-            <button type="submit" id="search-icon"><i class="fa fa-search"></i></button>
+            <button type="submit" id="search-icon" ><i  class="fa fa-search"  ></i></button>
         </form>
         <div class="icon">
             <a href="#"><i class="fa-thin fa-user"></i></a>
-
+                
             <a href="#"><i class="fa-solid fa-mobile-button"></i></a>
         </div>
     </div>
     <div class="nav-container">
         <nav class="navbar">
             <ul class="ul-nav">
- 
-                <li><a class="btn-square btn-choose" href="#">NÓNG</a></li>
-                <li><a class="btn-square" href="./newNews.html">MỚI</a></li>
- 
                 <li class="btn-square btn-choose"><a class="" href="#">NÓNG</a></li>
                 <li ><a class="btn-square" href="./newNews.html">MỚI</a></li>
- 
                 <li><a class="btn-square" href="./videoPage.html">VIDEO</a></li>
                 <li><a class="btn-square" href="./topic.html">CHỦ ĐỀ</a></li>
-
-                <li><a class="btn-radius" href="./positive-energy.html">Năng lượng tích cực</a></li>
-                <li><a class="btn-radius" href="./vietnam-discovery.html">Khám phá Việt Nam</a></li>
-                <li><a class="btn-radius" href="#">Khám phá thế giới</a></li>
+                 
+                <li ><a class="btn-radius" href="./positive-energy.html" >Năng lượng tích cực</a></li>
+                <li ><a class="btn-radius" href="./vietnam-discovery.html" >Khám phá Việt Nam</a></li>
+                <li ><a class="btn-radius" href="#" >Khám phá thế giới</a></li>
                 <li class="icon-dropdown" id="dropdown"><i class="fa fa-block-quote "></i></li>
             </ul>
         </nav>
-        <div class="nav-supper dropsupport">
+        <div class="nav-supper dropsupport"> 
             <div class="nav-area">
- 
-                <div class="nav-path">
-                    <span class="header-path">THẾ GIỚI</span>
-                    <ul class="ul-nav-path">
-
-                    </ul>
-                </div>
-
-                <div class="nav-path">
-                    <span class="header-path">XÃ HỘI</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Thời sự</a></li>
-                        <li><a class="a-nav-path">Giao thông</a></li>
-                        <li><a class="a-nav-path">Môi trường - Khí hậu</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-path">
-                    <span class="header-path">VĂN HÓA</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Nghệ thuật</a></li>
-                        <li><a class="a-nav-path">Ẩm thực</a></li>
-                        <li><a class="a-nav-path">Du lịch</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-path">
-                    <span class="header-path">KINH TẾ</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Lao động - Việc làm</a></li>
-                        <li><a class="a-nav-path"></a>Tài chính</li>
-                        <li><a class="a-nav-path"></a>Chứng khoán</li>
-                        <li><a class="a-nav-path">Kinh doanh</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-path">
-                    <span class="header-path">GIÁO DỤC</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Học bổng - Du lịch</a></li>
-                        <li><a class="a-nav-path">Đào tạo - Thi cử</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-path">
-                    <span class="header-path">THỂ THAO</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Bóng đá quốc tế</a></li>
-                        <li><a class="a-nav-path">Bóng đá Việt Nam</a></li>
-                        <li><a class="a-nav-path">Quần vợt</a></li>
-                        <li><a class="a-nav-path">Lịch thi đấu</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-path">
-                    <span class="header-path">GIẢI TRÍ</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Âm nhạc</a></li>
-                        <li><a class="a-nav-path">Thời trang</a></li>
-                        <li><a class="a-nav-path">Điện ảnh - Truyền hình</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-path">
-                    <span class="header-path">THẾ GIỚI</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path"></a></li>
-                    </ul>
-                </div>
-                <div style="clear: both;"></div>
- 
                 <div style="overflow: hidden;">
                     <div class="nav-path display-none">
                         <a href="#" class="header-path other-path ">
@@ -251,11 +173,10 @@
                 </div>
 
                <div style="clear: both;"></div>
- 
             </div>
         </div>
     </div>
-
+     
 
 
     <div class="content-layout">
@@ -264,7 +185,7 @@
             <div class="main-content">
                 <div class="img-hover-big img-hover-zoom">
                     <a href="#"><img class="img-radius" src="Images/vietnam-lao.jpg" alt="Viet nam lao"></a>
-                </div>
+                </div> 
                 <a href="#">Sau 9 ngày, vẫn chưa tìm thấy dấu vết tàu cá cùng 15 lao động bị mất liên lạc trên biển</a>
                 <div class="post-footer">
                     <a href="#"><img class="img-news" src="./Images/bao-tin-tuc.png" alt=""></a>
@@ -277,29 +198,24 @@
             <!--noi dung dang ngang sau noi dung chinh-->
             <div class="row-infor d-flex">
                 <div class="row-element d-flex">
-
-                    <a href="#" class="img-hover-zoom img-radius"><img src="./Images/miwon-phu-tho.webp"
-                            class="img-row-element img-radius"></a>
-                    <div class="row-element-rb">
-                        <a class="title-element" href="#">Nguyên nhân ban đầu khiến 4 người tử vong tại công ty Miwon
-                            Phú Thọ</a>
-                        <div class="post-footer">
-                            <a href="#"><img class="img-news " src="./Images/vov.png" alt=""></a>
-                            <span>3 giờ</span>
-                            <i class="fa-thin fa-clock"></i>
-                        </div>
-                    </div>
+                    
+                        <a href="#" class="img-hover-zoom img-radius"><img src="./Images/miwon-phu-tho.webp" class="img-row-element img-radius"></a>                           
+                        <div class="row-element-rb">  
+                            <a class="title-element" href="#">Nguyên nhân ban đầu khiến 4 người tử vong tại công ty Miwon Phú Thọ</a>           
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news " src="./Images/vov.png" alt=""></a>
+                                <span>3 giờ</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div> 
                 </div>
 
                 <div class="row-element d-flex">
-
-                    <a href="#" class="img-hover-zoom img-radius"><img
-                            src="./Images/6-tau-lon-nuoc-ngoai-tham-gia-tim-kiem-thuyen-vien-binh-thuan-mat-tich.webp"
-                            class="img-row-element img-radius"></a>
-
+                    
+                    <a href="#" class="img-hover-zoom img-radius"><img src="./Images/6-tau-lon-nuoc-ngoai-tham-gia-tim-kiem-thuyen-vien-binh-thuan-mat-tich.webp" class="img-row-element img-radius"></a>
+                    
                     <div class="row-element-rb">
-                        <a class="title-element" href="#">6 tàu lớn nước ngoài tham gia tìm kiếm thuyền viên Bình Thuận
-                            mất tích</a>
+                        <a class="title-element" href="#">6 tàu lớn nước ngoài tham gia tìm kiếm thuyền viên Bình Thuận mất tích</a>                  
                         <div class="post-footer">
                             <a href="#"><img class="img-news " src="./Images/bao-phap-luat.png" alt=""></a>
                             <span>3 giờ</span>
@@ -308,12 +224,10 @@
                     </div>
                 </div>
 
-                <div class="row-element d-flex">
-                    <a href="#" class="img-hover-zoom img-radius"><img
-                            src="./Images/gia-vang-mieng-tang-lai-gan-5-trieu-dong-luong.webp"
-                            class="img-row-element img-radius"></a>
+                <div class="row-element d-flex">  
+                    <a href="#" class="img-hover-zoom img-radius"><img src="./Images/gia-vang-mieng-tang-lai-gan-5-trieu-dong-luong.webp" class="img-row-element img-radius"></a>
                     <div class="row-element-rb">
-                        <a class="title-element" href="#">Giá vàng miếng tăng lại gần 5 triệu đồng/lượng</a>
+                        <a class="title-element" href="#">Giá vàng miếng tăng lại gần 5 triệu đồng/lượng</a>                  
                         <div class="post-footer">
                             <a href="#"><img class="img-news " src="./Images/bao-zing.png" alt=""></a>
                             <span>3 giờ</span>
@@ -331,14 +245,12 @@
             <div class="col-infor">
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="./Images/ma-tuy-han-quoc.webp" alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/ma-tuy-han-quoc.webp" alt=""></a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Trùm ma túy Hàn Quốc bị Interpol truy nã đỏ
-                            sa lưới ở TP.HCM</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Trùm ma túy Hàn Quốc bị Interpol truy nã đỏ sa lưới ở TP.HCM</a>
                         <div class="post-footer">
-                            <a href="#"><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
+                            <a href="#" ><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
                             <span>1 giờ</span>
                             <span>1 liên quan</span>
                             <i class="fa-thin fa-clock"></i>
@@ -348,13 +260,10 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_194_43221771/04597a6ea42c4d72143d.jpg"
-                                alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_194_43221771/04597a6ea42c4d72143d.jpg" alt=""></a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Có Tổng thống mới, kinh tế Sri Lanka có tìm
-                            được lối ra?</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Có Tổng thống mới, kinh tế Sri Lanka có tìm được lối ra?</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
                             <span>1 giờ</span>
@@ -366,13 +275,10 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_8_43222378/6bdd2d3be6780f265669.jpg"
-                                alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_8_43222378/6bdd2d3be6780f265669.jpg" alt=""></a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Ngày thứ hai liên tiếp, số ca mắc Covid-19
-                            trên cả nước tăng cao</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Ngày thứ hai liên tiếp, số ca mắc Covid-19 trên cả nước tăng cao</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-ha-noi-moi.png" alt=""></a>
                             <span>37 phút</span>
@@ -384,9 +290,7 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_119_43220749/66381605c84721197856.jpg"
-                                alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_119_43220749/66381605c84721197856.jpg" alt=""></a>
                     </div>
                     <div class="post-title">
                         <a href="#" class="anchor-post-p anchor-post-p-left">Việc làm khi sở hữu ô tô </a>
@@ -401,9 +305,7 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_146_43220917/c9967eaaa0e849b610f9.jpg"
-                                alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_146_43220917/c9967eaaa0e849b610f9.jpg" alt=""></a>
                     </div>
                     <div class="post-title">
                         <a href="#" class="anchor-post-p anchor-post-p-left">Đà Nẵng ghi nhận 345 ổ sốt xuất huyết</a>
@@ -415,74 +317,70 @@
                         </div>
                     </div>
                 </div>
-                <!--END COL INFOR-->
+            <!--END COL INFOR-->
             </div>
 
-
+            
 
             <!--noi dung co bong mo EP-->
             <div class="article-group">
                 <p class="article-group-title">
-                    <a href="#"> NĂNG LƯỢNG TÍCH CỰC</a>
+                    <a href="#" > NĂNG LƯỢNG TÍCH CỰC</a>
                 </p>
                 <div class="article-body">
                     <div class="article-group-img-container">
-                        <a href="#" class="img-hover-zoom img-radius"><img class="ar-gr-img "
-                                src="./Images/quen-minh-cuu-nguoi-trong-bien-lua.webp" alt=""></a>
+                        <a href="#" class="img-hover-zoom img-radius"><img class="ar-gr-img " src="./Images/quen-minh-cuu-nguoi-trong-bien-lua.webp" alt=""></a>
                     </div>
                     <div class="article-group-post">
-
-                        <div class="ar-gr-ele d-flex">
-                            <div class="col-infor-contrainer display-none">
-                                <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                        src="./Images/quen-minh-cuu-nguoi-trong-bien-lua.webp" alt=""></a>
-                            </div>
-                            <div>
-                                <a href="#">Quên mình cứu người trong biển lửa</a>
-                                <div class="post-footer">
-                                    <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
-                                    <span>36 phút</span>
-                                    <span>1 liên quan</span>
-                                    <i class="fa-thin fa-clock"></i>
-
+                        
+                            <div class="ar-gr-ele d-flex">
+                                <div class="col-infor-contrainer display-none">
+                                    <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/quen-minh-cuu-nguoi-trong-bien-lua.webp" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href="#">Quên mình cứu người trong biển lửa</a>
+                                    <div class="post-footer">
+                                        <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
+                                        <span>36 phút</span>
+                                        <span>1 liên quan</span>
+                                        <i class="fa-thin fa-clock"></i>
+                                    
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="ar-gr-ele d-flex">
-                            <div class="col-infor-contrainer display-none">
-                                <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                        src="./Images/quen-minh-cuu-nguoi-trong-bien-lua.webp" alt=""></a>
-                            </div>
-                            <div>
-                                <a href="#">Người "mẹ" cưu mang hơn 1.000 chó mèo ở TP.HCM</a>
-                                <div class="post-footer">
-                                    <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
-                                    <span>36 phút</span>
-                                    <span>1 liên quan</span>
-                                    <i class="fa-thin fa-clock"></i>
+                            <div class="ar-gr-ele d-flex" >
+                                <div class="col-infor-contrainer display-none">
+                                    <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/quen-minh-cuu-nguoi-trong-bien-lua.webp" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href="#">Người "mẹ" cưu mang hơn 1.000 chó mèo ở TP.HCM</a>
+                                    <div class="post-footer">
+                                        <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
+                                        <span>36 phút</span>
+                                        <span>1 liên quan</span>
+                                        <i class="fa-thin fa-clock"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="ar-gr-ele ar-gr-ele-end d-flex">
-                            <div class="col-infor-contrainer display-none">
-                                <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                        src="./Images/quen-minh-cuu-nguoi-trong-bien-lua.webp" alt=""></a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    Đóa sen trên núi Hừa Ngài
-                                </a>
-                                <div class="post-footer">
-                                    <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
-                                    <span>36 phút</span>
-                                    <span>1 liên quan</span>
-                                    <i class="fa-thin fa-clock"></i>
-
+                            <div class="ar-gr-ele ar-gr-ele-end d-flex" >
+                                <div class="col-infor-contrainer display-none">
+                                    <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/quen-minh-cuu-nguoi-trong-bien-lua.webp" alt=""></a>
                                 </div>
+                                <div>
+                                    <a href="#">
+                                        Đóa sen trên núi Hừa Ngài
+                                    </a>
+                                    <div class="post-footer">
+                                        <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
+                                        <span>36 phút</span>
+                                        <span>1 liên quan</span>
+                                        <i class="fa-thin fa-clock"></i>
+                                    
+                                    </div>
+                                </div>
+                                
                             </div>
-
-                        </div>
-                        <a href="#" class="ar-gr-full">XEM TẤT CẢ</a>
+                            <a href="#" class="ar-gr-full">XEM TẤT CẢ</a>
                     </div>
 
                 </div>
@@ -492,28 +390,23 @@
 
             <!--Noi dung loat anh ngang-->
             <div class="img-bar-container">
-
-                <a href="#" class="title-img-bar text-hover ">Ngôi nhà tiền tỷ ẩn dưới túp lều thô sơ hút khách du
-                    lịch</a>
-
-
-                <div class="img-bar img-radius">
-                    <a class="img-hover-zoom" href="#"> <img class="img-bar-t" src="./Images/ngoi-nha-tien-ty.webp"
-                            alt=""></a>
-                    <a class="img-hover-zoom " href="#"><img class="img-bar-t" src="./Images/ngoi-nha-tien-ty-2.webp"
-                            alt=""></a>
-                    <a class="img-hover-zoom " href="#"><img class="img-bar-t" src="./Images/ngoi-nha-tien-ty-3.webp"
-                            alt=""></a>
-                    <a class="img-hover-zoom responsive-hidden-img" href="#"><img class="img-bar-t"
-                            src="./Images/ngoi-nha-tien-ty-4.webp" alt=""></a>
-                    <div style="clear: both;"></div>
-                </div>
+                
+                <a href="#" class="title-img-bar text-hover ">Ngôi nhà tiền tỷ ẩn dưới túp lều thô sơ hút khách du lịch</a>
+                    
+                
+               <div class="img-bar img-radius">
+                    <a class="img-hover-zoom" href="#"> <img class="img-bar-t" src="./Images/ngoi-nha-tien-ty.webp" alt=""></a>
+                    <a  class="img-hover-zoom " href="#"><img class="img-bar-t" src="./Images/ngoi-nha-tien-ty-2.webp" alt=""></a>
+                    <a  class="img-hover-zoom " href="#"><img class="img-bar-t" src="./Images/ngoi-nha-tien-ty-3.webp" alt=""></a>
+                    <a  class="img-hover-zoom responsive-hidden-img" href="#"><img  class="img-bar-t" src="./Images/ngoi-nha-tien-ty-4.webp" alt=""></a>
+                <div style="clear: both;"></div>
+               </div>
                 <div class="post-footer responsive-hidden-img">
-                    <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
-                    <span>36 phút</span>
-                    <span>1 liên quan</span>
-                    <i class="fa-thin fa-clock"></i>
-
+                        <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
+                        <span>36 phút</span>
+                        <span>1 liên quan</span>
+                        <i class="fa-thin fa-clock"></i>
+                    
                 </div>
 
             </div>
@@ -522,66 +415,62 @@
 
             <div class="article-group">
                 <p class="article-group-title">
-                    <a href="#"> KHÁM PHÁ VIỆT NAM</a>
+                    <a href="#" > KHÁM PHÁ VIỆT NAM</a>
                 </p>
                 <div class="article-body">
                     <div class="article-group-img-container">
-                        <a href="#" class="img-hover-zoom img-radius"><img class="ar-gr-img "
-                                src="./Images/ve-dep-ho-thac-ba.webp" alt=""></a>
-                    </div>
+                        <a href="#" class="img-hover-zoom img-radius"><img class="ar-gr-img " src="./Images/ve-dep-ho-thac-ba.webp" alt=""></a>
+                    </div>             
                     <div class="article-group-post">
-                        <div class="ar-gr-ele  d-flex">
-                            <div class="col-infor-contrainer display-none">
-                                <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                        src="./Images/ve-dep-ho-thac-ba.webp" alt=""></a>
+                            <div class="ar-gr-ele  d-flex">
+                                <div class="col-infor-contrainer display-none">
+                                    <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/ve-dep-ho-thac-ba.webp" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href="#">Khám phá vẻ đẹp hồ Thác Bà</a>
+                                    <div class="post-footer">
+                                        <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
+                                        <span>36 phút</span>
+                                        <span>1 liên quan</span>
+                                        <i class="fa-thin fa-clock"></i>
+                                    
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <div>
-                                <a href="#">Khám phá vẻ đẹp hồ Thác Bà</a>
-                                <div class="post-footer">
-                                    <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
-                                    <span>36 phút</span>
-                                    <span>1 liên quan</span>
-                                    <i class="fa-thin fa-clock"></i>
-
+                            <div class="ar-gr-ele d-flex" >
+                                <div class="col-infor-contrainer display-none">
+                                    <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/ve-dep-ho-thac-ba.webp" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href="#">Chiêm ngưỡng kiến trúc độc đáo của nhà thờ Du Sinh, Đà Lạt</a>
+                                    <div class="post-footer">
+                                        <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
+                                        <span>36 phút</span>
+                                        <span>1 liên quan</span>
+                                        <i class="fa-thin fa-clock"></i>
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="ar-gr-ele d-flex">
-                            <div class="col-infor-contrainer display-none">
-                                <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                        src="./Images/ve-dep-ho-thac-ba.webp" alt=""></a>
-                            </div>
-                            <div>
-                                <a href="#">Chiêm ngưỡng kiến trúc độc đáo của nhà thờ Du Sinh, Đà Lạt</a>
-                                <div class="post-footer">
-                                    <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
-                                    <span>36 phút</span>
-                                    <span>1 liên quan</span>
-                                    <i class="fa-thin fa-clock"></i>
+                            <div class="ar-gr-ele ar-gr-ele-end d-flex" >
+                                <div class="col-infor-contrainer display-none">
+                                    <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/ve-dep-ho-thac-ba.webp" alt=""></a>
                                 </div>
+                                <div>
+                                    <a href="#">
+                                        Thành phố có diện tích nhỏ nhất Việt Nam, 
+                                        nhưng đón nhiều khách du lịch nhất 6 tháng đầu năm 2022: 
+                                        Vượt cả Hạ Long lẫn Nha Trang nhờ ngon - bổ - rẻ!
+                                    </a>
+                                    <div class="post-footer">
+                                        <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
+                                        <span>36 phút</span>
+                                        <span>1 liên quan</span>
+                                        <i class="fa-thin fa-clock"></i>
+                                    </div>
+                                </div>   
                             </div>
-                        </div>
-                        <div class="ar-gr-ele ar-gr-ele-end d-flex">
-                            <div class="col-infor-contrainer display-none">
-                                <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                        src="./Images/ve-dep-ho-thac-ba.webp" alt=""></a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    Thành phố có diện tích nhỏ nhất Việt Nam,
-                                    nhưng đón nhiều khách du lịch nhất 6 tháng đầu năm 2022:
-                                    Vượt cả Hạ Long lẫn Nha Trang nhờ ngon - bổ - rẻ!
-                                </a>
-                                <div class="post-footer">
-                                    <a href="#"><img class="img-news" src="./Images/bao-vietnamnet.png" alt=""></a>
-                                    <span>36 phút</span>
-                                    <span>1 liên quan</span>
-                                    <i class="fa-thin fa-clock"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="ar-gr-full">XEM TẤT CẢ</a>
+                            <a href="#" class="ar-gr-full">XEM TẤT CẢ</a>
                     </div>
                 </div>
             </div>
@@ -591,14 +480,12 @@
             <div class="col-infor">
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="./Images/nang-nong-tai-anh-khien-may-chu-ngung-hoat-dong.webp" alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/nang-nong-tai-anh-khien-may-chu-ngung-hoat-dong.webp" alt=""></a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Nắng nóng tại Anh khiến máy chủ Google
-                            ngừng hoạt động</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Nắng nóng tại Anh khiến máy chủ Google ngừng hoạt động</a>
                         <div class="post-footer">
-                            <a href="#"><img class="img-news" src="./Images/bao-to-quoc.png" alt=""></a>
+                            <a href="#" ><img class="img-news" src="./Images/bao-to-quoc.png" alt=""></a>
                             <span>1 giờ</span>
                             <span>2 liên quan</span>
                             <i class="fa-thin fa-clock"></i>
@@ -608,12 +495,10 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="Images/nhung-hinh-anh-dau-tien-cua-4-ngu-dan-o-binh-thuan.webp" alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="Images/nhung-hinh-anh-dau-tien-cua-4-ngu-dan-o-binh-thuan.webp" alt=""></a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Những hình ảnh đầu tiên của 4 ngư dân Bình
-                            Thuận gặp nạn được cứu</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Những hình ảnh đầu tiên của 4 ngư dân Bình Thuận gặp nạn được cứu</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-vtc.png" alt=""></a>
                             <span>32 phút</span>
@@ -625,8 +510,7 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="Images/Sri Lanka-co-tong-thong-moi.webp" alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="Images/Sri Lanka-co-tong-thong-moi.webp" alt=""></a>
                     </div>
                     <div class="post-title">
                         <a href="#" class="anchor-post-p anchor-post-p-left">Sri Lanka có tổng thống mới</a>
@@ -641,12 +525,10 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="Images/nguy-co-chet-nguoi-tu-trao-luu-lam-mat-tren-tik-tok.webp" alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="Images/nguy-co-chet-nguoi-tu-trao-luu-lam-mat-tren-tik-tok.webp" alt=""></a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Nguy cơ chết người từ trào lưu làm mát trên
-                            tik tok</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Nguy cơ chết người từ trào lưu làm mát trên tik tok</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
                             <span>4 giờ</span>
@@ -658,13 +540,10 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_146_43220917/c9967eaaa0e849b610f9.jpg"
-                                alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_146_43220917/c9967eaaa0e849b610f9.jpg" alt=""></a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Chồng sát hại vợ và con trai rồi gọi điện
-                            cho công an đầu thú</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Chồng sát hại vợ và con trai rồi gọi điện cho công an đầu thú</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-cand.png" alt=""></a>
                             <span>1 giờ</span>
@@ -676,13 +555,10 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="./Images/tho-sua-xe-lay-sieu-xe-ferrari-cua-khach-chay-roi-gap-nan-ai-phai-boi-thuong.webp"
-                                alt=""></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/tho-sua-xe-lay-sieu-xe-ferrari-cua-khach-chay-roi-gap-nan-ai-phai-boi-thuong.webp" alt=""></a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Thợ sửa xe lấy 'siêu xe' Ferrari của khách
-                            chạy rồi gặp nạn: Ai phải bồi thường?</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Thợ sửa xe lấy 'siêu xe' Ferrari của khách chạy rồi gặp nạn: Ai phải bồi thường?</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-phap-luat.png" alt=""></a>
                             <span>2 giờ</span>
@@ -691,52 +567,46 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#">
-                            <img class="img-col-title-infor img-radius"
-                                src="./Images/hang-ngan-tui-thuoc-dieu-tri-sot-xuat-huyet-phai-bo-trong-khi-nhieu-noi-thieu-thuoc.webp">
-                        </a>
+                            <a class="img-hover-zoom" href="#">
+                                <img class="img-col-title-infor img-radius" src="./Images/hang-ngan-tui-thuoc-dieu-tri-sot-xuat-huyet-phai-bo-trong-khi-nhieu-noi-thieu-thuoc.webp" >
+                            </a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Hàng ngàn túi thuốc điều trị sốt xuất huyết
-                            phải hủy bỏ trong khi nhiều nơi thiếu thuốc</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-left">Hàng ngàn túi thuốc điều trị sốt xuất huyết phải hủy bỏ trong khi nhiều nơi thiếu thuốc</a>
                         <div class="post-footer">
-                            <a href="#"><img class="img-news" src="./Images/sai-gon-online.png" alt=""></a>
-                            <span>2 giờ</span>
-                            <span>8 liên quan</span>
-                            <i class="fa-thin fa-clock"></i>
+                                <a href="#"><img class="img-news" src="./Images/sai-gon-online.png" alt=""></a>
+                                <span>2 giờ</span>
+                                <span>8 liên quan</span>
+                                <i class="fa-thin fa-clock"></i>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="post-article">
-                    <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="./Images/khongh-ngay-24-07-bo-giao-duc-cong-bo-diem-thi-tot-nghiep.webp"></a>
-                    </div>
-                    <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">0h ngày 24/7, Bộ Giáo dục và Đào tạo công
-                            bố điểm thi tốt nghiệp THPT 2022</a>
-                        <div class="post-footer">
-                            <a href="#"><img class="img-news" src="./Images/bao-vtc.png" alt=""></a>
-                            <span>4 giờ</span>
-                            <span>469 liên quan</span>
-                            <i class="fa-thin fa-clock"></i>
+                        <div class="col-infor-contrainer">
+                            <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/khongh-ngay-24-07-bo-giao-duc-cong-bo-diem-thi-tot-nghiep.webp" ></a>
                         </div>
-                    </div>
+                        <div class="post-title">
+                            <a href="#" class="anchor-post-p anchor-post-p-left">0h ngày 24/7, Bộ Giáo dục và Đào tạo công bố điểm thi tốt nghiệp THPT 2022</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news" src="./Images/bao-vtc.png" alt=""></a>
+                                <span>4 giờ</span>
+                                <span>469 liên quan</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div>
                 </div>
 
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="./Images/dich-covid19-ngay-23-07-so-ca-khoi-benh-nhieu-gap-9-lna-so-ca-mac-moi.webp"></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/dich-covid19-ngay-23-07-so-ca-khoi-benh-nhieu-gap-9-lna-so-ca-mac-moi.webp" ></a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Dịch COVID-19 ngày 23/7: Số ca khỏi bệnh
-                            nhiều hơn 9 lần số ca mắc mới</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Dịch COVID-19 ngày 23/7: Số ca khỏi bệnh nhiều hơn 9 lần số ca mắc mới</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-tin-tuc.png" alt=""></a>
                             <span>1 giờ</span>
@@ -748,12 +618,10 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="./Images/thu-tuong-pmc-tham-va-lam-viec-tai-vung-san-xuat-nong-nghiep-cong-nghe-cao-tinh-na.webp"></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/thu-tuong-pmc-tham-va-lam-viec-tai-vung-san-xuat-nong-nghiep-cong-nghe-cao-tinh-na.webp" ></a>
                     </div>
-                    <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Dịch COVID-19 ngày 23/7: Số ca khỏi bệnh
-                            nhiều hơn 9 lần số ca mắc mới</a>
+                    <div class="post-title">    
+                    <a href="#" class="anchor-post-p anchor-post-p-left">Dịch COVID-19 ngày 23/7: Số ca khỏi bệnh nhiều hơn 9 lần số ca mắc mới</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-suc-khoe-doi-song.png" alt=""></a>
                             <span>1 giờ</span>
@@ -765,12 +633,10 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="./Images/ba-ria-vung-tau-cuu-2-nguoi-dan-tau-ca-troi-dat-tren-bien.webp"></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/ba-ria-vung-tau-cuu-2-nguoi-dan-tau-ca-troi-dat-tren-bien.webp" ></a>
                     </div>
-                    <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Bà Rịa-Vũng Tàu: Cứu 2 ngư dân tàu cá trôi
-                            dạt trên biển
+                        <div class="post-title">
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Bà Rịa-Vũng Tàu: Cứu 2 ngư dân tàu cá trôi dạt trên biển
                             Bà Rịa-Vũng Tàu: Cứu 2 ngư dân tàu cá trôi dạt trên biển</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-tin-tuc.png" alt=""></a>
@@ -782,11 +648,10 @@
 
                 <div class="post-article">
                     <div class="col-infor-contrainer">
-                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
-                                src="./Images/cang-odesa-trung-ten-lua.webp"></a>
+                        <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/cang-odesa-trung-ten-lua.webp" ></a>
                     </div>
-                    <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-left">Cảng Odesa trúng tên lửa</a>
+                    <div class="post-title">    
+                    <a href="#" class="anchor-post-p anchor-post-p-left">Cảng Odesa trúng tên lửa</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
                             <span>18 phút</span>
@@ -795,14 +660,14 @@
                         </div>
                     </div>
                 </div>
-                <!--END COL INFOR 2-->
-            </div>
+            <!--END COL INFOR 2-->
+            </div>        
 
-            <!--END CONTENT LEFT-->
+        <!--END CONTENT LEFT-->    
         </div>
 
         <div class="content-right">
-
+            
             <div class="right-news">
                 <div class="post-article">
                     <div class="post-img-container anchor-post-p-right">
@@ -811,8 +676,7 @@
                         </a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p">Bài viết của Tổng Bí thư là định hướng chiến lược mang tính
-                            thời đại</a>
+                        <a href="#" class="anchor-post-p">Bài viết của Tổng Bí thư là định hướng chiến lược mang tính thời đại</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/sai-gon-online.png" alt=""></a>
                             <span>425 liên quan</span>
@@ -828,8 +692,7 @@
                         </a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-right">Tổng Bí thư: Dù thế giới đổi thay, tình
-                            nghĩa Việt-Lào vẫn vững bền hơn núi, hơn sông</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-right">Tổng Bí thư: Dù thế giới đổi thay, tình nghĩa Việt-Lào vẫn vững bền hơn núi, hơn sông</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/sai-gon-online.png" alt=""></a>
                             <span>425 liên quan</span>
@@ -841,13 +704,11 @@
                 <div class="post-article">
                     <div class="post-img-container">
                         <a class="img-hover-zoom " href="#">
-                            <img class="img-post img-radius" src="./Images/giam-sat-ct-thu-hoi-gan-8000-hop-kem.webp"
-                                alt="">
+                            <img class="img-post img-radius" src="./Images/giam-sat-ct-thu-hoi-gan-8000-hop-kem.webp" alt="">
                         </a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-right">Giám sát chương trình thu hồi gần 8.000
-                            hộp kem Haagen Dazs vị vani</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-right">Giám sát chương trình thu hồi gần 8.000 hộp kem Haagen Dazs vị vani</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-kt-dt.png" alt=""></a>
                             <span>16 phút</span>
@@ -859,8 +720,7 @@
 
                 <div class="post-article">
                     <div class="post-img-container ">
-                        <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
-                                src="./Images/MSB-tang-von-len-20000-ty.webp" alt="">
+                        <a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/MSB-tang-von-len-20000-ty.webp" alt="">
                         </a>
                     </div>
                     <div class="post-title">
@@ -877,13 +737,11 @@
                 <div class="post-article">
                     <div class="post-img-container">
                         <a class="img-hover-zoom " href="#">
-                            <img class="img-post img-radius"
-                                src="./Images/chu-tich-binh-dinh-giao-toan-bo-vu-lan-chiem-dat.webp" alt="">
+                            <img class="img-post img-radius" src="./Images/chu-tich-binh-dinh-giao-toan-bo-vu-lan-chiem-dat.webp" alt="">
                         </a>
                     </div>
                     <div class="post-title">
-                        <a href="#" class="anchor-post-p anchor-post-p-right">Chủ tịch Bình Định: Giao thanh tra toàn bộ
-                            vụ việc lấn chiếm đất đai ở huyện Vĩnh Thạnh</a>
+                        <a href="#" class="anchor-post-p anchor-post-p-right">Chủ tịch Bình Định: Giao thanh tra toàn bộ vụ việc lấn chiếm đất đai ở huyện Vĩnh Thạnh</a>
                         <div class="post-footer">
                             <a href="#"><img class="img-news" src="./Images/bao-tien-phong.png" alt=""></a>
                             <span>15 phút</span>
@@ -901,104 +759,104 @@
             <div class="newspaper-show">
                 <span style="margin:5px 10px; ">ĐỐI TÁC CHÍNH THỨC</span>
                 <div class="slide-container">
-
-                    <div class="slide">
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-cand.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-kt-dt.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-nguoi-lao-dong.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-nhan-dan.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-qdnf.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-tin-tuc.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-zing.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/sai-gon-online.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/vov.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-cand.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-kt-dt.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-nguoi-lao-dong.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-nhan-dan.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-qdnf.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-tin-tuc.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/bao-zing.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/sai-gon-online.png" alt="">
-                            </a>
-                        </div>
-                        <div class="element-slide">
-                            <a href="#" class="anchor-slide">
-                                <img class="img-slide" src="./Images/vov.png" alt="">
-                            </a>
-                        </div>
-                    </div>
+                    
+                        <div class="slide">
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-cand.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-kt-dt.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-nguoi-lao-dong.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-nhan-dan.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-qdnf.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-tin-tuc.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-zing.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/sai-gon-online.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/vov.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-cand.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-kt-dt.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-nguoi-lao-dong.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-nhan-dan.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-qdnf.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-tin-tuc.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/bao-zing.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/sai-gon-online.png" alt="">
+                                </a>
+                            </div>
+                            <div class="element-slide">
+                                <a href="#" class="anchor-slide">
+                                    <img class="img-slide" src="./Images/vov.png" alt="">
+                                </a>
+                            </div>
+                        </div>   
                 </div>
             </div>
-
+            
             <div class="img-aphich">
-                <img src="./Images/hoc-tap-va-lam-theo-tam-guong-dao-duc-ho-chi-minh.png" alt="">
+                <img src="./Images/hoc-tap-va-lam-theo-tam-guong-dao-duc-ho-chi-minh.png"  alt="">
             </div>
 
             <div class="infor-gover">
@@ -1008,15 +866,12 @@
                 </div>
                 <div class="body-i-g">
                     <div class="img-body-i-g d-flex">
-                        <img src="https://bcp.cdnchinhphu.vn/zoom/102_64/334894974524682240/2022/7/19/pqt-4926-1658236280270565245002-28-0-1278-2000-crop-1658236298100571489300.jpg"
-                            alt="">
-                        <span>Phó Thủ tướng Lê Minh Khái tiếp Tổng Giám đốc kiêm đồng sáng lập Tập đoàn Grab</span>
+                        <img src="https://bcp.cdnchinhphu.vn/zoom/102_64/334894974524682240/2022/7/19/pqt-4926-1658236280270565245002-28-0-1278-2000-crop-1658236298100571489300.jpg" alt="">
+                        <span >Phó Thủ tướng Lê Minh Khái tiếp Tổng Giám đốc kiêm đồng sáng lập Tập đoàn Grab</span>
                     </div>
                     <div class="news-i-g">
-                        <a href="#">Thủ tướng: Tiếp tục rà soát toàn diện các chính sách, chăm lo tốt hơn nữa đời sống
-                            người có công *</a>
-                        <a href="#">Kiện toàn Ban Chỉ đạo tổng kết thi hành Luật Đất đai và xây dựng Luật Đất đai (sửa
-                            đổi)</a>
+                        <a href="#">Thủ tướng: Tiếp tục rà soát toàn diện các chính sách, chăm lo tốt hơn nữa đời sống người có công *</a>
+                        <a href="#">Kiện toàn Ban Chỉ đạo tổng kết thi hành Luật Đất đai và xây dựng Luật Đất đai (sửa đổi)</a>
                     </div>
                 </div>
             </div>
@@ -1024,29 +879,26 @@
 
 
 
-            <!--Trang tin dia phuong-->
+            <!--Trang tin dia phuong--> 
             <div class="local-news">
                 <a href="#" class="header-local"> <i class="fa-solid fa-location-dot"></i> ĐỊA PHƯƠNG</a>
-                <select name="local" class="local-option"
-                    style="width:100% ; border: 1px solid #b1b1b1; padding: 5px; box-sizing: border-box; margin:10px 0;">
+                <select name="local" class="local-option" style="width:100% ; border: 1px solid #b1b1b1; padding: 5px; box-sizing: border-box; margin:10px 0;">
                     <option value="tphochiminh">TP. Hồ Chí Minh</option>
-                    <option value="danang">Đà Nẵng</option>
-                    <option value="hanoi">Hà Nội</option>
-                    <option value="angiang">An Giang</option>
-                    <option value="bacgiang">Bắc Giang</option>
-                    <option value="backan">Bắc Kạn</option>
-                    <option value="baclieu">Bạc Liêu</option>
-                    <option value="bacninh">Bắc Ninh</option>
-                    <option value="bentre">Bến Tre</option>
-                    <option value="binhdinh">Bình Định</option>
+                            <option value="danang">Đà Nẵng</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="angiang">An Giang</option>
+                            <option value="bacgiang">Bắc Giang</option>
+                            <option value="backan">Bắc Kạn</option>
+                            <option value="baclieu">Bạc Liêu</option>
+                            <option value="bacninh">Bắc Ninh</option>
+                            <option value="bentre">Bến Tre</option>
+                            <option value="binhdinh">Bình Định</option>
                 </select>
                 <div class="right-news">
                     <div class="post-article">
-                        <div class="post-img-container anchor-post-p-right"><a class="img-hover-zoom " href="#"><img
-                                    class="img-post img-radius" src="./Images/tong-bi-thu-2.webp" alt=""></a></div>
+                        <div class="post-img-container anchor-post-p-right"><a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/tong-bi-thu-2.webp" alt=""></a></div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p">Bài viết của Tổng Bí thư là định hướng chiến lược mang
-                                tính thời đại</a>
+                            <a href="#" class="anchor-post-p">Bài viết của Tổng Bí thư là định hướng chiến lược mang tính thời đại</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/sai-gon-online.png" alt=""></a>
                                 <span>425 liên quan</span>
@@ -1054,14 +906,11 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="post-article">
-                        <div class="post-img-container"><a class="img-hover-zoom " href="#"><img
-                                    class="img-post img-radius" src="./Images/7539c2d22590ccce9581.webp" alt=""></a>
-                        </div>
+                        <div class="post-img-container"><a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/7539c2d22590ccce9581.webp" alt=""></a></div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">Tổng Bí thư: Dù thế giới đổi thay,
-                                tình nghĩa Việt-Lào vẫn vững bền hơn núi, hơn sông</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Tổng Bí thư: Dù thế giới đổi thay, tình nghĩa Việt-Lào vẫn vững bền hơn núi, hơn sông</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/sai-gon-online.png" alt=""></a>
                                 <span>425 liên quan</span>
@@ -1069,14 +918,11 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="post-article">
-                        <div class="post-img-container"><a class="img-hover-zoom " href="#"><img
-                                    class="img-post img-radius" src="./Images/giam-sat-ct-thu-hoi-gan-8000-hop-kem.webp"
-                                    alt=""></a></div>
+                        <div class="post-img-container"><a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/giam-sat-ct-thu-hoi-gan-8000-hop-kem.webp" alt=""></a></div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">Giám sát chương trình thu hồi gần
-                                8.000 hộp kem Haagen Dazs vị vani</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Giám sát chương trình thu hồi gần 8.000 hộp kem Haagen Dazs vị vani</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/bao-kt-dt.png" alt=""></a>
                                 <span>16 phút</span>
@@ -1085,14 +931,11 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="post-article">
-                        <div class="post-img-container "><a class="img-hover-zoom " href="#"><img
-                                    class="img-post img-radius" src="./Images/MSB-tang-von-len-20000-ty.webp"
-                                    alt=""></a></div>
+                        <div class="post-img-container "><a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/MSB-tang-von-len-20000-ty.webp" alt=""></a></div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">MSB sắp tăng vốn lên 20.000 tỷ
-                                đồng</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">MSB sắp tăng vốn lên 20.000 tỷ đồng</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/sai-gon-online.png" alt=""></a>
                                 <span>14 phút</span>
@@ -1101,15 +944,11 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="post-article">
-                        <div class="post-img-container"><a class="img-hover-zoom " href="#"><img
-                                    class="img-post img-radius"
-                                    src="./Images/chu-tich-binh-dinh-giao-toan-bo-vu-lan-chiem-dat.webp" alt=""></a>
-                        </div>
+                        <div class="post-img-container"><a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/chu-tich-binh-dinh-giao-toan-bo-vu-lan-chiem-dat.webp" alt=""></a></div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">Chủ tịch Bình Định: Giao thanh tra
-                                toàn bộ vụ việc lấn chiếm đất đai ở huyện Vĩnh Thạnh</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Chủ tịch Bình Định: Giao thanh tra toàn bộ vụ việc lấn chiếm đất đai ở huyện Vĩnh Thạnh</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/bao-tien-phong.png" alt=""></a>
                                 <span>15 phút</span>
@@ -1146,7 +985,9 @@
                                 </a>
                             </h4>
                             <div class="bm_card_video_c_logo d-flex">
-                                <a href="#"><img src="./Images/sai-gon-online.png" alt=""></a>
+                                <a href="#"><img
+                                        src="./Images/sai-gon-online.png"
+                                        alt=""></a>
                                 <span class="ml-12 fs-13 op-025 ">18 phút</span>
                                 <span class="ml-12 fs-13 op-025">13 liên quan</span>
 
@@ -1156,7 +997,8 @@
                     <div class="bm_card_video d-flex">
                         <div class="bm_card_video_img  img-hover-zoom">
                             <a href="#">
-                                <img src="./Images/tphcm-xu-ly-bien-bao-giao-thong-che-khuat.webp" alt="">
+                                <img src="./Images/tphcm-xu-ly-bien-bao-giao-thong-che-khuat.webp"
+                                    alt="">
                             </a>
                         </div>
 
@@ -1167,9 +1009,11 @@
                                 </a>
                             </h4>
                             <div class="bm_card_video_c_logo d-flex">
-                                <a href="#"><img src="./Images/vnews.png" alt=""> VNEWS</a>
+                                <a href="#"><img
+                                        src="./Images/vnews.png"
+                                        alt=""> VNEWS</a>
                                 <span class="ml-12 fs-13 op-025 ">26 phút</span>
-
+                                
 
                             </div>
                         </div>
@@ -1177,7 +1021,8 @@
                     <div class="bm_card_video d-flex">
                         <div class="bm_card_video_img  img-hover-zoom">
                             <a href="#">
-                                <img src="./Images/tphcm-thuong-nong-150tr-HCV-quoc-te.webp" alt="">
+                                <img src="./Images/tphcm-thuong-nong-150tr-HCV-quoc-te.webp"
+                                    alt="">
                             </a>
                         </div>
 
@@ -1188,9 +1033,11 @@
                                 </a>
                             </h4>
                             <div class="bm_card_video_c_logo d-flex">
-                                <a href="#"><img src="./Images/vnews.png" alt=""> VNEWS</a>
+                                <a href="#"><img
+                                        src="./Images/vnews.png"
+                                        alt=""> VNEWS</a>
                                 <span class="ml-12 fs-13 op-025 ">27 phút</span>
-
+                                
 
                             </div>
                         </div>
@@ -1238,7 +1085,8 @@
                                 <a href="#">Hơn 1,6 tỷ đồng ủng hộ Quỹ Khuyến học Lê Hữu Trác</a>
                             </h4>
                             <div class="bm_card_video_c_logo d-flex">
-                                <a href="#"><img src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                <a href="#"><img
+                                        src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
                                         alt=""></a>
                                 <span class="ml-12 fs-13 op-025 ">10 phút</span>
                                 <span class="ml-12 fs-13 op-025">13 liên quan</span>
@@ -1278,7 +1126,8 @@
                                 <a href="#">Hơn 1,6 tỷ đồng ủng hộ Quỹ Khuyến học Lê Hữu Trác</a>
                             </h4>
                             <div class="bm_card_video_c_logo d-flex">
-                                <a href="#"><img src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                <a href="#"><img
+                                        src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
                                         alt=""></a>
                                 <span class="ml-12 fs-13 op-025 ">10 phút</span>
                                 <span class="ml-12 fs-13 op-025">13 liên quan</span>
@@ -1318,7 +1167,8 @@
                                 <a href="#">Hơn 1,6 tỷ đồng ủng hộ Quỹ Khuyến học Lê Hữu Trác</a>
                             </h4>
                             <div class="bm_card_video_c_logo d-flex">
-                                <a href="#"><img src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
+                                <a href="#"><img
+                                        src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png"
                                         alt=""></a>
                                 <span class="ml-12 fs-13 op-025 ">10 phút</span>
                                 <span class="ml-12 fs-13 op-025">13 liên quan</span>
@@ -1327,7 +1177,7 @@
                         </div>
 
                     </div>
-
+                     
                 </div>
             </div>
 
@@ -1341,13 +1191,10 @@
 
                     <div class="post-article">
                         <div class="post-img-container">
-                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
-                                    src="./Images/nghi-pham-vu-nguoi-phu-nu-tu-vung-thi-the-khong-nguyen-ven.webp"
-                                    alt=""></a>
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/nghi-pham-vu-nguoi-phu-nu-tu-vung-thi-the-khong-nguyen-ven.webp" alt=""></a>
                         </div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">Nghi phạm vụ người phụ nữ tử vong thi
-                                thể không nguyên vẹn đã tự sát?</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Nghi phạm vụ người phụ nữ tử vong thi thể không nguyên vẹn đã tự sát?</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/bao-nguoi-lao-dong.png" alt=""></a>
                                 <span>13 liên quan</span>
@@ -1357,12 +1204,10 @@
                     </div>
                     <div class="post-article">
                         <div class="post-img-container">
-                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
-                                    src="./Images/xe-khach-cho-23-nguoi-lao-xuong-vuc.webp" alt=""></a>
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/xe-khach-cho-23-nguoi-lao-xuong-vuc.webp" alt=""></a>
                         </div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">Xe khách chở 23 người lao xuống vực
-                                trên đèo Đại Ninh</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Xe khách chở 23 người lao xuống vực trên đèo Đại Ninh</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/bao-phap-luat.png" alt=""></a>
                                 <span>11 giờ</span>
@@ -1373,12 +1218,10 @@
                     </div>
                     <div class="post-article">
                         <div class="post-img-container">
-                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
-                                    src="./Images/xe-khach-cho-23-nguoi-lao-xuong-vuc.webp" alt=""></a>
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/xe-khach-cho-23-nguoi-lao-xuong-vuc.webp" alt=""></a>
                         </div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">Xe khách chở 23 người lao xuống vực
-                                trên đèo Đại Ninh</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Xe khách chở 23 người lao xuống vực trên đèo Đại Ninh</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/bao-phap-luat.png" alt=""></a>
                                 <span>11 giờ</span>
@@ -1389,13 +1232,10 @@
                     </div>
                     <div class="post-article">
                         <div class="post-img-container">
-                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
-                                    src="./Images/vu-thi-the-mot-phu-nu-khong-toan-ven-nghi-pham-gay-an-da-tu-tu.webp"
-                                    alt=""></a>
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/vu-thi-the-mot-phu-nu-khong-toan-ven-nghi-pham-gay-an-da-tu-tu.webp" alt=""></a>
                         </div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">Vụ thi thể một phụ nữ không toàn vẹn:
-                                Nghi phạm gây án đã tự tử</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Vụ thi thể một phụ nữ không toàn vẹn: Nghi phạm gây án đã tự tử</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/bao-tien-phong.png" alt=""></a>
                                 <span>11 giờ</span>
@@ -1406,13 +1246,10 @@
                     </div>
                     <div class="post-article">
                         <div class="post-img-container">
-                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
-                                    src="./Images/khoc-khi-ong-a-be-mat-phong-vien-trung-quoc-bi-bat-nat-den-muc-tu-sat.webp"
-                                    alt=""></a>
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/khoc-khi-ong-a-be-mat-phong-vien-trung-quoc-bi-bat-nat-den-muc-tu-sat.webp" alt=""></a>
                         </div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">Khóc khi ông Abe mất, phóng viên Trung
-                                Quốc bị bắt nạt đến mức tự sát</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Khóc khi ông Abe mất, phóng viên Trung Quốc bị bắt nạt đến mức tự sát</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
                                 <i class="fa-thin fa-clock"></i>
@@ -1421,12 +1258,10 @@
                     </div>
                     <div class="post-article">
                         <div class="post-img-container">
-                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
-                                    src="./Images/thuyen-truong-tau-BTH-97478.webp" alt=""></a>
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius" src="./Images/thuyen-truong-tau-BTH-97478.webp" alt=""></a>
                         </div>
                         <div class="post-title">
-                            <a href="#" class="anchor-post-p anchor-post-p-right">Thuyền trưởng tàu BTh-97478: 'Rất
-                                nhiều tàu đi qua nhưng họ không nghe kêu cứu'</a>
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Thuyền trưởng tàu BTh-97478: 'Rất nhiều tàu đi qua nhưng họ không nghe kêu cứu'</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/bao-phap-luat.png" alt=""></a>
                                 <span>11 giờ</span>
@@ -1445,7 +1280,7 @@
                 <span>TIỆN ÍCH</span>
             </h3>
             <div class="utility">
-
+                
                 <div class="temp_">
                     <div class="utility-weather-today">
                         <img src="./Images/sun-weather.svg" alt="trời nắng">
@@ -1460,20 +1295,19 @@
                             <span>Khả năng mưa: 18%</span>
                         </div>
                     </div>
-
-                    <select
-                        style="width:100% ; border: 1px solid #b1b1b1; padding: 5px; box-sizing: border-box; margin:10px 0;">
-                        <option value="tphochiminh">TP. Hồ Chí Minh</option>
-                        <option value="danang">Đà Nẵng</option>
-                        <option value="hanoi">Hà Nội</option>
-                        <option value="angiang">An Giang</option>
-                        <option value="bacgiang">Bắc Giang</option>
-                        <option value="backan">Bắc Kạn</option>
-                        <option value="baclieu">Bạc Liêu</option>
-                        <option value="bacninh">Bắc Ninh</option>
-                        <option value="bentre">Bến Tre</option>
-                        <option value="binhdinh">Bình Định</option>
-                    </select>
+                    
+                        <select style="width:100% ; border: 1px solid #b1b1b1; padding: 5px; box-sizing: border-box; margin:10px 0;">
+                            <option value="tphochiminh">TP. Hồ Chí Minh</option>
+                            <option value="danang">Đà Nẵng</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="angiang">An Giang</option>
+                            <option value="bacgiang">Bắc Giang</option>
+                            <option value="backan">Bắc Kạn</option>
+                            <option value="baclieu">Bạc Liêu</option>
+                            <option value="bacninh">Bắc Ninh</option>
+                            <option value="bentre">Bến Tre</option>
+                            <option value="binhdinh">Bình Định</option>
+                        </select>
                     <div class="weather-nextday">
                         <div class="wtnd-element bd-r">
                             <span>20/07</span>
@@ -1492,7 +1326,7 @@
                             <img src="./Images/rain-weather.svg" alt="">
                             <span>24° - 31°</span>
                             <span>Mưa giông vào buổi sáng</span>
-
+                            
                         </div>
                         <div class="wtnd-element ">
                             <span>20/07</span>
@@ -1510,7 +1344,7 @@
                         <a href="#">Giá vàng</a>
                         <a href="#">Kết quả sổ số</a>
                         <a href="#">Chứng khoán</a>
-
+                        
                     </div>
                     <div class="u-col-2">
                         <a href="#">Lịch truyền hình</a>
@@ -1528,35 +1362,32 @@
             <h3 class="bm_News_T text-hover">
                 <span>XU HƯỚNG</span>
             </h3>
-            <div class="trend">
-                <a class="hot-infor-ele font-size-8" href="#">ngày Thương binh </a>
-                <a class="hot-infor-ele font-size-6" href="#">Lạm phát</a>
-                <a class="hot-infor-ele font-size-7" href="#">nhà quốc hội</a>
-                <a class="hot-infor-ele font-size-6" href="#">Ban chấp hành trung ương đảng</a>
-                <a class="hot-infor-ele font-size-2" href="#">Nguyễn Kim Trung Thái</a>
-                <a class="hot-infor-ele font-size-3" href="#">Sri Lanka</a>
-                <a class="hot-infor-ele font-size-4" href="#">Tịnh thất bồng lai</a>
-                <a class="hot-infor-ele font-size-3" href="#">V.A</a>
-                <a class="hot-infor-ele font-size-3" href="#">Ranil Wickremesinghe</a>
-                <a class="hot-infor-ele font-size-7" href="#">Phạm Minh Chính</a>
-                <a class="hot-infor-ele font-size-2" href="#">Lê Tùng Vân</a>
-                <a class="hot-infor-ele font-size-8" href="#">hội đồng xét xử</a>
-                <a class="hot-infor-ele font-size-3" href="#">XIII</a>
-                <a class="hot-infor-ele font-size-4" href="#">Cao Thị Cúc</a>
-                <a class="hot-infor-ele font-size-3" href="#">ukraine</a>
-                <a class="hot-infor-ele font-size-8" href="#">TAND Tp.HCM</a>
-                <a class="hot-infor-ele font-size-3" href="#">Quốc hội Lào</a>
-                <a class="hot-infor-ele font-size-1" href="#">Nguyễn Võ Quỳnh Trang</a>
-
+            <div class="trend">    
+                    <a class="hot-infor-ele font-size-8" href="#">ngày Thương binh </a>
+                    <a class="hot-infor-ele font-size-6" href="#">Lạm phát</a>
+                    <a class="hot-infor-ele font-size-7" href="#">nhà quốc hội</a>
+                    <a class="hot-infor-ele font-size-6" href="#">Ban chấp hành trung ương đảng</a>
+                    <a class="hot-infor-ele font-size-2" href="#">Nguyễn Kim Trung Thái</a>
+                    <a class="hot-infor-ele font-size-3" href="#">Sri Lanka</a>
+                    <a class="hot-infor-ele font-size-4" href="#">Tịnh thất bồng lai</a>
+                    <a class="hot-infor-ele font-size-3" href="#">V.A</a>
+                    <a class="hot-infor-ele font-size-3" href="#">Ranil Wickremesinghe</a>
+                    <a class="hot-infor-ele font-size-7" href="#">Phạm Minh Chính</a>
+                    <a class="hot-infor-ele font-size-2" href="#">Lê Tùng Vân</a>
+                    <a class="hot-infor-ele font-size-8" href="#">hội đồng xét xử</a>
+                    <a class="hot-infor-ele font-size-3" href="#">XIII</a>
+                    <a class="hot-infor-ele font-size-4" href="#">Cao Thị Cúc</a>
+                    <a class="hot-infor-ele font-size-3" href="#">ukraine</a>
+                    <a class="hot-infor-ele font-size-8" href="#">TAND Tp.HCM</a>
+                    <a class="hot-infor-ele font-size-3" href="#">Quốc hội Lào</a>
+                    <a class="hot-infor-ele font-size-1" href="#">Nguyễn Võ Quỳnh Trang</a>
+                    
             </div>
 
- 
-        </div>
- 
         </div>
 
         
-    </div> 
+    </div>
 
 
 
@@ -1565,120 +1396,7 @@
 
 
 
-        <div style="clear: both;"></div>
-        <div class="footer">
-            <div class="footer-align">
-                <div class="logo-white">
-                    <a href="#"></a>
-                </div>
 
- 
-                <form method="get" action="#" class="Search-content">
-                    <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
-                    <button type="submit" id="search-icon"><i class="fa fa-search"></i></button>
-                </form>
-
-            </div>
-        </div>
-
-        <div class="list-item-footer">
-
-            <span>Công An Huyện Đồng Phú</span>
-            <span>Nguyễn Xuân Thanh</span>
-            <span>Lương Văn Luận</span>
-            <span>Nguyễn Văn Hải</span>
-            <span>Kiến An</span>
-            <span>Lâm Chí Dĩnh</span>
-            <span>Nguyễn Ngọc Sơn</span>
-            <span>Hoa Động</span>
-            <span>Thủy Nguyên</span>
-            <span>Công An TP Hải Phòng</span>
-            <span>Thôn Hạnh Phúc</span>
-            <span>Bắc Ninh</span>
-            <span>Nguyễn Văn Quỹ</span>
-            <span>Công An Huyện An Biên</span>
-            <span>Công An Quận Kiến An</span>
-            <span>Công An Tỉnh Bình Phước</span>
-            <span>Trần Thanh Liêm</span>
-            <span>Cơ Quan Cảnh Sát Điều Tra</span>
-            <span>P.N.T.TLê Xuân Lương</span>
-            <span>Ấp Cầu 2</span>
-            <span>Sở TN&MT Tỉnh Bắc Ninh</span>
-            <span>Khu Đô Thị Cựu Viên</span>
-            <span>Bộ Luật Hình Sự</span>
-            <span>Nguyễn Thục Anh</span>
-            <span>Trần Văn Nam</span>
-            <span>Công An Tỉnh Lào Cai</span>
-            <span>Tề Lễ</span>
-            <span>Mầu Quang Thắng</span>
-            <span>UBND Thị Xã Từ Sơn</span>
-            <span>Nguyễn Mạnh Thừa</span>
-            <span>Công An Tỉnh Bắc Ninh</span>
-            <span>UBND Tỉnh Bình Dương</span>
-            <span>Porsche Macan</span>
-            <span>Bắc SơnLê Chân</span>
-            <span>Gây Hậu Quả Nghiêm Trọng</span>
-            <span>Nguyễn Văn MinhTừ Sơn</span>
-            <span>Lạc Trôi</span>
-            <span>UBND TP Từ Sơn</span>
-            <span>Công An Quận Ngô Quyền</span>
-            <span>Tổng Công Ty Sản Xuất</span>
-            <span>Đông Thái</span>
-            <span>Đồng Phú</span>
-            <span>Nguyễn Đại Quang</span>
-            <span>HĐND Tỉnh Bắc Ninh</span>
-            <span>Mạng Xã Hội</span>
-            <span>Lương Thị Bích Loan</span>
-            <span>Yên Bái</span>
-            <span>Hải Phòng</span>
-            <span>Ngân Hàng SEABank</span>
-            <span>Tỉnh Ủy Bình Dương</span>
-            <span>Cục Hàng Không Dân Dụng</span>
-            <span>Lào Cai</span>
-            <span>Dương Trần Văn Nam</span>
-            <span>TP Từ SơnBình Phước</span>
-            <span>Phạm Lê Minh Thiện</span>
-            <span>Trái Phép</span>
-
-
-        </div>
-        <hr style="width: 970px; color: #c3c3c3; margin: 0 auto;">
-        <div class="contact-other-license">
-            <div class="contact">
-                <h3>LIÊN HỆ</h3>
-                <ul>
-                    <li>Giới thiệu</li>
-                    <li>Điều khoản sử dụng</li>
-                    <li>Quảng cáo</li>
-                </ul>
-            </div>
-            <div class="other">
-                <ul>
-                    <h3>KHÁC</h3>
-                    <li>Tổng hợp</li>
-                </ul>
-            </div>
-            <div class="license">
-                <p>
-                    <span>
-                        Giấy phép số 1818/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 05/05/2017
-                    </span>
-                    <span>
-                        Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Võ Quang
-                    </span>
-                    <span>
-                        Địa chỉ: Tầng 5, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
-                    </span>
-                    <span>
-                        Tel: (024) 3-212-3232, số máy lẻ 6666. contact.baomoi@epi.com.vn
-                    </span>
-                </p>
-                <p>
-                    <span>
-                        BÁO MỚI tổng hợp và sắp xếp các thông tin tự động bởi chương trình máy tính
-                    </span>
-                </p>
- 
     <div style="clear: both;"></div>
     <footer>
         <div class="footer">
@@ -1793,64 +1511,21 @@
                         </span>
                     </p>
                 </div>
- 
             </div>
 
     </footer>
     
 
 
-        <footer>
-            <div class="footer_mb">
-                <a href="#" class="logo_foot">
-                    <div class="bm_L">
-                        <div class="logo d-flex">
-                            <figure>
-                                <img class="img"
-                                    src="https://store-images.s-microsoft.com/image/apps.10914.9007199266246939.92fe68b3-e1ba-4ac3-bd37-4bdbb1408cd2.f04875cd-d533-4669-ab17-cf81409a0d10"
-                                    alt="">
-                            </figure>
 
-                            <div class="dowload">
-                                <h5>
-                                    TẢI ỨNG DỤNG BÁO MỚI <br>
-                                    <span>Để không bỏ sót tin tức</span>
-                                </h5>
-                            </div>
 
-                            <div class="logo_down">
 
-                                <i class="fa-solid fa-cloud-arrow-down"></i>
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-                <div class="bm_L">
-                    <div class="address_foot">
-                        <p>
-                            Địa chỉ: Tầng 5, Tòa nhà Báo Sinh Viên VN,
-                            <br>
-                            D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
-                            <br>
-                            Tel: <b>(024) 3-212-3232, số máy lẻ 6666.</b>
-                            <br>
-                            Email: <b>contact.baomoi@epi.com.vn</b>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    
 
 
 
 
 
-
-
-
-
-        <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
-
 </html>
