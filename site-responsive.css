@@ -106,6 +106,16 @@
     .bm_card_c{
         margin-left: 12px;
     }
+
+    .footer,
+    .list-item-footer,
+    .contact-other-license{
+        display: none;
+    }
+
+    .footer_mb{
+        display: block;
+    }
 }
 
 
@@ -135,4 +145,5 @@
     .bm_R{
         display: none;
     }
+ 
 }
