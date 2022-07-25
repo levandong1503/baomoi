@@ -37,18 +37,14 @@ const topicCards = document.querySelectorAll('.topic_card');
 const closeIcon = document.querySelector('.close-icon'); 
 const elModal = document.querySelector('.modal');
 
-function showDetailTopic(e){
+function showDetailTopic(){
+    
+    elModal.classList.add('open'); 
 }
 
 for (const card of topicCards) {
-    card.addEventListener('click', (e) => {
-       
-    elModal.classList.add('open'); 
-    e.stopPropagation()
-    } )
+    card.addEventListener('click', showDetailTopic)
     
 }
  
-closeIcon.addEventListener('click',(e) => elModal.classList.remove('open'));
-
- 
+closeIcon.addEventListener('click',e => elModal.classList.remove('open'));
