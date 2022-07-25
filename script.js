@@ -48,6 +48,7 @@ for (const card of topicCards) {
     } )
     
 }
+ 
+closeIcon.addEventListener('click',(e) => elModal.classList.remove('open'));
 
-closeIcon.addEventListener('click',(e) => elModal.classList.remove('open')
- )
+ 
