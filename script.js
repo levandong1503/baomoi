@@ -1,8 +1,10 @@
 var nav = document.getElementById("dropdown");
 var dropLayout = document.querySelector(".nav-supper");
+var isBodyHidden = false;
 nav.onclick = function(){
     var cls = dropLayout.getAttribute("class");
     var index = cls.indexOf("dropsupport");
+    
     if(index == -1){
         dropLayout.setAttribute("class",cls + " dropsupport");
     }
@@ -10,7 +12,20 @@ nav.onclick = function(){
         dropLayout.setAttribute("class",cls.replace(" dropsupport",""))
             
     }
-    console.log(dropLayout.getAttribute("class"));
+
+    if(window.innerWidth < 970 && !isBodyHidden ){
+        var body = document.getElementById("app");
+       body.setAttribute("style","overflow:hidden");
+       isBodyHidden = true;
+        
+    }
+    else if(isBodyHidden){
+        var body = document.getElementById("app");
+       body.setAttribute("style","  ")
+       isBodyHidden = false;
+       
+    }
+    
 }
 
 // fix nav
@@ -21,10 +36,18 @@ function fixNav() {
     let clsLayout = layout_drop.getAttribute("class");
     if( window.scrollY >elNav.offsetTop){
         elNav.setAttribute("class","nav-container fix"); 
-        layout_drop.setAttribute("class", clsLayout.indexOf("fix")==-1?clsLayout+" fix":clsLayout);
+        //layout_drop.setAttribute("class", clsLayout.indexOf("fix")==-1?clsLayout+" fix":clsLayout);
+        if(window.innerWidth > 970){
+            layout_drop.style.position = "fixed"
+        }
+        if(isBodyHidden){
+            layout_drop.style.position="absolute";
+        }
+        
     }else {
         elNav.setAttribute('class','nav-container'); 
-        layout_drop.setAttribute("class", clsLayout.replace(" fix",""));
+        //layout_drop.setAttribute("class", clsLayout.replace(" fix",""));
+        layout_drop.style.position="absolute";
     }
 
 }
@@ -45,6 +68,32 @@ function showDetailTopic(){
 for (const card of topicCards) {
     card.addEventListener('click', showDetailTopic)
     
-}
+} 
  
 closeIcon.addEventListener('click',e => elModal.classList.remove('open'));
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
