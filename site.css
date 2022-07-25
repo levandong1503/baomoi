@@ -13,6 +13,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+div,p {
+    word-break: break-word;
+}
+
 .mgt-3{
     margin-top: 3px;
 }
@@ -1593,4 +1598,46 @@ button.close-icon:hover {
 .icon-arrow.pre {
     left: 15px;
     top: 50%;
+}
+
+.footer_mb {
+    padding: 16px;
+    background: #f8f9fa;
+    display: none;
+}
+
+ 
+
+.logo{ 
+    
+    padding: 16px;
+    background-color: #f8f9fa; 
+}
+
+.logo figure{
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.dowload{
+    flex-grow: 1;
+}
+
+.logo .logo_down {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+}
+
+.logo i{
+    font-size: 25px;
+}
+
+.address_foot{
+    padding: 20px 0 60px;
+    text-align: center;
 }
