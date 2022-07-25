@@ -1,7 +1,7 @@
 var nav = document.getElementById("dropdown");
 var dropLayout = document.querySelector(".nav-supper");
 var isBodyHidden = false;
-nav.onclick = function(){
+nav.addEventListener('click',  function(){
     var cls = dropLayout.getAttribute("class");
     var index = cls.indexOf("dropsupport");
     
@@ -26,7 +26,7 @@ nav.onclick = function(){
        
     }
     
-}
+}) 
 
 // fix nav
 let elNav = document.querySelector('.nav-container'); 
@@ -67,33 +67,8 @@ function showDetailTopic(){
 
 for (const card of topicCards) {
     card.addEventListener('click', showDetailTopic)
-    
-} 
+     
+}
  
 closeIcon.addEventListener('click',e => elModal.classList.remove('open'));
- 
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
