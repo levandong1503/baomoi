@@ -110,7 +110,7 @@
     .img-bar-container {
         flex-direction: row-reverse;
     }
-
+  
     /*  */
 
     .bm {
@@ -146,10 +146,42 @@
 
     .footer_mb {
         display: block;
+    } 
+    .bm{
+        max-width: 730px;
+    } 
+
+    
+    
+    .bm_R{
+        display: none;
     }
 
+    .bm_card{
+        width: 100%;
+        flex-direction: row;
+    }
+    .bm_card_img{
+        flex-shrink: 0;
+        width: 33%;
+        height: auto;
+    }
 
-    .Search-content input {
+    .bm_card_c{
+        margin-left: 12px;
+    }
+
+    .footer,
+    .list-item-footer,
+    .contact-other-license{
+        display: none;
+    }
+
+    .footer_mb{
+        display: block;
+    }
+    
+    .Search-content input{
         width: 100%;
     }
 
@@ -211,9 +243,11 @@
 
     .other-path:not(:first-of-type) {
         background-color: #fdf7ea;
+ 
     }
     .bm_L{
         max-width: 100%;
+        margin: auto;
     }
 }
 

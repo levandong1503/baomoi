@@ -67,7 +67,8 @@ function showDetailTopic(){
 
 for (const card of topicCards) {
     card.addEventListener('click', showDetailTopic)
-    
+     
 }
  
 closeIcon.addEventListener('click',e => elModal.classList.remove('open'));
+ 
