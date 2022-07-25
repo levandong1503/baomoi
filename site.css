@@ -218,7 +218,7 @@ display: inline-block; }
     margin: 0; padding: 0;
     list-style-type: none;
     display: flex;
-    
+    height: 100%;
     align-items: center;
 }
 
@@ -228,7 +228,7 @@ display: inline-block; }
     border-right: 1px solid #8ac7d1;
     padding: 0  10px;
     display: inline-block;
-    
+    line-height: 40px;
 }
 .btn-choose{
     background-color: #2b94a5;
