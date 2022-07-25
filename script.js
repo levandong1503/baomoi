@@ -60,14 +60,19 @@ const topicCards = document.querySelectorAll('.topic_card');
 const closeIcon = document.querySelector('.close-icon'); 
 const elModal = document.querySelector('.modal');
 
-function showDetailTopic(){
-    elModal.classList.add('open')
+function showDetailTopic(e){
 }
 
 for (const card of topicCards) {
-    card.addEventListener('click', showDetailTopic)
+    card.addEventListener('click', (e) => {
+       
+    elModal.classList.add('open'); 
+    e.stopPropagation()
+    } )
+    
 }
 
+ 
 // closeIcon.addEventListener('click',() => elModal.classList.remove('open'))
 
 
