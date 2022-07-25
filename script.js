@@ -34,6 +34,7 @@ let layout_drop = document.querySelector('.nav-supper');
 
 function fixNav() {
     let clsLayout = layout_drop.getAttribute("class");
+    console.log(window.innerWidth);
     if( window.scrollY >elNav.offsetTop){
         elNav.setAttribute("class","nav-container fix"); 
         //layout_drop.setAttribute("class", clsLayout.indexOf("fix")==-1?clsLayout+" fix":clsLayout);
