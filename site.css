@@ -1418,7 +1418,7 @@ display: inline-block; }
 /* topic page*/
 
 .topic_container{
-    min-width: 1020px;
+    max-width: 1020px;
     margin: 0 -20px;
     flex-wrap: wrap;
 }
@@ -1456,6 +1456,10 @@ display: inline-block; }
     margin-left: 7px;
 }
 
+.topic_card_mb{
+    display: none;
+}
+
 .topic_content{
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1463,6 +1467,7 @@ display: inline-block; }
 
 .topic_content_col3{
     width:  147px;
+    flex-direction: column;
 }
  
 .topic_content_col3_title h4{

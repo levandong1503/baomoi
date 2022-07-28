@@ -30,7 +30,7 @@ nav.addEventListener('click',  function(){
 
 // fix nav
 let elNav = document.querySelector('.nav-container'); 
-let layout_drop = document.querySelector('.nav-supper');
+let layout_drop = document.querySelector('.nav-supper'); 
 
 function fixNav() {
     let clsLayout = layout_drop.getAttribute("class");
