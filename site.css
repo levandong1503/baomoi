@@ -1487,10 +1487,13 @@ display: inline-block; }
 .topic_content_col2_title h4{
     font-weight: 400;
 }
-
+.topic_content_col2_img{
+    flex-shrink: 0;
+    width: 33%;
+    height: auto;
+}
 .topic_content_col2_img figure {
-    width:  60px;
-    height: 60px;
+    width: 100%;
 }
 
 .topic_content_col1{
