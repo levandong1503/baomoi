@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiên quyết không khoan nhượng với tham nhũng, tiêu cực</title>
+    <link rel="stylesheet" href="site.css" type="text/css">
+    <link rel="stylesheet" href="./site-responsive.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+</head>
+<body id="app">
+
+    <div class="top-header">
+        <a href="#"><img src="./Images/bm-logo.png" width="100px"></a>
+
+        <form method="get" action="#" class="Search-content">
+            <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
+            <button type="submit" id="search-icon"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="icon">
+            <a href="#"><i class="fa-thin fa-user"></i></a>
+
+            <a href="#"><i class="fa-solid fa-mobile-button"></i></a>
+        </div>
+    </div>
+    <div class="nav-container">
+        <nav class="navbar">
+            <ul class="ul-nav">
+                <li class="btn-square btn-choose"><a class="" href="#">NÓNG</a></li>
+                <li><a class="btn-square" href="./newNews.html">MỚI</a></li>
+                <li><a class="btn-square" href="./videoPage.html">VIDEO</a></li>
+                <li><a class="btn-square" href="./topic.html">CHỦ ĐỀ</a></li>
+
+                <li><a class="btn-radius" href="./positive-energy.html">Năng lượng tích cực</a></li>
+                <li><a class="btn-radius" href="./vietnam-discovery.html">Khám phá Việt Nam</a></li>
+                <li><a class="btn-radius" href="#">Khám phá thế giới</a></li>
+                <li class="icon-dropdown" id="dropdown"><i class="fa fa-block-quote "></i></li>
+            </ul>
+        </nav>
+        <div class="nav-supper dropsupport">
+            <div class="nav-area">
+                <div style="overflow: hidden;">
+                    <div class="nav-path display-none">
+                        <a href="#" class="header-path other-path ">
+                            <i class="fa-light fa-location-dot"></i>
+                            Tin quanh ta
+                            <select name="location" id=""
+                                style="float: right; border:none; background-color: #f3f3f3;">
+                                <option value="">chọn địa phương</option>
+                                <option value="">Hà Nội</option>
+                                <option value="">Hà Nội</option>
+                                <option value="">Hà Nội</option>
+                                <option value="">Hà Nội</option>
+                            </select></a>
+                        <a href="#" class="header-path display-none other-path">
+                            BÓNG ĐÁ
+                            <i style="display: inline-block; float: right;" class="fa-light fa-futbol"></i>
+                        </a>
+                        <a href="#" class="header-path display-none other-path">
+                            TIỆN ÍCH
+                            <i style="display: inline-block; float: right;" class="fa-light fa-cloud-bolt-sun"></i>
+                        </a>
+                        <a href="#" class="header-path display-none other-path">
+                            AUDIO
+                            <i style="display: inline-block; float: right;" class="fa-light fa-microphone"></i>
+                        </a>
+                    </div>
+                    <div class="nav-path">
+                        <a href="" class="header-path">THẾ GIỚI</a>
+                        <ul class="ul-nav-path">
+
+                        </ul>
+                    </div>
+
+                    <div class="nav-path">
+                        <a href="#" class="header-path">XÃ HỘI</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">Thời sự</a></li>
+                            <li><a class="a-nav-path">Giao thông</a></li>
+                            <li><a class="a-nav-path">Môi trường - Khí hậu</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-path">
+                        <a href="#" class="header-path">VĂN HÓA</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">Nghệ thuật</a></li>
+                            <li><a class="a-nav-path">Ẩm thực</a></li>
+                            <li><a class="a-nav-path">Du lịch</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-path">
+                        <a href="#" class="header-path">KINH TẾ</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">Lao động - Việc làm</a></li>
+                            <li><a class="a-nav-path"></a>Tài chính</li>
+                            <li><a class="a-nav-path"></a>Chứng khoán</li>
+                            <li><a class="a-nav-path">Kinh doanh</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-path">
+                        <a href="#" class="header-path">GIÁO DỤC</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">Học bổng - Du lịch</a></li>
+                            <li><a class="a-nav-path">Đào tạo - Thi cử</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-path">
+                        <a href="#" class="header-path">THỂ THAO</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">Bóng đá quốc tế</a></li>
+                            <li><a class="a-nav-path">Bóng đá Việt Nam</a></li>
+                            <li><a class="a-nav-path">Quần vợt</a></li>
+                            <li><a class="a-nav-path">Lịch thi đấu</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-path">
+                        <a href="#" class="header-path">GIẢI TRÍ</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">Âm nhạc</a></li>
+                            <li><a class="a-nav-path">Thời trang</a></li>
+                            <li><a class="a-nav-path">Điện ảnh - Truyền hình</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-path">
+                        <a href="#" class="header-path">PHÁP LUẬT</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">An ninh trật tự</a></li>
+                            <li><a href="#" class="a-nav-path">Hình sự dân sự</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-path">
+                        <a href="#" class="header-path">CÔNG NGHỆ</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">CNTT - viễn thông</a></li>
+                            <li><a href="#" class="a-nav-path">Thiết bị phân cứng</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-path">
+                        <a href="#" class="header-path">KHOA HỌC</a>
+                        <ul class="ul-nav-path">
+
+                        </ul>
+                    </div>
+                    <div class="nav-path">
+                        <a href="#" class="header-path">ĐỜI SỐNG</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">Dinh dưỡng - làm đẹp</a></li>
+                            <li><a href="#" class="a-nav-path">Tình yêu - hôn nhân</a></li>
+                            <li><a href="#" class="a-nav-path">Sức khỏe - y tế</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-path">
+                        <a href="#" class="header-path">XE CỘ</a>
+                        <ul class="ul-nav-path">
+
+                        </ul>
+                    </div>
+                    <div class="nav-path">
+                        <a href="#" class="header-path">NHÀ ĐẤT</a>
+                        <ul class="ul-nav-path">
+                            <li><a class="a-nav-path">Quản lí quy hoạch</a></li>
+                            <li><a href="#" class="a-nav-path">Không gian kiến trúc</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-layout">
+        <div class="content-left">
+            <a href="" class="link-news">ĐẢNG CỘNG SẢN</a>
+            <h1>Kiên quyết không khoan nhượng với tham nhũng, tiêu cực</h1>
+            <div class="post-footer">
+                <a href="#"><img class="img-cnt-l" src="./Images/bao-dcs.png" alt="">DCSVN</a>
+                <a href="#" ><i class="register-img-cnt-l fa-thin fa-star"></i> </a>
+                <span>30/6/22</span>
+                <span>89 liên quan</span>
+                <span><i class="fa-light fa-copy"></i> Gốc</span>
+                <span>
+                    <i class="fa-light fa-location-dot"></i>
+                    <span>Hà Nội</span>
+                </span>
+            </div>
+            <p class="main-infor-news">(ĐCSVN) – Tổng Bí thư nêu rõ: Phòng, chống tham nhũng là cuộc đấu tranh ngay trong chính bản thân mỗi con người, 
+                trong mỗi cơ quan, tổ chức; liên quan đến lợi ích, chức vụ, danh vọng, uy tín của tổ chức, cá nhân. Vì vậy, phải có thái độ thật kiên quyết, 
+                không khoan nhượng và hành động thật quyết liệt, cụ thể, hiệu quả.
+            </p>
+
+            <img class="img-infor-news" src="./Images/tong-bi-thu-nguyen-phu-trong-phat-bieu-ket-luan-hoi-nghi.jpg" alt="">
+            <p class="img-explan">
+                Tổng Bí thư Nguyễn Phú Trọng phát biểu kết luận Hội nghị.  
+            </p>
+            <p class="infor-news">
+                Phát biểu Kết luận Hội nghị toàn quốc tổng kết 10 năm công tác đấu tranh phòng, chống tham nhũng, 
+                tiêu cực sáng 30/6, Tổng Bí thư Nguyễn Phú Trọng, Trưởng Ban Chỉ đạo khẳng định, đây là một Hội nghị có ý nghĩa rất quan trọng, 
+                bàn về những vấn đề liên quan đến "chống giặc nội xâm", giữ gìn sự trong sạch, vững mạnh của Đảng và hệ thống chính trị; củng cố,
+                nâng cao niềm tin của nhân dân đối với Đảng,
+                 Nhà nước và chế độ ta; được cán bộ, đảng viên và nhân dân rất quan tâm, đặt nhiều kỳ vọng.
+            </p>
+            <p class="infor-news">
+                Sự có mặt đông đủ của Bộ Chính trị, Ban Bí thư, các đồng chí Uỷ viên Ban Chấp hành Trung ương, các đồng chí lãnh đạo chủ chốt các ban, 
+                bộ, ngành Trung ương và toàn bộ 63 tỉnh, thành phố trực thuộc Trung ương với gần 500 đại biểu dự họp trực tiếp và hơn 80.000 
+                đại biểu dự họp trực tuyến tại hơn 4.000 điểm cầu trong cả nước (nhiều tỉnh, thành phố kết nối đến cấp huyện, xã) đã thể hiện 
+                ý thức trách nhiệm, tinh thần nghiêm túc và quyết tâm cao của toàn Đảng ta trong việc kiên quyết, kiên trì đấu tranh phòng, 
+                chống tham nhũng, tiêu cực; thực hiện nghiêm Nghị quyết Đại hội XIII của Đảng về vấn đề này, cũng như Nghị quyết Hội nghị 
+                Trung ương 4 các khoá XI, XII, XIII về xây dựng, 
+                chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện.
+            </p>
+            
+            <p class="infor-news">
+                Thay mặt Bộ Chính trị, Ban Bí thư, Ban Chỉ đạo Trung ương về phòng, chống tham nhũng, tiêu cực, 
+                Tổng Bí thư nhiệt liệt hoan nghênh, chào mừng và cảm ơn các đồng chí đã tham dự Hội nghị đông đủ và đóng góp nhiều ý kiến rất quan trọng, 
+                tâm huyết, sâu sắc, mang đến cho Hội nghị một tinh thần phấn chấn, đoàn kết, 
+                trách nhiệm và thống nhất cao và gửi đến các vị đại biểu và các đồng chí có mặt ở các điểm cầu lời chào thân ái, lời thăm hỏi chân tình và lời chúc tốt đẹp nhất.
+            </p>
+            <p class="infor-news">
+                Tổng Bí thư nêu rõ, Hội nghị của chúng ta đã nghe Báo cáo của Ban Chỉ đạo Trung ương về phòng, chống tham nhũng, 
+                tiêu cực và ý kiến phát biểu của một số đại biểu. Tất cả các ý kiến phát biểu đều bày tỏ sự thống nhất cao với nội dung Báo cáo, 
+                đồng thời bổ sung, phân tích, làm rõ thêm nhiều vấn đề; nêu thêm một số kinh nghiệm quý, cách làm hay trong lãnh đạo, 
+                chỉ đạo và tổ chức thực hiện, từ đó đề xuất, 
+                kiến nghị, nhấn mạnh thêm một số nhiệm vụ, giải pháp nhằm làm tốt hơn nữa công tác phòng, chống tham nhũng, tiêu cực trong thời gian tới.
+            </p>
+            <img class="img-infor-news" src="./Images/cac-dai-bieu-du-hoi-nghi.jpg" alt="">
+            <p class="img-explan">
+                Các đại biểu dự hội nghị
+            </p>
+            <p class="infor-news">
+                Nhìn lại công tác đấu tranh phòng, chống tham nhũng giai đoạn 2012 – 2022, Tổng Bí thư nêu rõ, qua Báo cáo tổng kết và nghe các ý kiến phát biểu; 
+                qua kết quả cụ thể trong thực tế, và qua điều tra dư luận xã hội, sự đánh giá của các tổ chức quốc tế, chúng ta hoàn toàn có cơ sở để khẳng định rằng: 
+                Phát huy kết quả và rút kinh nghiệm về công tác đấu tranh, phòng, chống tham nhũng trong các giai đoạn trước, trong 10 năm gần đây, 
+                với việc thành lập Ban Chỉ đạo Trung ương về phòng, chống tham nhũng, tiêu cực (trực thuộc Bộ Chính trị) đến nay, công tác đấu tranh phòng, 
+                chống tham nhũng đã được Trung ương lãnh đạo, chỉ đạo quyết liệt, bài bản, ngày càng đi vào chiều sâu, có bước tiến mạnh, 
+                đạt nhiều kết quả cụ thể, rất quan trọng, toàn diện, để lại dấu ấn tốt, tạo hiệu ứng tích cực, lan toả mạnh mẽ trong toàn xã hội, 
+                và thực sự "đã trở thành phong trào, xu thế không thể đảo ngược", được cán bộ, đảng viên và nhân dân đồng tình, ủng hộ, đánh giá cao, 
+                được bạn bè quốc tế ghi nhận. Tham nhũng từng bước đã được kiềm chế, ngăn chặn, góp phần quan trọng giữ vững ổn định chính trị, 
+                phát triển kinh tế - xã hội, củng cố thêm niềm tin của cán bộ, đảng viên và nhân dân đối với Đảng, Nhà nước ta.
+            </p>
+            <p class="infor-news">
+                Theo kết quả điều tra dư luận xã hội do Ban Tuyên giáo Trung ương tiến hành mới đây, 
+                tuyệt đại đa số ý kiến của người dân (93%) bày tỏ tin tưởng vào sự lãnh đạo của Đảng trong đấu tranh phòng, chống tham nhũng; 
+                khiến cho mọi sự xuyên tạc, chống phá của các thế lực xấu, 
+                thù địch đều trở nên trơ trẽn, nực cười. Đó là thành công lớn trong công tác phòng, chống tham nhũng của chúng ta trong thời gian qua.
+            </p>
+            <img class="img-infor-news" src="./Images/cac-dai-bieu-tai-diem-cau-chinh.jpg" alt="">
+            <p class="img-explan">
+                Các đại biểu tại điểm cầu chính
+            </p>
+            <p class="infor-news">
+                Tổng Bí thư khẳng định, nhìn lại chặng đường 10 năm kể từ khi thành lập Ban Chỉ đạo Trung ương về phòng, chống tham nhũng, 
+                tiêu cực trực thuộc Bộ Chính trị, Trung ương Đảng đến nay, nhất là sau 2 năm thực hiện Nghị quyết Đại hội XIII của Đảng, 
+                mặc dù phải đối mặt với rất nhiều khó khăn, thách thức, nhưng với ý chí và tinh thần trách nhiệm cao, với sự nỗ lực phấn đấu, 
+                chung sức, đồng lòng của toàn Đảng, toàn dân, toàn quân, công tác đấu tranh phòng, chống tham nhũng, tiêu cực của chúng ta đã 
+                thu được nhiều kết quả quan trọng, góp phần củng cố, nâng cao ý chí, niềm tin của nhân dân vào công cuộc đổi mới, xây dựng và bảo vệ Tổ quốc, 
+                làm cho đất nước ta ngày càng giàu mạnh, ngày càng phát triển, có vị thế xứng đáng trên trường quốc tế.
+            </p>
+            <p class="infor-news">
+                Tổng Bí thư nêu rõ, không phải như một số ý kiến cho rằng, nếu quá tập trung vào chống tham nhũng sẽ làm "nhụt chí", 
+                "chùn bước" những người dám nghĩ, dám làm, làm "chậm" sự phát triển đất nước; mà hoàn toàn ngược lại, chính nhờ làm tốt công tác xây dựng,
+                 chỉnh đốn Đảng, đẩy mạnh đấu tranh phòng, chống tham nhũng, tiêu cực đã góp phần quan trọng thúc đẩy phát triển kinh tế - xã hội, 
+                 giữ vững ổn định chính trị, tăng cường quốc phòng, an ninh và đối ngoại, đặc biệt là góp phần lấy lại và củng cố niềm tin của nhân dân, 
+                 bác bỏ luận điệu sai trái của các thế lực xấu, thù địch, chống đối cho rằng đấu tranh phòng, chống tham nhũng, xử lý cán bộ, 
+                 đảng viên sai phạm là "đấu đá nội bộ", "phe cánh". “Đẩy mạnh đấu tranh phòng, chống tham nhũng và xây dựng, 
+                 làm trong sạch Đảng và bộ máy Nhà nước chỉ làm "chùn bước" những ai có động cơ không trong sáng, đã trót "nhúng chàm" 
+                 và những người không nắm vững chủ trương, chính sách của Đảng, thiếu bản lĩnh, thiếu kiến thức và kinh nghiệm” – Tổng Bí thư 
+                 khẳng định!
+            </p>
+            <p class="infor-news">
+                Qua tổng kết, chúng ta có thể khẳng định rằng, chưa bao giờ công tác đấu tranh phòng, chống tham nhũng, 
+                tiêu cực lại được thực hiện một cách mạnh mẽ, đồng bộ, quyết liệt, bài bản và hiệu quả như thời gian gần đây; 
+                để lại dấu ấn nổi bật, tạo sự đồng thuận cao trong xã hội và củng cố, tăng cường niềm tin của cán bộ, 
+                đảng viên và nhân dân đối với Đảng, Nhà nước.
+            </p>
+            <p class="infor-news">
+                Trong khi đó, tại phiên tòa, đại diện các cơ quan, đơn vị điều tra, giám định đều khẳng định quá trình điều tra,
+                 thu thập chứng cứ, các bước giám định các clip đều đảm bảo đúng quy định pháp luật.
+                 Họ cũng cho rằng nhiều câu hỏi của các luật sư nằm ngoài nội dung vụ án nên không trả lời.
+            </p>
+            <p class="infor-news">
+                Phân tích từ thực tiễn công tác đấu tranh phòng, chống tham nhũng ở nước ta thời gian qua, Tổng Bí thư cho biết, 
+                chúng ta có thể rút ra nhiều bài học quý, có giá trị cả về mặt lý luận và thực tiễn. Tổng Bí thư nêu khái quát mấy vấn đề cốt yếu sau đây:
+            </p>
+            <p class="infor-news">
+                (1) Trước hết, cần phải nhận thức thật đầy đủ, sâu sắc vị trí, ý nghĩa, tầm quan trọng của công tác đấu tranh phòng, chống tham nhũng, 
+                tiêu cực để từ đó có quyết tâm chính trị rất cao, biện pháp rất trúng và phải đặt dưới sự lãnh đạo, chỉ đạo, tập trung, 
+                thống nhất của Đảng, mà trực tiếp, thường xuyên là Ban Chỉ đạo Trung ương về phòng, chống tham nhũng, tiêu cực trực thuộc Bộ Chính trị; 
+                Ban Nội chính Trung ương là cơ quan thường trực của Ban Chỉ đạo. Phải biến quyết tâm chính trị thành hành động thực tế của cán bộ, đảng viên, 
+                công chức, viên chức và nhân dân, trước hết là sự gương mẫu, quyết liệt, nói đi đôi với làm của các đồng chí lãnh đạo Đảng, Nhà nước, 
+                của người đứng đầu cấp uỷ, chính quyền, cơ quan, tổ chức, đơn vị trong phòng, chống tham nhũng. Tham nhũng thường diễn ra trong nội bộ, 
+                do người có chức, có quyền thực hiện. Phòng, chống tham nhũng là cuộc đấu tranh ngay trong chính bản thân mỗi con người, trong mỗi cơ quan, 
+                tổ chức, đơn vị, địa phương mình; liên quan đến lợi ích, chức vụ, danh vọng, uy tín của tổ chức, cá nhân. Vì vậy, 
+                phải có thái độ thật kiên quyết, không khoan nhượng và hành động thật quyết liệt, cụ thể, hiệu quả. 
+                Người đứng đầu phải chịu trách nhiệm về những yếu kém, sai phạm về tham nhũng trong tổ chức, cơ quan, đơn vị, 
+                địa phương mình. Người được giao chức vụ, quyền hạn phải không ngừng tu dưỡng, rèn luyện, thường xuyên tự soi, 
+                tự sửa; đồng thời phải tăng cường giám sát, kiểm soát có hiệu quả việc thực thi quyền lực của người có chức vụ, quyền hạn. 
+                Mọi quyền lực đều phải được kiểm soát chặt chẽ bằng cơ chế; quyền lực phải được ràng buộc bằng trách nhiệm; 
+                quyền lực đến đâu trách nhiệm đến đó, quyền lực càng cao trách nhiệm càng lớn; bất kể ai lạm dụng, lợi dụng quyền lực để trục lợi đều phải 
+                bị truy cứu trách nhiệm và xử lý vi phạm. Nói phải "nhốt" quyền lực vào trong "lồng" cơ chế là với ý nghĩa như vậy.
+            </p>
+            <img class="img-infor-news" src="./Images/hoi-nghi-duoc-to-chuc-theo-hinh-thuc-truc-tiep-ket-hop-voi-truc-tuyen.jpg" alt="">
+            <p class="img-explan">
+                Hội nghị được tổ chức theo hình thức trực tiếp kết hợp với trực tuyến trong toàn quốc. 
+            </p>
+            <p class="infor-news">
+                2) Phòng, chống tham nhũng là "chống giặc nội xâm", tức là chống những thói hư, tật xấu, nhất là sự suy thoái về phẩm chất, đạo đức, tệ ăn bớt, 
+                ăn cắp, ăn chặn của công dưới nhiều hình thức; tiền tài, của cải, vật chất,... do người khác "biếu xén", "cho, tặng", hối lộ,... 
+                với động cơ không trong sáng. Nó thường diễn ra đối với những người có chức, có quyền. Vì vậy, đây là nhiệm vụ rất quan trọng, 
+                nhưng cũng vô cùng khó khăn, phức tạp, đòi hỏi chúng ta phải tiến hành một cách kiên quyết, kiên trì, liên tục, bền bỉ, "không nghỉ", 
+                "không ngừng" ở tất cả các cấp, các ngành, các lĩnh vực; thực hiện đồng bộ các biện pháp chính trị, tư tưởng, tổ chức, hành chính, kinh tế, 
+                hình sự; với những bước đi vững chắc, tích cực, chủ động và có trọng tâm, trọng điểm; phải xây dựng cho được một cơ chế phòng ngừa chặt chẽ để 
+                "không thể tham nhũng"; một cơ chế răn đe, trừng trị nghiêm khắc để "không dám tham nhũng"; và một cơ chế bảo đảm để "không cần tham nhũng". 
+                Tham nhũng là "khuyết tật bẩm sinh" của quyền lực, là một trong những nguy cơ đe doạ sự tồn vong của chế độ. Thời đại nào, chế độ nào, 
+                quốc gia nào cũng có, không thể xoá ngay tận gốc tham nhũng trong một thời gian ngắn. Do vậy, trong đấu tranh phòng, 
+                chống tham nhũng không thể chủ quan, nóng vội, thoả mãn; không được né tránh, cầm chừng; trái lại, phải rất kiên trì, không "ngừng", 
+                không "nghỉ"; vừa phải kiên quyết phát hiện, xử lý tham nhũng, vừa phải kiên trì giáo dục, quản lý, ngăn ngừa, răn đe, 
+                không để xảy ra tham nhũng, vừa phải cảnh giác, đấu tranh với những âm mưu, hoạt động của các thế lực thù địch, 
+                phần tử xấu lợi dụng đấu tranh phòng, chống tham nhũng để kích động, chia rẽ, chống phá Đảng, Nhà nước và chế độ ta.
+            </p>
+            <p class="infor-news">
+                3) Phải kết hợp chặt chẽ giữa tích cực phòng ngừa với chủ động phát hiện, xử lý kịp thời, đồng bộ, nghiêm minh các hành vi tham nhũng; 
+                trong đó, phòng ngừa là chính, là cơ bản, lâu dài; phát hiện, xử lý là đột phá, quan trọng. Để chủ động, tích cực phòng ngừa, 
+                cần phải tập trung xây dựng, hoàn thiện thể chế, chính sách về kinh tế - xã hội, 
+                tăng cường pháp chế xã hội chủ nghĩa, đẩy mạnh xây dựng Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện.
+            </p>
+            <p class="infor-news">
+                Trong phát hiện, xử lý, phải quán triệt nguyên tắc: Có vụ việc thì phải xác minh làm rõ; tích cực, khẩn trương, 
+                rõ đến đâu xử lý đến đó; xử lý cả hành vi tham nhũng và hành vi dung túng, bao che cho tham nhũng; can thiệp, cản trở việc chống tham nhũng. 
+                Có dấu hiệu phạm tội thì phải khởi tố, điều tra; kết luận có tội thì phải truy tố, xét xử theo quy định của pháp luật; 
+                vụ việc chưa đến mức xử lý hình sự thì xử lý kỷ luật nghiêm theo quy định của Đảng, Nhà nước, đoàn thể. 
+                Phải tiến hành đồng bộ giữa kỷ luật đảng, kỷ luật hành chính của Nhà nước, đoàn thể và xử lý hình sự. Kỷ luật của Đảng thực hiện trước, 
+                tạo tiền đề để xử lý kỷ luật hành chính của Nhà nước, của đoàn thể và xử lý hình sự. Việc xử lý phải lấy giáo dục, răn đe, 
+                phòng ngừa làm chính, 
+                kết hợp giữa trừng trị với khoan hồng; đồng thời bảo vệ, khuyến khích những người dám nghĩ, dám làm, dám đổi mới, sáng tạo vì sự nghiệp chung.
+            </p>
+            <img class="img-infor-news" src="./Images/hoi-nghi-dien-ra-trong-1-buoi-sang-voi-nhieu-noi-dung-quan-trong-trong-cong-tac-phong-chong-tham-nhung.jpg" alt="">
+            <p class="img-explan">
+                Hội nghị diễn ra trong 1 buổi sáng với nhiều nội dung quan trọng trong công tác phòng, chống tham nhũng, tiêu cực trong thời gian tới. 
+            </p>
+            <p class="infor-news">
+                4) Phải gắn công tác phòng, chống tham nhũng, tiêu cực với việc thực hành tiết kiệm, chống lãng phí; gắn phòng, chống tham nhũng, lãng phí, 
+                tiêu cực với xây dựng, chỉnh đốn Đảng, học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh; chống suy thoái về tư tưởng chính trị, 
+                đạo đức, lối sống, "tự diễn biến", "tự chuyển hoá" trong nội bộ; huy động sức mạnh tổng hợp của cả hệ thống chính trị và toàn xã hội trong đấu 
+                tranh phòng, chống tham nhũng. Phát huy mạnh mẽ vai trò, trách nhiệm của cơ quan và đại biểu dân cử, Mặt trận Tổ quốc và các tổ chức thành viên;
+                 của nhân dân, cơ quan truyền thông và báo chí, doanh nghiệp, doanh nhân trong phòng, chống tham nhũng. Phải quán triệt sâu sắc quan điểm của 
+                 Chủ tịch Hồ Chí Minh: "Dân là gốc"; dựa vào dân, lắng nghe dân, lắng nghe dư luận để chọn lọc, tiếp thu cái đúng, nhưng không đơn giản "theo 
+                 đuôi", chạy theo dư luận. Triển khai có hiệu quả hoạt động phòng, chống tham nhũng ra khu vực ngoài Nhà nước; tăng cường hợp tác quốc tế về 
+                 phòng, chống tham nhũng.
+            </p>
+            <p class="infor-news">
+                5) Kiểm soát cho được việc thực hiện quyền lực nhà nước, bảo đảm sự lãnh đạo, 
+                chỉ đạo thống nhất của Ban Chỉ đạo Trung ương về phòng, chống tham nhũng, tiêu cực; phát huy vai trò nòng cốt và sự phối hợp chặt chẽ, 
+                đồng bộ, kịp thời, hiệu quả của các cơ quan chức năng phòng, chống tham nhũng. Ban Chỉ đạo phải thực sự là trung tâm chỉ đạo, điều hoà, 
+                phối hợp hoạt động, là chỗ dựa vững chắc để các cơ quan chức năng phòng, chống tham nhũng thực thi nhiệm vụ được giao. Đội ngũ cán bộ làm 
+                công tác phòng, chống tham nhũng phải có bản lĩnh vững vàng, có dũng khí đấu tranh; phải trung thực, liêm chính, "chí công vô tư", thực sự là 
+                "thanh bảo kiếm" sắc bén của Đảng và Nhà nước trong đấu tranh phòng, chống tham nhũng. Kiểm soát quyền lực và thực hành liêm chính trước 
+                hết phải được tiến hành có hiệu quả trong các cơ quan này, phải chống tham nhũng ngay trong các cơ quan làm công tác phòng, chống tham nhũng.
+            </p>
+            <p class="infor-news">
+                6) Các giải pháp phòng, chống tham nhũng phải phù hợp với bối cảnh yêu cầu phát triển nền kinh tế thị trường định hướng xã hội 
+                chủ nghĩa ở Việt Nam và truyền thống văn hoá của dân tộc; tiếp thu có chọn lọc kinh nghiệm của nước ngoài. Đồng thời, phải xây dựng được 
+                văn hoá công vụ của mỗi ngành, cơ quan, đơn vị. Văn hoá công vụ sẽ bảo đảm tính chuyên nghiệp, trách nhiệm, minh bạch, hiệu quả trong thực 
+                thi nhiệm vụ. Trong từng giai đoạn khác nhau, phải xác định những nhiệm vụ trọng tâm, 
+                những giải pháp có tính đột phá, phù hợp với tình hình của đất nước, của địa phương để tập trung lãnh đạo, chỉ đạo thực hiện có hiệu quả.
+            </p>
+            <h3>Bịt kín những "khoảng trống", "kẽ hở" để "không thể tham nhũng, tiêu cực"</h3>
+            <p class="infor-news">
+                Trong thời gian tới, Tổng Bí thư yêu cầu cần tiếp tục đẩy mạnh, nâng cao hơn nữa hiệu quả công tác giáo dục, tuyên truyền, xây dựng văn hoá 
+                tiết kiệm, không tham nhũng, tiêu cực trong cán bộ, đảng viên và nhân dân. Tiếp tục xây dựng, hoàn thiện đồng bộ thể chế về xây dựng, 
+                chỉnh đốn Đảng, quản lý kinh tế - xã hội và phòng, chống tham nhũng, tiêu cực; kịp thời khắc phục những bất cập, bịt kín những "khoảng trống", 
+                "kẽ hở" để "không thể tham nhũng, tiêu cực". Tăng cường công tác kiểm tra, giám sát, thanh tra, kiểm toán; đẩy mạnh điều tra, truy tố, xét xử, 
+                thi hành án; phát hiện sớm, xử lý nghiêm các vụ việc, vụ án tham nhũng; ngăn chặn có hiệu quả tệ "tham nhũng vặt"; nâng cao hiệu quả thu hồi 
+                tài sản tham nhũng. Tiếp tục hoàn thiện và thực hiện nghiêm các quy định về công khai, minh bạch và trách nhiệm giải trình trong hoạt động của 
+                cơ quan, tổ chức, đơn vị; kiểm soát có hiệu quả tài sản, thu nhập của người có chức vụ, quyền hạn; cải cách hành chính và xây dựng đội ngũ cán 
+                bộ có đủ phẩm chất, năng lực và uy tín, ngang tầm nhiệm vụ trong giai đoạn mới. Tiếp tục kiện toàn tổ chức bộ máy, nâng cao năng lực, hiệu quả 
+                hoạt động của các cơ quan, đơn vị có chức năng phòng, chống tham nhũng, tiêu cực, trước hết là các Ban Chỉ đạo cấp tỉnh và các cơ quan nội 
+                chính từ Trung ương đến địa phương…
+            </p>
+            <p class="infor-news">
+                Trước khi kết thúc Hội nghị, Tổng Bí thư đã nhắc lại một câu nói đầy ấn tượng và rất sâu sắc của nhân vật Pa-ven Coóc-xa-ghin - nhân vật chính 
+                trong tác phẩm "Thép đã tôi thế đấy" của nhà văn nổi tiếng Liên Xô Ni-cô-lai Ốt-xtơ-rốp-sky - một cuốn sách "gối đầu giường" của lớp thanh niên thời những năm 1959 – 1960: Cái quý  nhất của con người là Cuộc sống và Danh dự sống, bởi vì đời người chỉ sống có một lần. Phải sống sao cho khỏi xót xa, ân hận vì những năm tháng đã sống hoài, sống phí; để khỏi hổ thẹn vì những việc làm ty tiện, đớn hèn, bị mọi người khinh bỉ; để đến khi nhắm mắt xuôi tay, ta có thể tự hào rằng: Tất cả đời ta, tất cả sức ta, ta đã hiến dâng cho sự nghiệp 
+                cao đẹp nhất trên đời - sự nghiệp đấu tranh vì độc lập, tự do của Tổ quốc, vì sự trường tồn của Dân tộc, sự vẻ vang của Giống nòi và hạnh phúc của 
+                Nhân dân!
+            </p>
+            <p class="author">
+                HUỲNH DU - BẢO PHƯƠNG
+            </p>
+
+            <p class="relation">
+                <a href="#">bào chữa </a>
+                |<a href="#"> viện kiểm sát</a>
+                |<a href="#"> vân </a>
+                |<a href="#"> luật sư</a>
+                |<a href="#"> quyền tự do dân chủ</a>
+                |<a href="#"> trùng dương </a>
+                |<a href="#"> TAND huyện Đức Hòa</a>
+                |<a href="#"> viện kiểm sát</a>
+                |<a href="#"> hoàn nguyên</a>
+                |<a href="#"> Cao Thị Cúc</a>
+                |<a href="#"> hội đồng xét xử</a>
+            </p>
+
+
+            <h3 class="bm_News_T text-hover">
+                <span>TIN KHÁC</span>
+            </h3>
+            <div class="col-infor">
+                <div class="post-article">
+                    <div class="col-infor-contrainer"><a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="./Images/ma-tuy-han-quoc.webp" alt=""></a></div>
+                    <div class="post-title">
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Trùm ma túy Hàn Quốc bị Interpol truy nã đỏ sa lưới ở TP.HCM</a>
+                        <div class="post-footer">
+                            <a href="#" ><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
+                            <span>1 giờ</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-article">
+                    <div class="col-infor-contrainer"><a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_194_43221771/04597a6ea42c4d72143d.jpg" alt=""></a></div>
+                    <div class="post-title">
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Có Tổng thống mới, kinh tế Sri Lanka có tìm được lối ra?</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
+                            <span>1 giờ</span>
+                            <span>597 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-article">
+                    <div class="col-infor-contrainer"><a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_8_43222378/6bdd2d3be6780f265669.jpg" alt=""></a></div>
+                    <div class="post-title">
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Ngày thứ hai liên tiếp, số ca mắc Covid-19 trên cả nước tăng cao</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news" src="./Images/bao-ha-noi-moi.png" alt=""></a>
+                            <span>37 phút</span>
+                            <span>293 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-article">
+                    <div class="col-infor-contrainer"><a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_119_43220749/66381605c84721197856.jpg" alt=""></a></div>
+                    <div class="post-title">
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Việc làm khi sở hữu ô tô </a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
+                            <span>1 giờ</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-article">
+                    <div class="col-infor-contrainer"><a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius" src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_20_146_43220917/c9967eaaa0e849b610f9.jpg" alt=""></a></div>
+                    <div class="post-title">
+                        <a href="#" class="anchor-post-p anchor-post-p-left">Đà Nẵng ghi nhận 345 ổ sốt xuất huyết</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news" src="./Images/logo-chinh-phu.png" alt=""> Chính phủ</a>
+                            <span>2 giờ</span>
+                            <span>315 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="content-right">
+            <div class="bm_boxNews">
+                <h3 class="bm_News_T text-hover">
+                    <span>VIDEO</span>
+                </h3>
+    
+                <div class="bm_card_News-video_container">
+                    <div class="bm_card_video d-flex">
+                        <div class="bm_card_video_img ">
+                            <a href="#">
+                                <video class="bm_video_fix" autoplay="true" loop playsinline muted>
+                                    <source src="./Images/6-lan-bau-tong-thong-sri-lanka.webm" type="video/webm">
+                                </video>
+                            </a>
+                        </div>
+    
+                        <div class="bm_card_video_c ">
+                            <h4 class="text-hover">
+                                <a href="#">
+                                    Người 6 lần làm thủ tướng Sri Lanka, được bầu làm Tổng thống Sri Lanka
+                                </a>
+                            </h4>
+                            <div class="bm_card_video_c_logo d-flex">
+                                <a href="#"><img
+                                        src="./Images/sai-gon-online.png"
+                                        alt=""></a>
+                                <span class="ml-12 fs-13 op-025 ">18 phút</span>
+                                <span class="ml-12 fs-13 op-025">13 liên quan</span>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bm_card_video d-flex">
+                        <div class="bm_card_video_img  img-hover-zoom">
+                            <a href="#">
+                                <img src="./Images/tphcm-xu-ly-bien-bao-giao-thong-che-khuat.webp"
+                                    alt="">
+                            </a>
+                        </div>
+    
+                        <div class="bm_card_video_c ">
+                            <h4 class="text-hover">
+                                <a href="#">
+                                    TP.HCM xử lý biển báo giao thông bị che khuất
+                                </a>
+                            </h4>
+                            <div class="bm_card_video_c_logo d-flex">
+                                <a href="#"><img
+                                        src="./Images/vnews.png"
+                                        alt=""> VNEWS</a>
+                                <span class="ml-12 fs-13 op-025 ">26 phút</span>
+                                
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bm_card_video d-flex">
+                        <div class="bm_card_video_img  img-hover-zoom">
+                            <a href="#">
+                                <img src="./Images/tphcm-thuong-nong-150tr-HCV-quoc-te.webp"
+                                    alt="">
+                            </a>
+                        </div>
+    
+                        <div class="bm_card_video_c ">
+                            <h4 class="text-hover">
+                                <a href="#">
+                                    TP.HCM: Thưởng nóng 150 triệu đồng cho học sinh giành HCV quốc tế
+                                </a>
+                            </h4>
+                            <div class="bm_card_video_c_logo d-flex">
+                                <a href="#"><img
+                                        src="./Images/vnews.png"
+                                        alt=""> VNEWS</a>
+                                <span class="ml-12 fs-13 op-025 ">27 phút</span>
+                                
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-detail" style="width: 100%;  margin: 30px 0;">
+                <img width="100% " src="./Images/tong-bi-thu-gio-tay-phat-bieu.webp" alt="">
+            </div>
+
+            <div class="hot-new-24h">
+                <h3 class="bm_News_T text-hover">
+                    <span><a href="#">NÓNG 24H</a></span>
+                </h3>
+                <div class="hot-new-24h-container">
+
+                    <div class="post-article">
+                        <div class="post-img-container">
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
+                                    src="./Images/nghi-pham-vu-nguoi-phu-nu-tu-vung-thi-the-khong-nguyen-ven.webp"
+                                    alt=""></a>
+                        </div>
+                        <div class="post-title">
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Nghi phạm vụ người phụ nữ tử vong
+                                thi
+                                thể không nguyên vẹn đã tự sát?</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news" src="./Images/bao-nguoi-lao-dong.png" alt=""></a>
+                                <span>13 liên quan</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-article">
+                        <div class="post-img-container">
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
+                                    src="./Images/xe-khach-cho-23-nguoi-lao-xuong-vuc.webp" alt=""></a>
+                        </div>
+                        <div class="post-title">
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Xe khách chở 23 người lao xuống
+                                vực
+                                trên đèo Đại Ninh</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news" src="./Images/bao-phap-luat.png" alt=""></a>
+                                <span>11 giờ</span>
+                                <span>38 liên quan</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-article">
+                        <div class="post-img-container">
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
+                                    src="./Images/xe-khach-cho-23-nguoi-lao-xuong-vuc.webp" alt=""></a>
+                        </div>
+                        <div class="post-title">
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Xe khách chở 23 người lao xuống
+                                vực
+                                trên đèo Đại Ninh</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news" src="./Images/bao-phap-luat.png" alt=""></a>
+                                <span>11 giờ</span>
+                                <span>38 liên quan</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-article">
+                        <div class="post-img-container">
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
+                                    src="./Images/vu-thi-the-mot-phu-nu-khong-toan-ven-nghi-pham-gay-an-da-tu-tu.webp"
+                                    alt=""></a>
+                        </div>
+                        <div class="post-title">
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Vụ thi thể một phụ nữ không toàn
+                                vẹn:
+                                Nghi phạm gây án đã tự tử</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news" src="./Images/bao-tien-phong.png" alt=""></a>
+                                <span>11 giờ</span>
+                                <span>13 liên quan</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-article">
+                        <div class="post-img-container">
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
+                                    src="./Images/khoc-khi-ong-a-be-mat-phong-vien-trung-quoc-bi-bat-nat-den-muc-tu-sat.webp"
+                                    alt=""></a>
+                        </div>
+                        <div class="post-title">
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Khóc khi ông Abe mất, phóng viên
+                                Trung
+                                Quốc bị bắt nạt đến mức tự sát</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news" src="./Images/bao-zing.png" alt=""></a>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-article">
+                        <div class="post-img-container">
+                            <a class="img-hover-zoom " href="#"><img class="img-post img-radius"
+                                    src="./Images/thuyen-truong-tau-BTH-97478.webp" alt=""></a>
+                        </div>
+                        <div class="post-title">
+                            <a href="#" class="anchor-post-p anchor-post-p-right">Thuyền trưởng tàu BTh-97478: 'Rất
+                                nhiều tàu đi qua nhưng họ không nghe kêu cứu'</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news" src="./Images/bao-phap-luat.png" alt=""></a>
+                                <span>11 giờ</span>
+                                <span>15 liên quan</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        <!--end content-right-->    
+        </div>  
+    </div>
+    <div style="clear: both;"></div>
+
+
+
+
+    <footer>
+            <div class="footer">
+                <div class="footer-align">
+                    <div class="logo-white">
+                        <a href="#"></a>
+                    </div>
+
+                    <form method="get" action="#" class="Search-content">
+                        <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
+                        <button type="submit" id="search-icon"><i class="fa fa-search"></i></button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="list-item-footer">
+
+                <span>Công An Huyện Đồng Phú</span>
+                <span>Nguyễn Xuân Thanh</span>
+                <span>Lương Văn Luận</span>
+                <span>Nguyễn Văn Hải</span>
+                <span>Kiến An</span>
+                <span>Lâm Chí Dĩnh</span>
+                <span>Nguyễn Ngọc Sơn</span>
+                <span>Hoa Động</span>
+                <span>Thủy Nguyên</span>
+                <span>Công An TP Hải Phòng</span>
+                <span>Thôn Hạnh Phúc</span>
+                <span>Bắc Ninh</span>
+                <span>Nguyễn Văn Quỹ</span>
+                <span>Công An Huyện An Biên</span>
+                <span>Công An Quận Kiến An</span>
+                <span>Công An Tỉnh Bình Phước</span>
+                <span>Trần Thanh Liêm</span>
+                <span>Cơ Quan Cảnh Sát Điều Tra</span>
+                <span>P.N.T.TLê Xuân Lương</span>
+                <span>Ấp Cầu 2</span>
+                <span>Sở TN&MT Tỉnh Bắc Ninh</span>
+                <span>Khu Đô Thị Cựu Viên</span>
+                <span>Bộ Luật Hình Sự</span>
+                <span>Nguyễn Thục Anh</span>
+                <span>Trần Văn Nam</span>
+                <span>Công An Tỉnh Lào Cai</span>
+                <span>Tề Lễ</span>
+                <span>Mầu Quang Thắng</span>
+                <span>UBND Thị Xã Từ Sơn</span>
+                <span>Nguyễn Mạnh Thừa</span>
+                <span>Công An Tỉnh Bắc Ninh</span>
+                <span>UBND Tỉnh Bình Dương</span>
+                <span>Porsche Macan</span>
+                <span>Bắc SơnLê Chân</span>
+                <span>Gây Hậu Quả Nghiêm Trọng</span>
+                <span>Nguyễn Văn MinhTừ Sơn</span>
+                <span>Lạc Trôi</span>
+                <span>UBND TP Từ Sơn</span>
+                <span>Công An Quận Ngô Quyền</span>
+                <span>Tổng Công Ty Sản Xuất</span>
+                <span>Đông Thái</span>
+                <span>Đồng Phú</span>
+                <span>Nguyễn Đại Quang</span>
+                <span>HĐND Tỉnh Bắc Ninh</span>
+                <span>Mạng Xã Hội</span>
+                <span>Lương Thị Bích Loan</span>
+                <span>Yên Bái</span>
+                <span>Hải Phòng</span>
+                <span>Ngân Hàng SEABank</span>
+                <span>Tỉnh Ủy Bình Dương</span>
+                <span>Cục Hàng Không Dân Dụng</span>
+                <span>Lào Cai</span>
+                <span>Dương Trần Văn Nam</span>
+                <span>TP Từ SơnBình Phước</span>
+                <span>Phạm Lê Minh Thiện</span>
+                <span>Trái Phép</span>
+
+
+            </div>
+            
+            <div class="contact-other-license">
+                <div class="contact">
+                    <h3>LIÊN HỆ</h3>
+                    <ul>
+                        <li>Giới thiệu</li>
+                        <li>Điều khoản sử dụng</li>
+                        <li>Quảng cáo</li>
+                    </ul>
+                </div>
+                <div class="other">
+                    <ul>
+                        <h3>KHÁC</h3>
+                        <li>Tổng hợp</li>
+                    </ul>
+                </div>
+                <div class="license">
+                    <p>
+                        <span>
+                            Giấy phép số 1818/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 05/05/2017
+                        </span>
+                        <span>
+                            Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Võ Quang
+                        </span>
+                        <span>
+                            Địa chỉ: Tầng 5, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                        </span>
+                        <span>
+                            Tel: (024) 3-212-3232, số máy lẻ 6666. contact.baomoi@epi.com.vn
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            BÁO MỚI tổng hợp và sắp xếp các thông tin tự động bởi chương trình máy tính
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+        <footer>
+            <div class="footer_mb">
+                <a href="#" class="logo_foot">
+                    <div class="bm_L">
+                        <div class="logo d-flex">
+                            <figure>
+                                <img class="img"
+                                    src="https://store-images.s-microsoft.com/image/apps.10914.9007199266246939.92fe68b3-e1ba-4ac3-bd37-4bdbb1408cd2.f04875cd-d533-4669-ab17-cf81409a0d10"
+                                    alt="">
+                            </figure>
+
+                            <div class="dowload">
+                                <h5>
+                                    TẢI ỨNG DỤNG BÁO MỚI <br>
+                                    <span>Để không bỏ sót tin tức</span>
+                                </h5>
+                            </div>
+
+                            <div class="logo_down">
+
+                                <i class="fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <div class="bm_L">
+                    <div class="address_foot">
+                        <p>
+                            Địa chỉ: Tầng 5, Tòa nhà Báo Sinh Viên VN,
+                            <br>
+                            D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                            <br>
+                            Tel: <b>(024) 3-212-3232, số máy lẻ 6666.</b>
+                            <br>
+                            Email: <b>contact.baomoi@epi.com.vn</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
