@@ -16,17 +16,16 @@ nav.addEventListener('click',  function(){
             
     }
 
-    if(window.innerWidth < 970 && !isBodyHidden ){
+    if (window.innerWidth < 970 && !isBodyHidden) {
         var body = document.getElementById("app");
-       body.setAttribute("style","overflow:hidden");
-       isBodyHidden = true;
-        
-    }
-    else if(isBodyHidden){
+        body.setAttribute("style", "overflow:hidden");
+        isBodyHidden = true;
+
+    } else if (isBodyHidden) {
         var body = document.getElementById("app");
-       body.setAttribute("style","  ")
-       isBodyHidden = false;
-       
+        body.setAttribute("style", "  ")
+        isBodyHidden = false;
+
     }
     
     
@@ -61,7 +60,7 @@ DropCloseBtn[0].onclick = function() {
 }
 
 // fix nav
-let elNav = document.querySelector('.nav-container'); 
+let elNav = document.querySelector('.nav-container');
 let layout_drop = document.querySelector('.nav-supper');
 
 function fixNav() {
@@ -73,33 +72,38 @@ function fixNav() {
         if(window.innerWidth > 970){
             //layout_drop.style.position = "fixed"
         }
-        
-    }else {
-        elNav.setAttribute('class','nav-container'); 
+
+    } else {
+        elNav.setAttribute('class', 'nav-container');
         //layout_drop.setAttribute("class", clsLayout.replace(" fix",""));
         //layout_drop.style.position="absolute";
     }
 
 }
- 
-window.addEventListener('scroll',fixNav)
+
+window.addEventListener('scroll', fixNav)
 
 //modal
 
 const topicCards = document.querySelectorAll('.topic_card');
-const closeIcon = document.querySelector('.close-icon'); 
+const closeIcon = document.querySelector('.close-icon');
 const elModal = document.querySelector('.modal');
 
-function showDetailTopic(){
-    
-    elModal.classList.add('open'); 
+function showDetailTopic(e) {
+    if (elModal != null) {
+        if (window.innerWidth > 970) {
+            elModal.classList.add('open');
+            e.preventDefault();
+        }
+    }
 }
 
 for (const card of topicCards) {
-    card.addEventListener('click', showDetailTopic)
-     
-}
- 
-closeIcon.addEventListener('click',e => elModal.classList.remove('open'));
- 
+    card.addEventListener('click', e => showDetailTopic(e))
 
+}
+
+if (closeIcon != null) {
+
+    closeIcon.addEventListener('click', () => elModal.classList.remove('open'));
+}
