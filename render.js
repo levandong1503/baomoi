@@ -1,5 +1,5 @@
 const dataFake = [{
-        "img": "https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_22_83_43241273/81b562ffbdbd54e30dac.jpg",
+        "img": "./Images/moi-day-tai-buoi-hop-bao-thuong-ky-cua-bo-ngoai-giao-chieu-21-07-de-nghi-cap-nhat-thong-tin.webp",
         "content": "Thầy dạy lái hot nhất cộng đồng mạng chỉ ra sai lầm trong vụ Ferrari đâm gốc cây",
         "logo": "https://photo-baomoi.bmcdn.me/6eede58338c0d19e88d1.png",
         "time": "1",

@@ -7,111 +7,176 @@
     <title>Năng lượng tích cực - BAOMOI</title>
     <link rel="stylesheet" href="site.css" type="text/css">
     <link href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./site-responsive.css" type="text/css">
 </head>
-<body>
-    <div class="header">
-        <a href="./index.html"><img src="./Images/bm-logo.png" width="100px"></a>
+<body id="app">
+    <header>
+        <div class="top-header">
+            <a href="#"><img src="./Images/bm-logo.png" width="100px"></a>
 
-        <form method="get"  action="#" class="Search-content">
-            <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
-            <button type="submit" id="search-icon" ><i  class="fa fa-search"  ></i></button>
-        </form>
-        <div class="icon">
-            <a href="#"><i class="fa-thin fa-user"></i></a>
-                
-            <a href="#"><i class="fa-solid fa-mobile-button"></i></a>
-        </div>
-    </div>
+            <form method="get" action="#" class="Search-content">
+                <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
+                <button type="submit" id="search-icon"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="icon">
+                <a href="#"><i class="fa-thin fa-user"></i></a>
 
-
-    <div class="nav-container">
-        <nav class="navbar">
-            <ul class="ul-nav">
-                <li ><a class="btn-square" href="#">NÓNG</a></li>
-                <li ><a class="btn-square" href="./newNews.html">MỚI</a></li>
-                <li><a class="btn-square" href="./videoPage.html">VIDEO</a></li>
-                <li><a class="btn-square" href="./topic.html">CHỦ ĐỀ</a></li>
-                 
-                <li ><a class="btn-radius btn-choose" href="#" >Năng lượng tích cực</a></li>
-                <li ><a class="btn-radius" href="./vietnam-discovery.html" >Khám phá Việt Nam</a></li>
-                <li ><a class="btn-radius" href="#" >Khám phá thế giới</a></li>
-                <li class="icon-dropdown" id="dropdown"><i class="fa fa-block-quote "></i></li>
-            </ul>
-        </nav>
-        <div class="nav-supper dropsupport"> 
-            <div class="nav-area">
-                <div class="nav-path">
-                    <span class="header-path">THẾ GIỚI</span>
-                    <ul class="ul-nav-path">
-                        
-                    </ul>
-                </div>
-                
-                <div class="nav-path">
-                    <span class="header-path">XÃ HỘI</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Thời sự</a></li>
-                        <li><a class="a-nav-path">Giao thông</a></li>
-                        <li><a class="a-nav-path">Môi trường - Khí hậu</a></li>
-                    </ul>
-                </div>
-        
-                <div class="nav-path">
-                    <span class="header-path">VĂN HÓA</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Nghệ thuật</a></li>
-                        <li><a class="a-nav-path">Ẩm thực</a></li>
-                        <li><a class="a-nav-path">Du lịch</a></li>
-                    </ul>
-                </div>
-        
-                <div class="nav-path">
-                    <span class="header-path">KINH TẾ</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Lao động - Việc làm</a></li>
-                        <li><a class="a-nav-path"></a>Tài chính</li>
-                        <li><a class="a-nav-path"></a>Chứng khoán</li>
-                        <li><a class="a-nav-path">Kinh doanh</a></li>
-                    </ul>
-                </div>
-        
-                <div class="nav-path">
-                    <span class="header-path">GIÁO DỤC</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Học bổng - Du lịch</a></li>
-                        <li><a class="a-nav-path">Đào tạo - Thi cử</a></li>
-                    </ul>
-                </div>
-        
-                <div class="nav-path">
-                    <span class="header-path">THỂ THAO</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Bóng đá quốc tế</a></li>
-                        <li><a class="a-nav-path">Bóng đá Việt Nam</a></li>
-                        <li><a class="a-nav-path">Quần vợt</a></li>
-                        <li><a class="a-nav-path">Lịch thi đấu</a></li>
-                    </ul>
-                </div>
-        
-                <div class="nav-path">
-                    <span class="header-path">GIẢI TRÍ</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path">Âm nhạc</a></li>
-                        <li><a class="a-nav-path">Thời trang</a></li>
-                        <li><a class="a-nav-path">Điện ảnh - Truyền hình</a></li>
-                    </ul>
-                </div>
-        
-                <div class="nav-path">
-                    <span class="header-path">THẾ GIỚI</span>
-                    <ul class="ul-nav-path">
-                        <li><a class="a-nav-path"></a></li>
-                    </ul>
-                </div> 
-               <div style="clear: both;"></div>
+                <a href="#"><i class="fa-solid fa-mobile-button"></i></a>
             </div>
         </div>
-    </div>
+        <div class="nav-container">
+            <nav class="navbar">
+                <ul class="ul-nav">
+                    <li class="btn-square btn-choose"><a class="" href="#">NÓNG</a></li>
+                    <li><a class="btn-square" href="./newNews.html">MỚI</a></li>
+                    <li><a class="btn-square" href="./videoPage.html">VIDEO</a></li>
+                    <li><a class="btn-square" href="./topic.html">CHỦ ĐỀ</a></li>
+
+                    <li><a class="btn-radius" href="./positive-energy.html">Năng lượng tích cực</a></li>
+                    <li><a class="btn-radius" href="./vietnam-discovery.html">Khám phá Việt Nam</a></li>
+                    <li><a class="btn-radius" href="#">Khám phá thế giới</a></li>
+                    <li class="icon-dropdown" id="dropdown"><i class="fa fa-block-quote "></i></li>
+                </ul>
+            </nav>
+            <div class="nav-supper dropsupport">
+                <div class="nav-area">
+                    <div style="overflow: hidden;">
+                        <div class="nav-path display-none">
+                            <a href="#" class="header-path other-path ">
+                                <i class="fa-light fa-location-dot"></i>
+                                Tin quanh ta
+                                <select name="location" id=""
+                                    style="float: right; border:none; background-color: #f3f3f3;">
+                                    <option value="">chọn địa phương</option>
+                                    <option value="">Hà Nội</option>
+                                    <option value="">Hà Nội</option>
+                                    <option value="">Hà Nội</option>
+                                    <option value="">Hà Nội</option>
+                                </select></a>
+                            <a href="#" class="header-path display-none other-path">
+                                BÓNG ĐÁ
+                                <i style="display: inline-block; float: right;" class="fa-light fa-futbol"></i>
+                            </a>
+                            <a href="#" class="header-path display-none other-path">
+                                TIỆN ÍCH
+                                <i style="display: inline-block; float: right;" class="fa-light fa-cloud-bolt-sun"></i>
+                            </a>
+                            <a href="#" class="header-path display-none other-path">
+                                AUDIO
+                                <i style="display: inline-block; float: right;" class="fa-light fa-microphone"></i>
+                            </a>
+                        </div>
+                        <div class="nav-path">
+                            <a href="" class="header-path">THẾ GIỚI</a>
+                            <ul class="ul-nav-path">
+
+                            </ul>
+                        </div>
+
+                        <div class="nav-path">
+                            <a href="#" class="header-path">XÃ HỘI</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">Thời sự</a></li>
+                                <li><a class="a-nav-path">Giao thông</a></li>
+                                <li><a class="a-nav-path">Môi trường - Khí hậu</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-path">
+                            <a href="#" class="header-path">VĂN HÓA</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">Nghệ thuật</a></li>
+                                <li><a class="a-nav-path">Ẩm thực</a></li>
+                                <li><a class="a-nav-path">Du lịch</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-path">
+                            <a href="#" class="header-path">KINH TẾ</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">Lao động - Việc làm</a></li>
+                                <li><a class="a-nav-path"></a>Tài chính</li>
+                                <li><a class="a-nav-path"></a>Chứng khoán</li>
+                                <li><a class="a-nav-path">Kinh doanh</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-path">
+                            <a href="#" class="header-path">GIÁO DỤC</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">Học bổng - Du lịch</a></li>
+                                <li><a class="a-nav-path">Đào tạo - Thi cử</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-path">
+                            <a href="#" class="header-path">THỂ THAO</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">Bóng đá quốc tế</a></li>
+                                <li><a class="a-nav-path">Bóng đá Việt Nam</a></li>
+                                <li><a class="a-nav-path">Quần vợt</a></li>
+                                <li><a class="a-nav-path">Lịch thi đấu</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-path">
+                            <a href="#" class="header-path">GIẢI TRÍ</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">Âm nhạc</a></li>
+                                <li><a class="a-nav-path">Thời trang</a></li>
+                                <li><a class="a-nav-path">Điện ảnh - Truyền hình</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-path">
+                            <a href="#" class="header-path">PHÁP LUẬT</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">An ninh trật tự</a></li>
+                                <li><a href="#" class="a-nav-path">Hình sự dân sự</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-path">
+                            <a href="#" class="header-path">CÔNG NGHỆ</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">CNTT - viễn thông</a></li>
+                                <li><a href="#" class="a-nav-path">Thiết bị phân cứng</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-path">
+                            <a href="#" class="header-path">KHOA HỌC</a>
+                            <ul class="ul-nav-path">
+
+                            </ul>
+                        </div>
+                        <div class="nav-path">
+                            <a href="#" class="header-path">ĐỜI SỐNG</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">Dinh dưỡng - làm đẹp</a></li>
+                                <li><a href="#" class="a-nav-path">Tình yêu - hôn nhân</a></li>
+                                <li><a href="#" class="a-nav-path">Sức khỏe - y tế</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-path">
+                            <a href="#" class="header-path">XE CỘ</a>
+                            <ul class="ul-nav-path">
+
+                            </ul>
+                        </div>
+                        <div class="nav-path">
+                            <a href="#" class="header-path">NHÀ ĐẤT</a>
+                            <ul class="ul-nav-path">
+                                <li><a class="a-nav-path">Quản lí quy hoạch</a></li>
+                                <li><a href="#" class="a-nav-path">Không gian kiến trúc</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-close-drop" style="">ĐÓNG</div>
+                    </div>
+                    
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        </div>
+</header>
 
     <div class="bg-img-pe flow-root">
         <div class="content-layout">
@@ -138,40 +203,48 @@
                 <div class="col-right">  <!--Col 2 row 1-->
                     <div class="small-cnt-pe">
                         <div class="img-hover-zoom"><img src="./Images/su-thay-luyen-ngu-van-free.webp" alt=""></div>
-                        <a href="" class="text-hover">Sư thầy 'luyện' ngữ văn miễn phí</a>
-                        <div class="post-footer">
-                            <a href="#"><img class="img-news " src="./Images/bao-giao-du-thoi-dai.png" alt=""></a>
-                            <span>21/07/22</span>
-                            <i class="fa-thin fa-clock"></i>
+                        <div class="small-cnt-pe-right">
+                            <a href="" class="text-hover">Sư thầy 'luyện' ngữ văn miễn phí</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news " src="./Images/bao-giao-du-thoi-dai.png" alt=""></a>
+                                <span>21/07/22</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="small-cnt-pe">
-                        <div class="img-hover-zoom"><img src="./Images/su-thay-luyen-ngu-van-free.webp" alt=""></div>
-                        <a href="" class="text-hover">Sư thầy 'luyện' ngữ văn miễn phí</a>
-                        <div class="post-footer">
-                            <a href="#"><img class="img-news " src="./Images/bao-giao-du-thoi-dai.png" alt=""></a>
-                            <span>21/07/22</span>
-                            <i class="fa-thin fa-clock"></i>
+                        <div class="img-hover-zoom"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_29_23_43302119/0d1b29cdf38f1ad1439e.jpg" alt=""></div>
+                        <div class="small-cnt-pe-right">
+                            <a href="" class="text-hover">Giải cứu 31 chú chó trong lò mổ và chuyện 'mắc nợ ân tình</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news " src="https://photo-baomoi.bmcdn.me/26dc73b3aef047ae1ee1.png" alt=""></a>
+                                <span>22/07/22</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-right">   <!--Col 2 row 1-->
                     <div class="small-cnt-pe">
-                        <div class="img-hover-zoom"><img src="./Images/su-thay-luyen-ngu-van-free.webp" alt=""></div>
-                        <a href="" class="text-hover">Sư thầy 'luyện' ngữ văn miễn phí</a>
-                        <div class="post-footer">
-                            <a href="#"><img class="img-news " src="./Images/bao-giao-du-thoi-dai.png" alt=""></a>
-                            <span>21/07/22</span>
-                            <i class="fa-thin fa-clock"></i>
+                        <div class="img-hover-zoom"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_29_180_43300589/f6f5e9333371da2f8360.jpg" alt=""></div>
+                        <div class="small-cnt-pe-right">
+                            <a href="" class="text-hover">Cận cảnh 'trạm' nước lạnh miễn phí giữa thời tiết nắng nóng ở Hà Nội</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news " src="./Images/bao-dai-doan-ket.png" alt=""></a>
+                                <span>21/07/22</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="small-cnt-pe">
-                        <div class="img-hover-zoom"><img src="./Images/su-thay-luyen-ngu-van-free.webp" alt=""></div>
-                        <a href="" class="text-hover">Sư thầy 'luyện' ngữ văn miễn phí</a>
-                        <div class="post-footer">
-                            <a href="#"><img class="img-news " src="./Images/bao-giao-du-thoi-dai.png" alt=""></a>
-                            <span>21/07/22</span>
-                            <i class="fa-thin fa-clock"></i>
+                        <div class="img-hover-zoom"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_29_23_43299930/2c1a97d34d91a4cffd80.jpg" alt=""></div>
+                        <div class="small-cnt-pe-right">
+                            <a href="" class="text-hover">Người đàn ông miền Tây chi 400 lượng vàng xây nhà nuôi hàng trăm cụ già</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news " src="https://photo-baomoi.bmcdn.me/e9b048137951900fc940.png" alt=""></a>
+                                <span>11/07/22</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -180,822 +253,704 @@
                 <!-- dãy các bài báo phân thành 3 cột -->
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
+                        <a href="#"><img src="./Images/xom-truong-tho-tai-an-giang.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
                     <div class="post-footer">
                         <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
                         <span>19/07/22</span>
                         <i class="fa-thin fa-clock"></i>
+                    </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
                         <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
+                            <span>19/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
                         <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
+                            <span>19/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
                         <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
+                            <span>19/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
                         <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
+                            <span>18/07/22</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img">
                         <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
                     </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
+                            <span>18/07/22</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
 
                 <!--copy demo-->
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_28_14_43293205/ab683c5be5190c475508.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Đội tuyển cầu mây nữ Việt Nam vô địch thế giới</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-nhan-dan.png" alt=""></a>
+                            <span>28/07/22</span>
+                            <span>28 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_28_274_43292729/ecbce58b3cc9d5978cd8.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Câu chuyện xúc động phía sau kỳ tích của cậu học trò Ơ Đu</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-zing.png" alt=""></a>
+                            <span>28/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_28_101_43292185/ed8c79b5a0f749a910e6.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Chàng trai 11 năm 'cõng sách', 'xây' 600 thư viện cho trẻ vùng cao: 'Là một phần của cuộc sống, chỉ cần còn sức vẫn sẽ tiếp tục làm!'</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
+                            <span>28/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_27_11_43286285/5c332646ff04165a4f15.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Người thương binh truyền cảm hứng về tinh thần học tập suốt đời</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-kt-dt.png" alt=""></a>
+                            <span>27/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_27_20_43282947/fda22a3ef37c1a22436d.jpg" alt=""></a>
+                    </div>
+                    <div class="br-o-right">
+                        <a href="#" class="text-hover">Chiến sĩ nghĩa vụ công an đạt thủ khoa: Gác bài vở chạy đi chữa cháy, gác chốt'</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
+                            <span>27/07/22</span>
+                            <span>9 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_26_119_43277945/34d59b044246ab18f257.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Cô gái đi khắp thế giới cứu chữa cho động vật hoang dã</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-zing.png" alt=""></a>
+                            <span>26/07/22</span>
+                            <span>2 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img">
+                        <a href="#"><video loop autoplay muted src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_26_329_43271502/e38ace9416d6ff88a6c7.gif.webm" alt=""></video></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Đoạn clip sau đó khiến cộng đồng mạng đặc biệt chú ý bởi hành động đẹp của nam thanh niên. Thậm chí có người còn nhận định anh chàng chính là soái ca ngoài đời thực</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-sao-star.png" alt=""></a>
+                            <span>26/07/22</span>
+                            <span>2 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_26_240_43269550/ca9cba9562d78b89d2c6.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Những chàng trai trẻ phục dựng miễn phí hàng trăm bức ảnh liệt sĩ</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
+                            <span>26/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_25_119_43268528/21b70489dccb35956cda.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Cặp vợ chồng thu gom phế liệu nuôi con đỗ thủ khoa</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-zing.png" alt=""></a>
+                            <span>25/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_25_119_43267129/dad05afe82bc6be232ad.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Một lớp có 44 học sinh đạt trên 9 điểm môn Văn</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-zing.png" alt=""></a>
+                            <span>25/07/22</span>
+                            <span>8 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_25_15_43260208/f89482025a40b31eea51.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Đội Công binh mũ nồi xanh Việt Nam lan tỏa hình ảnh Bộ đội Cụ Hồ trên đất châu Phi</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-nguoi-lao-dong.png" alt=""></a>
+                            <span>25/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
                         <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Cô học trò nghèo đạt điểm 10 môn Ngữ văn tại Quảng Nam</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-dai-doan-ket.png" alt=""></a>
+                            <span>25/07/22</span>
+                            <span>12 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img">
                         <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
                     </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
+                            <span>18/07/22</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_24_5_43256670/e47168cfb08d59d3009c.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Thí sinh 82 tuổi đỗ tốt nghiệp THPT</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-cand.png" alt=""></a>
+                            <span>24/07/22</span>
+                            <span>65 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_24_119_43256399/90ef4e5296107f4e2601.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Lớp học có 29 em đạt trên 27 điểm ở tổ hợp xét tuyển A01</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-cand.png" alt=""></a>
+                            <span>24/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
                         <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
+                            <span>19/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_24_119_43255659/7d3d2797ffd5168b4fc4.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Thủ khoa khối C00 mất 15 phút để đạt điểm 10 môn Lịch sử và Địa lý</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-zing.png" alt=""></a>
+                            <span>24/07/22</span>
+                            <span>30 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
                         <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
+                            <span>18/07/22</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_24_338_43255357/3aa0f50e2d4cc4129d5d.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Thầy Hiệu trưởng tiết lộ về nam sinh duy nhất trở thành thủ khoa đạt 30 điểm tuyệt đối: Nói 'không' với điện thoại, tính cách gây bất ngờ</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-phap-luat.png" alt=""></a>
+                            <span>24/07/22</span>
+                            <span>111 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_24_23_43254457/2a7348a790e579bb20f4.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Nam sinh Bắc Giang 'thắng lớn', thủ khoa cả 3 khối thi ĐH Bách Khoa Hà Nội</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-vietnamnet.png" alt=""></a>
+                            <span>24/07/22</span>
+                            <span>24 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_24_23_43252535/4f9d0353db11324f6b00.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Làng bên bờ biển xứ Nghệ: Trời nắng 40 độ, mặc 3 lớp áo suốt ngày ngồi quạt than</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-tin-tuc.png" alt=""></a>
+                            <span>24/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
                         <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
+                            <span>19/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_24_119_43252169/64ab82585a1ab344ea0b.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Nữ sinh điểm 10 môn Ngữ văn viết 11 trang giấy thi trong 115 phút</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-zing.png" alt=""></a>
+                            <span>24/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_23_114_43246729/dc206f13b051590f0040.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Nhiều người thích thú đi đổi pin lấy cây xanh</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-phap-luat.png" alt=""></a>
+                            <span>23/07/22</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img">
+                        <a href="#"><img  src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_28_101_43294544/cd901090c9d2208c79c3.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Tiệm cơm 1k và những suất ăn đầy ý nghĩa: Ánh mắt của trẻ thơ xua đi mọi khó khăn, vất cả</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
+                            <span>28/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--clear here-->
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_28_14_43293205/ab683c5be5190c475508.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Đội tuyển cầu mây nữ Việt Nam vô địch thế giới</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-nhan-dan.png" alt=""></a>
+                            <span>28/07/22</span>
+                            <span>18 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_09_101_43121054/8e3dca59281bc145980a.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Chàng trai kỹ sư đưa máy bay phun thuốc trừ sâu 'phủ' khắp các cánh đồng Việt Nam</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
+                            <span>09/07/22</span>
+                            <span>5 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_08_329_43110935/65f73b0bd94930176958.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Cụ ông 82 thi tốt nghiệp THPT ở Hà Nội: Ngả mũ trước ý chí của 'thí sinh' lớn tuổi nhất lịch sử</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-sao-star.png" alt=""></a>
+                            <span>09/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_08_94_43109049/9914c4042546cc189557.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Hàng nghìn suất cơm ấm áp nghĩa tình tiếp sức sĩ tử thi tốt nghiệp THPT 2022</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-suc-khoe-doi-song.png" alt=""></a>
+                            <span>08/07/22</span>
+                            <span>647 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_08_65_43107405/860fbe0f5f4db613ef5c.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-vov.png" alt=""></a>
+                            <span>08/07/22</span>
+                            <span>2 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_08_23_43107278/30cd94cb75899cd7c598.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Chàng trai bỏ việc về dựng nhà, đỡ đẻ cho mèo hoang</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-vietnamnet.png" alt=""></a>
+                            <span>08/07/22</span>
+                            
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_07_294_43105671/b36a1c5dfd1f14414d0e.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">'Nước mía 0 đồng' giải nhiệt cho thí sinh</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-tin-tuc.png" alt=""></a>
+                            <span>07/07/22</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_07_114_43100923/2a278b6e6a2c8372da3d.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Những tấm 'bảng nhắc bài' cực đáng yêu của đội tiếp sức mùa thi</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-phap-luat.png" alt=""></a>
+                            <span>07/07/22</span>
+                            <span>307 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_07_231_43099413/c1e3709f91dd788321cc.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Bữa sáng miễn phí tiếp sức mùa thi ở trường THPT Đakrông</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-giao-du-thoi-dai.png" alt=""></a>
+                            <span>07/07/22</span>
+                            <span>307 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_06_181_43093199/0df05f52be10574e0e01.jpg" alt=""></a>
+                    </div>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Cô giáo ở Quảng Trị chuẩn bị hơn 100 suất ăn sáng tặng thí sinh miền núi trước giờ thi</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-giao-du-thoi-dai.png" alt=""></a>
+                            <span>06/07/22</span>
+                            <span>2 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
                         <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
+                            <span>18/07/22</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_06_23_43091017/eb303bebdaa933f76ab8.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Xe buýt 'bò trên cầu' khi Hà Nội mưa lớn, tài xế tiết lộ điều ấm lòng</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-vietnamnet.png" alt=""></a>
+                            <span>07/07/22</span>
+                            
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_06_181_43087054/144bb0ab51e9b8b7e1f8.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Vượt đường xa ôn miễn phí cho trò</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-giao-du-thoi-dai.png" alt=""></a>
+                            <span>06/07/22</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_05_294_43079961/7e7d1258f21a1b44420b.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Quán bánh canh 'bình ổn' cho người lao động</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-tin-tuc.png" alt=""></a>
+                            <span>05/07/22</span>
+                            <span>7 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
+                        <a href="#"><video loop autoplay muted src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_05_329_43077918/49e386bd66ff8fa1d6ee.gif.webm" alt=""></video></a>
                     </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Clip: Tài xế soi đèn 'hộ tống' người phụ nữ qua đèo vắng, hành động đáp lại gây xúc động</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-sao-star.png" alt=""></a>
+                            <span>05/07/22</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_05_101_43077976/3d690f30ef72062c5f63.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Gặp người đầu tiên đưa cầu truyền hình Olympia về Sơn La: Nhà cách trường 30km, ôm ước mơ 'leo núi' 11 năm và cái kết tuyệt vời</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
+                            <span>04/07/22</span>
+                            <span>473 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_05_329_43077053/70a9caef2aadc3f39abc.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">'Người cha' có hàng trăm đứa con: Hồi sinh sự sống từ bãi rác, vệ đường và túi nylon...</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-sao-star.png" alt=""></a>
+                            <span>05/07/22</span>
+                            
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_04_15_43068610/1ffb2a42ca00235e7a11.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">'Biệt đội nhí' nhặt rác ở biển Sầm Sơn</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-nguoi-lao-dong.png" alt=""></a>
+                            <span>04/07/22</span>
+                            <span>4 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_04_91_43067061/b312efba0ff8e6a6bfe9.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Chủ tiệm sửa xe 'không tiền cũng vá' ở TP.HCM: Đã làm việc này 6 năm nay, không dàn cảnh</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-giao-du-thoi-dai.png" alt=""></a>
+                            <span>04/07/22</span>
+                            <span>1 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-other">
                     <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
+                        <a href="#"><img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2022_06_25_119_42989635/a11afbf21eb0f7eeaea1.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
+                    <div class="bt-o-right">
+                        <a href="#" class="text-hover">Những gia đình '3 đời hiến máu'</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="./Images/bao-phap-luat.png" alt=""></a>
+                            <span>23/06/22</span>
+                            <span>2 liên quan</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
-                    </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
-                    </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
-                    </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
-                    </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
-                    </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Xóm 'trường thọ' tại An Giang</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-mot-the-gioi.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/nhung-doi-vo-chong-cung-lam-viec-thien.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Những đôi vợ chồng làm việc thiện</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/sai-gon-online.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/hai-anh-chang-mang-xeng.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Hai chàng trai mang... xẻng đi khắp 63 tỉnh thành để trồng cây</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-to-quoc.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/lang-gom-thanh-ha-diem-to-net-dep.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Làng gốm Thanh Hà điểm tô nét đẹp truyền thống phố cổ Hội An</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-vietnam+.png" alt=""></a>
-                        <span>19/07/22</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img img-hover-zoom">
-                        <a href="#"><img src="./Images/chang-phi-cong-tre-hon-10-lan-hien-mau.webp" alt=""></a>
-                    </div>
-                    <a href="#" class="text-hover">Chàng phi công trẻ hơn 10 lần hiến máu với thông điệp 'cho đi là còn mãi...'</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-tien-phong.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
-                <div class="bottom-other">
-                    <div class="bt-o-img">
-                        <a href="#"><video loop autoplay muted src="./Images/clip-cap-doi-di-xe-may-doi-mua-de-che-o-cho-be-trai.webm" alt=""></video></a>
-                    </div>
-                    <a href="#" class="text-hover">Clip cặp đôi đi xe máy đội mưa để che ô cho bé trai dắt xe đạp gây xúc động</a>
-                    <div class="post-footer">
-                        <a href="#"><img class="img-news " src="./Images/bao-infonet.png" alt=""></a>
-                        <span>18/07/22</span>
-                        <span>1 liên quan</span>
-                        <i class="fa-thin fa-clock"></i>
-                    </div>
-                </div>
+                
                 <!--demo có thể xóa-->
             </div>
             

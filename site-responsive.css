@@ -5,29 +5,32 @@
     .img-hover-zoom  img:hover{
         transform: scale(1,1);
     }
-
-
+    /*phan noi dung*/
     .content-layout{
         width: 80%;
         margin: 0 auto;
+    }
+    .top-header{
+        width:100%;
     }
     .navbar{
         width: 80%; 
         margin: 0 auto;
     }
-
- 
-
-
-    .header{
-        width:100%;
+    .btn-close-drop{
+        display: block;
+        border: 1px solid black; margin: 0 auto 50px auto; text-align: center; cursor: pointer;
+                                                                user-select: none; border-radius: 5px; width: 50px;
     }
+
     .content-left{
         float: none;
         width: 100%;
     }
 
-
+    .Search-content{
+        display: none;
+    }
     .col-infor-contrainer,.row-element > a.img-hover-zoom,.img-bar > a:not(:nth-child(4)){
         width: 33% !important;
         height: auto !important;
@@ -37,11 +40,14 @@
         flex-direction: column;
         border-bottom: none     ;
     }
+    .img-bar{
+        display: flex;
+    }
     .img-hover-big{
         width: 100%;
         height: auto;
     }
-    .img-hover-big a img,.img-hover-zoom img,.img-col-title-infor{
+    .img-hover-big a img,/*.img-hover-zoom img,*/.img-col-title-infor{
         width: 100%;
         height: auto;
     }
@@ -82,8 +88,79 @@
     .img-bar-container{
         flex-direction: row-reverse;
     }
+  
+    /*  */
 
+    .bm{
+        max-width: 730px;
+    }
 
+    .bm_L{
+        max-width: 758px;
+    }
+    
+    .bm_R{
+        display: none;
+    }
+
+    .bm_card{
+        width: 100%;
+        flex-direction: row;
+    }
+    .bm_card_img{
+        flex-shrink: 0;
+        width: 33%;
+        height: auto;
+    }
+
+    .bm_card_c{
+        margin-left: 12px;
+    }
+
+    .footer,
+    .list-item-footer,
+    .contact-other-license{
+        display: none;
+    }
+
+    .footer_mb{
+        display: block;
+    } 
+    .bm{
+        max-width: 730px;
+    } 
+
+    .bm_L{
+        max-width: 758px;
+    }
+    
+    .bm_R{
+        display: none;
+    }
+
+    .bm_card{
+        width: 100%;
+        flex-direction: row;
+    }
+    .bm_card_img{
+        flex-shrink: 0;
+        width: 33%;
+        height: auto;
+    }
+
+    .bm_card_c{
+        margin-left: 12px;
+    }
+
+    .footer,
+    .list-item-footer,
+    .contact-other-license{
+        display: none;
+    }
+
+    .footer_mb{
+        display: block;
+    }
     
     .Search-content input{
         width: 100%;
@@ -106,6 +183,7 @@
 
 
     /*nav bar*/
+    
     .nav-area{
             /* position: relative; */
             width: 100%;
@@ -143,7 +221,72 @@
 
     .other-path:not(:first-of-type){
         background-color: #fdf7ea;
+ 
     }
+
+    .bm_L{
+        width: 100%;
+    }
+
+
+
+    /*pe*/
+    .content-pe{
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+    }
+        /*cục lớn bên trái */
+    .big-cnt-pe{
+        width: 100%;
+    }
+    .big-cnt-pe .img-hover-zoom,.big-cnt-pe .img-hover-zoom img{
+        width: 100% !important;
+    }
+        /*4 cục nhỏ bên phải*/
+    .small-cnt-pe div.img-hover-zoom img {
+        width: 100%;
+        height: auto;
+    }
+    .small-cnt-pe{
+        display: flex;
+        box-shadow: none;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-bottom: 15px;
+        margin-left: 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .small-cnt-pe .img-hover-zoom{
+        width: 33% !important;
+        height: auto !important;
+        display: block;
+        flex-shrink: 0;
+    }
+    .small-cnt-pe-right{
+        margin-left: 10px;
+    }
+    
+    .bottom-other{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e9ecef;
+        padding-bottom: 15px;
+    }
+    .bt-o-img{
+        width: 33% !important;
+        height: auto !important;
+        display: block;
+        flex-shrink: 0;
+    }
+    .bt-o-right{
+        margin-left: 10px ;
+    }
+    
+    
 }
 
 
