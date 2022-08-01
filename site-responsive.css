@@ -8,10 +8,10 @@
     /*phan noi dung*/
     .content-layout{
         width: 80%;
-        margin: 0 auto;
+        margin: 10px auto 0;
     }
     .top-header{
-        width:100%;
+        width:80%;
     }
     .navbar{
         width: 80%; 
@@ -44,16 +44,20 @@
     .img-bar{
         display: flex;
     }
-    .img-hover-big{
+    .img-main-big{
         width: 100%;
         height: auto;
     }
-    .img-hover-big a img,/*.img-hover-zoom img,*/.img-col-title-infor{
+    .img-main-big a img,/*.img-hover-zoom img,*/.img-col-title-infor{
         width: 100%;
         height: auto;
     }
 
-
+    /*fix kích thước img-bar kích thức %*/
+    .img-bar-t{
+        
+        height: 100% !important;
+    }
 
     .row-element {
         width: 100%;
@@ -267,6 +271,7 @@
         /*cục lớn bên trái */
     .big-cnt-pe{
         width: 100%;
+        height: auto;
     }
     .big-cnt-pe .img-hover-zoom,.big-cnt-pe .img-hover-zoom img{
         width: 100% !important;
@@ -408,7 +413,7 @@
     }
 }
 
-@media only screen and (max-width:410px) {
+@media only screen and (max-width:415px) {
 
     .ul-nav li:nth-last-child(2),
     .ul-nav li:nth-last-child(3),

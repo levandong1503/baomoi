@@ -46,15 +46,17 @@ window.onresize = function(){
 }
 
 var DropCloseBtn = document.getElementsByClassName("btn-close-drop");
-DropCloseBtn[0].onclick = function() {
-    if(isDropNav){
-        var cls = dropLayout.getAttribute("class");
-        dropLayout.setAttribute("class",cls + " dropsupport");
-        isDropNav  = false;
-        if(isBodyHidden){
-            var body = document.getElementById("app");
-            body.setAttribute("style","  ");
-            isBodyHidden = false;
+if(DropCloseBtn[0]){
+    DropCloseBtn[0].onclick = function() {
+        if(isDropNav){
+            var cls = dropLayout.getAttribute("class");
+            dropLayout.setAttribute("class",cls + " dropsupport");
+            isDropNav  = false;
+            if(isBodyHidden){
+                var body = document.getElementById("app");
+                body.setAttribute("style","  ");
+                isBodyHidden = false;
+            }
         }
     }
 }
@@ -105,5 +107,12 @@ for (const card of topicCards) {
 
 if (closeIcon != null) {
 
-    closeIcon.addEventListener('click', () => elModal.classList.remove('open'));
+    try{
+        closeIcon.addEventListener('click', () => elModal.classList.remove('open'));
+    }
+    catch{
+        console.error("nut close bi loi");
+    }
 }
+
+
