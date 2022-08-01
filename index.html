@@ -12,176 +12,178 @@
     <title>Trang chu</title>
 </head>
 
-<body>
+
 
     <body id="app">
 
+        <header>
+            <div class="top-header">
+                <a href="#"><img src="./Images/bm-logo.png" width="100px"></a>
 
-        <div class="header">
-            <a href="#"><img src="./Images/bm-logo.png" width="100px"></a>
+                <form method="get" action="#" class="Search-content">
+                    <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
+                    <button type="submit" id="search-icon"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="icon">
+                    <a href="#"><i class="fa-thin fa-user"></i></a>
 
-            <form method="get" action="#" class="Search-content">
-                <input type="text" name="Title" placeholder="Nhập nôi dung tìm kiếm">
-                <button type="submit" id="search-icon"><i class="fa fa-search"></i></button>
-            </form>
-            <div class="icon">
-                <a href="#"><i class="fa-thin fa-user"></i></a>
-
-                <a href="#"><i class="fa-solid fa-mobile-button"></i></a>
-            </div>
-        </div>
-        <div class="nav-container">
-            <nav class="navbar">
-                <ul class="ul-nav">
-                    <li class="btn-square btn-choose"><a class="" href="#">NÓNG</a></li>
-                    <li><a class="btn-square" href="./newNews.html">MỚI</a></li>
-                    <li><a class="btn-square" href="./videoPage.html">VIDEO</a></li>
-                    <li><a class="btn-square" href="./topic.html">CHỦ ĐỀ</a></li>
-
-                    <li><a class="btn-radius" href="./positive-energy.html">Năng lượng tích cực</a></li>
-                    <li><a class="btn-radius" href="./vietnam-discovery.html">Khám phá Việt Nam</a></li>
-                    <li><a class="btn-radius" href="#">Khám phá thế giới</a></li>
-                    <li class="icon-dropdown" id="dropdown"><i class="fa fa-block-quote "></i></li>
-                </ul>
-            </nav>
-            <div class="nav-supper dropsupport">
-                <div class="nav-area">
-                    <div style="overflow: hidden;">
-                        <div class="nav-path display-none">
-                            <a href="#" class="header-path other-path ">
-                                <i class="fa-light fa-location-dot"></i>
-                                Tin quanh ta
-                                <select name="location" id=""
-                                    style="float: right; border:none; background-color: #f3f3f3;">
-                                    <option value="">chọn địa phương</option>
-                                    <option value="">Hà Nội</option>
-                                    <option value="">Hà Nội</option>
-                                    <option value="">Hà Nội</option>
-                                    <option value="">Hà Nội</option>
-                                </select></a>
-                            <a href="#" class="header-path display-none other-path">
-                                BÓNG ĐÁ
-                                <i style="display: inline-block; float: right;" class="fa-light fa-futbol"></i>
-                            </a>
-                            <a href="#" class="header-path display-none other-path">
-                                TIỆN ÍCH
-                                <i style="display: inline-block; float: right;" class="fa-light fa-cloud-bolt-sun"></i>
-                            </a>
-                            <a href="#" class="header-path display-none other-path">
-                                AUDIO
-                                <i style="display: inline-block; float: right;" class="fa-light fa-microphone"></i>
-                            </a>
-                        </div>
-                        <div class="nav-path">
-                            <a href="" class="header-path">THẾ GIỚI</a>
-                            <ul class="ul-nav-path">
-
-                            </ul>
-                        </div>
-
-                        <div class="nav-path">
-                            <a href="#" class="header-path">XÃ HỘI</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">Thời sự</a></li>
-                                <li><a class="a-nav-path">Giao thông</a></li>
-                                <li><a class="a-nav-path">Môi trường - Khí hậu</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="nav-path">
-                            <a href="#" class="header-path">VĂN HÓA</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">Nghệ thuật</a></li>
-                                <li><a class="a-nav-path">Ẩm thực</a></li>
-                                <li><a class="a-nav-path">Du lịch</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="nav-path">
-                            <a href="#" class="header-path">KINH TẾ</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">Lao động - Việc làm</a></li>
-                                <li><a class="a-nav-path"></a>Tài chính</li>
-                                <li><a class="a-nav-path"></a>Chứng khoán</li>
-                                <li><a class="a-nav-path">Kinh doanh</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="nav-path">
-                            <a href="#" class="header-path">GIÁO DỤC</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">Học bổng - Du lịch</a></li>
-                                <li><a class="a-nav-path">Đào tạo - Thi cử</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="nav-path">
-                            <a href="#" class="header-path">THỂ THAO</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">Bóng đá quốc tế</a></li>
-                                <li><a class="a-nav-path">Bóng đá Việt Nam</a></li>
-                                <li><a class="a-nav-path">Quần vợt</a></li>
-                                <li><a class="a-nav-path">Lịch thi đấu</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="nav-path">
-                            <a href="#" class="header-path">GIẢI TRÍ</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">Âm nhạc</a></li>
-                                <li><a class="a-nav-path">Thời trang</a></li>
-                                <li><a class="a-nav-path">Điện ảnh - Truyền hình</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="nav-path">
-                            <a href="#" class="header-path">PHÁP LUẬT</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">An ninh trật tự</a></li>
-                                <li><a href="#" class="a-nav-path">Hình sự dân sự</a></li>
-                            </ul>
-                        </div>
-                        <div class="nav-path">
-                            <a href="#" class="header-path">CÔNG NGHỆ</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">CNTT - viễn thông</a></li>
-                                <li><a href="#" class="a-nav-path">Thiết bị phân cứng</a></li>
-                            </ul>
-                        </div>
-                        <div class="nav-path">
-                            <a href="#" class="header-path">KHOA HỌC</a>
-                            <ul class="ul-nav-path">
-
-                            </ul>
-                        </div>
-                        <div class="nav-path">
-                            <a href="#" class="header-path">ĐỜI SỐNG</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">Dinh dưỡng - làm đẹp</a></li>
-                                <li><a href="#" class="a-nav-path">Tình yêu - hôn nhân</a></li>
-                                <li><a href="#" class="a-nav-path">Sức khỏe - y tế</a></li>
-                            </ul>
-                        </div>
-                        <div class="nav-path">
-                            <a href="#" class="header-path">XE CỘ</a>
-                            <ul class="ul-nav-path">
-
-                            </ul>
-                        </div>
-                        <div class="nav-path">
-                            <a href="#" class="header-path">NHÀ ĐẤT</a>
-                            <ul class="ul-nav-path">
-                                <li><a class="a-nav-path">Quản lí quy hoạch</a></li>
-                                <li><a href="#" class="a-nav-path">Không gian kiến trúc</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div style="clear: both;"></div>
+                    <a href="#"><i class="fa-solid fa-mobile-button"></i></a>
                 </div>
             </div>
-        </div>
+            <div class="nav-container">
+                <nav class="navbar">
+                    <ul class="ul-nav">
+                        <li class="btn-square btn-choose"><a class="" href="#">NÓNG</a></li>
+                        <li><a class="btn-square" href="./newNews.html">MỚI</a></li>
+                        <li><a class="btn-square" href="./videoPage.html">VIDEO</a></li>
+                        <li><a class="btn-square" href="./topic.html">CHỦ ĐỀ</a></li>
 
+                        <li><a class="btn-radius" href="./positive-energy.html">Năng lượng tích cực</a></li>
+                        <li><a class="btn-radius" href="./vietnam-discovery.html">Khám phá Việt Nam</a></li>
+                        <li><a class="btn-radius" href="#">Khám phá thế giới</a></li>
+                        <li class="icon-dropdown" id="dropdown"><i class="fa fa-block-quote "></i></li>
+                    </ul>
+                </nav>
+                <div class="nav-supper dropsupport">
+                    <div class="nav-area">
+                        <div style="overflow: hidden;">
+                            <div class="nav-path display-none">
+                                <a href="#" class="header-path other-path ">
+                                    <i class="fa-light fa-location-dot"></i>
+                                    Tin quanh ta
+                                    <select name="location" id=""
+                                        style="float: right; border:none; background-color: #f3f3f3;">
+                                        <option value="">chọn địa phương</option>
+                                        <option value="">Hà Nội</option>
+                                        <option value="">Hà Nội</option>
+                                        <option value="">Hà Nội</option>
+                                        <option value="">Hà Nội</option>
+                                    </select></a>
+                                <a href="#" class="header-path display-none other-path">
+                                    BÓNG ĐÁ
+                                    <i style="display: inline-block; float: right;" class="fa-light fa-futbol"></i>
+                                </a>
+                                <a href="#" class="header-path display-none other-path">
+                                    TIỆN ÍCH
+                                    <i style="display: inline-block; float: right;" class="fa-light fa-cloud-bolt-sun"></i>
+                                </a>
+                                <a href="#" class="header-path display-none other-path">
+                                    AUDIO
+                                    <i style="display: inline-block; float: right;" class="fa-light fa-microphone"></i>
+                                </a>
+                            </div>
+                            <div class="nav-path">
+                                <a href="" class="header-path">THẾ GIỚI</a>
+                                <ul class="ul-nav-path">
+
+                                </ul>
+                            </div>
+
+                            <div class="nav-path">
+                                <a href="#" class="header-path">XÃ HỘI</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">Thời sự</a></li>
+                                    <li><a class="a-nav-path">Giao thông</a></li>
+                                    <li><a class="a-nav-path">Môi trường - Khí hậu</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-path">
+                                <a href="#" class="header-path">VĂN HÓA</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">Nghệ thuật</a></li>
+                                    <li><a class="a-nav-path">Ẩm thực</a></li>
+                                    <li><a class="a-nav-path">Du lịch</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-path">
+                                <a href="#" class="header-path">KINH TẾ</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">Lao động - Việc làm</a></li>
+                                    <li><a class="a-nav-path"></a>Tài chính</li>
+                                    <li><a class="a-nav-path"></a>Chứng khoán</li>
+                                    <li><a class="a-nav-path">Kinh doanh</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-path">
+                                <a href="#" class="header-path">GIÁO DỤC</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">Học bổng - Du lịch</a></li>
+                                    <li><a class="a-nav-path">Đào tạo - Thi cử</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-path">
+                                <a href="#" class="header-path">THỂ THAO</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">Bóng đá quốc tế</a></li>
+                                    <li><a class="a-nav-path">Bóng đá Việt Nam</a></li>
+                                    <li><a class="a-nav-path">Quần vợt</a></li>
+                                    <li><a class="a-nav-path">Lịch thi đấu</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-path">
+                                <a href="#" class="header-path">GIẢI TRÍ</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">Âm nhạc</a></li>
+                                    <li><a class="a-nav-path">Thời trang</a></li>
+                                    <li><a class="a-nav-path">Điện ảnh - Truyền hình</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-path">
+                                <a href="#" class="header-path">PHÁP LUẬT</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">An ninh trật tự</a></li>
+                                    <li><a href="#" class="a-nav-path">Hình sự dân sự</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-path">
+                                <a href="#" class="header-path">CÔNG NGHỆ</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">CNTT - viễn thông</a></li>
+                                    <li><a href="#" class="a-nav-path">Thiết bị phân cứng</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-path">
+                                <a href="#" class="header-path">KHOA HỌC</a>
+                                <ul class="ul-nav-path">
+
+                                </ul>
+                            </div>
+                            <div class="nav-path">
+                                <a href="#" class="header-path">ĐỜI SỐNG</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">Dinh dưỡng - làm đẹp</a></li>
+                                    <li><a href="#" class="a-nav-path">Tình yêu - hôn nhân</a></li>
+                                    <li><a href="#" class="a-nav-path">Sức khỏe - y tế</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-path">
+                                <a href="#" class="header-path">XE CỘ</a>
+                                <ul class="ul-nav-path">
+
+                                </ul>
+                            </div>
+                            <div class="nav-path">
+                                <a href="#" class="header-path">NHÀ ĐẤT</a>
+                                <ul class="ul-nav-path">
+                                    <li><a class="a-nav-path">Quản lí quy hoạch</a></li>
+                                    <li><a href="#" class="a-nav-path">Không gian kiến trúc</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-close-drop" style="border: 1px solid black; margin: 0 auto 50px auto; text-align: center; cursor: pointer;
+                                                                user-select: none; border-radius: 5px; width: 50px;">ĐÓNG</div>
+                        </div>
+                        
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+    </header>
 
 
         <div class="content-layout">
@@ -189,9 +191,9 @@
 
                 <div class="main-content">
                     <div class="img-hover-big img-hover-zoom">
-                        <a href="#"><img class="img-radius" src="Images/vietnam-lao.jpg" alt="Viet nam lao"></a>
+                        <a href="./news-sau-9-ngay-van-chua-tim-thay-dau-vet-tau-ca.html"><img class="img-radius" src="Images/sau-9-ngay-van-chua-tim-thay-dau-vet-tau-ca.webp" alt="Viet nam lao"></a>
                     </div>
-                    <a href="#">Sau 9 ngày, vẫn chưa tìm thấy dấu vết tàu cá cùng 15 lao động bị mất liên lạc trên
+                    <a href="./news-sau-9-ngay-van-chua-tim-thay-dau-vet-tau-ca.html">Sau 9 ngày, vẫn chưa tìm thấy dấu vết tàu cá cùng 15 lao động bị mất liên lạc trên
                         biển</a>
                     <div class="post-footer">
                         <a href="#"><img class="img-news" src="./Images/bao-tin-tuc.png" alt=""></a>
@@ -258,6 +260,22 @@
 
                 <!--Noi dung dang cot ben trai-->
                 <div class="col-infor">
+                    <div class="post-article">
+                        <div class="col-infor-contrainer">
+                            <a class="img-hover-zoom" href="./News-ltv.html"><img class="img-col-title-infor img-radius"
+                                    src="./Images/ong-le-tung-van.webp" alt=""></a>
+                        </div>
+                        <div class="post-title">
+                            <a href="./News-ltv.html" class="anchor-post-p anchor-post-p-left">Ông Lê Tùng Vân đến tòa, luật sư nêu quan điểm</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news" src="./Images/bao-vov.png" alt=""></a>
+                                <span>22/7/22</span>
+                                <span>43 liên quan</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="post-article">
                         <div class="col-infor-contrainer">
                             <a class="img-hover-zoom" href="#"><img class="img-col-title-infor img-radius"
@@ -452,6 +470,9 @@
 
                 </div>
 
+
+
+                
 
 
                 <div class="article-group">
@@ -741,6 +762,36 @@
                     <!--END COL INFOR 2-->
                 </div>
 
+
+                <!--Noi dung loat anh ngang-->
+                <div class="img-bar-container">
+
+                    <a href="./mot-thang-sau-khi-bi-canh-sat-tbn-bat-HD-HAH-gio-ra-sao.html" class="title-img-bar text-hover ">
+                        1 tháng sau khi bị Cảnh sát Tây Ban Nha bắt, Hồng Đăng, Hồ Hoài Anh hiện ra sao?
+                    </a>
+
+
+                    <div class="img-bar img-radius">
+                        <a class="img-hover-zoom" href="./mot-thang-sau-khi-bi-canh-sat-tbn-bat-HD-HAH-gio-ra-sao.html"> <img class="img-bar-t" src="./Images/cach-day-gan-1-thang-nhieu-trang-bao-nuoc-ngoai-dua-tin-ve-viec-hai-nghe-si-noi-tieng-cua-vn-bi-bat.webp"
+                                alt=""></a>
+                        <a class="img-hover-zoom " href="./mot-thang-sau-khi-bi-canh-sat-tbn-bat-HD-HAH-gio-ra-sao.html"><img class="img-bar-t"
+                                src="./Images/moi-day-tai-buoi-hop-bao-thuong-ky-cua-bo-ngoai-giao-chieu-21-07-de-nghi-cap-nhat-thong-tin.webp" alt=""></a>
+                        <a class="img-hover-zoom " href="#"><img class="img-bar-t"
+                                src="./Images/danh-tinh-cua-hai-nghe-si-sau-do-cung-duoc-co-quan-chuc-nang-VN-xac-dinh.webp" alt=""></a>
+                        <a class="img-hover-zoom responsive-hidden-img" href="./mot-thang-sau-khi-bi-canh-sat-tbn-bat-HD-HAH-gio-ra-sao.html"><img class="img-bar-t"
+                                src="./Images/nguoi-phat-ngon-le-thi-thu-hang-cung-cho-biet-dai-su-quan-van-tiep-tuc-theo-doi-vu-viec.webp" alt=""></a>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="post-footer responsive-hidden-img">
+                        <a href="#"><img class="img-news" src="./Images/bao-tri-thuc-cuoc-song.png" alt=""></a>
+                        <span>36 phút</span>
+                        <span>1 liên quan</span>
+                        <i class="fa-thin fa-clock"></i>
+
+                    </div>
+
+                </div>
+
                 <!--END CONTENT LEFT-->
             </div>
 
@@ -759,6 +810,23 @@
                                 thời đại</a>
                             <div class="post-footer">
                                 <a href="#"><img class="img-news" src="./Images/sai-gon-online.png" alt=""></a>
+                                <span>425 liên quan</span>
+                                <i class="fa-thin fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-article">
+                        <div class="post-img-container anchor-post-p-right">
+                            <a class="img-hover-zoom " href="./news-kien-quyet-khong-khoan-nhung-voi-tham-nhung.html">
+                                <img class="img-post img-radius" src="./Images/kien-quyet-khong-khoan-nhuong-voi-tham-nhung.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="post-title">
+                            <a href="./news-kien-quyet-khong-khoan-nhung-voi-tham-nhung.html" class="anchor-post-p">Kiên quyết không khoan nhượng với tham nhũng, tiêu cực</a>
+                            <div class="post-footer">
+                                <a href="#"><img class="img-news" src="./Images/bao-dcs.png" alt=""> DCSVN</a>
+                                <span>30/6/22</span>
                                 <span>425 liên quan</span>
                                 <i class="fa-thin fa-clock"></i>
                             </div>
@@ -976,7 +1044,7 @@
 
                 <!--Trang tin dia phuong-->
                 <div class="local-news">
-                    <a href="#" class="header-local"> <i class="fa-solid fa-location-dot"></i> ĐỊA PHƯƠNG</a>
+                    <a href="#" class="top-local"> <i class="fa-solid fa-location-dot"></i> ĐỊA PHƯƠNG</a>
                     <select name="local" class="local-option"
                         style="width:100% ; border: 1px solid #b1b1b1; padding: 5px; box-sizing: border-box; margin:10px 0;">
                         <option value="tphochiminh">TP. Hồ Chí Minh</option>
@@ -1598,7 +1666,7 @@
 
 
             </div>
-            <hr style="width: 100%; color: #c3c3c3; margin: 0 auto;">
+            
             <div class="contact-other-license">
                 <div class="contact">
                     <h3>LIÊN HỆ</h3>

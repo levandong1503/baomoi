@@ -109,6 +109,20 @@ const dataFake = [{
         "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
         "time": 16,
         "rel": "3 liên quan"
+    },
+    {
+        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+        "content": "Công bố kết quả kỳ họp thứ III của Hội đồng Tư vấn Kinh doanh APEC",
+        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+        "time": 16,
+        "rel": "3 liên quan"
+    },
+    {
+        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+        "content": "Công bố kết quả kỳ họp thứ III của Hội đồng Tư vấn Kinh doanh APEC",
+        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+        "time": 16,
+        "rel": "3 liên quan"
     }
 ]
 
@@ -150,40 +164,9 @@ const imgs = ["6-tau-lon-nuoc-ngoai-tham-gia-tim-kiem-thuyen-vien-binh-thuan-mat
     "dai-dien-vks-dua-ra-quann-diem-giu-nguyen-cao-trang-try-to.webp ",
     "den-cho-hoi-an-kham-pha-thien-duong-am-thuc.webp ",
     "den-ninh-binh-dung-chi-song-ao-voi-hang-mua-hay-trang-an-ma-bo-qua.webp ",
-    "den-quy-nhon-nam-thuyen-dao-choi-khi-rung-nuoc-dep-me-man - Copy - Copy.webp ",
-    "dich-covid19-ngay-23-07-so-ca-khoi-benh-nhieu-gap-9-lna-so-ca-mac-moi - Copy - Copy.webp ",
-    "diem-danh-nhung-toa-thap-noi-tieng-nhat-viet-nam - Copy - Copy.webp ",
-    "gia-vang-mieng-tang-lai-gan-5-trieu-dong-luong - Copy - Copy.webp ",
-   " giam-sat-ct-thu-hoi-gan-8000-hop-kem - Copy - Copy.webp ",
-    "hai-anh-chang-mang-xeng - Copy - Copy.webp ",
-    "hang-ngan-tui-thuoc-dieu-tri-sot-xuat-huyet-phai-bo-trong-khi-nhieu-noi-thieu-thuoc - Copy - Copy.webp ",
-    "hoc-tap-va-lam-theo-tam-guong-dao-duc-ho-chi-minh - Copy - Copy.png",
-    "hon-100-trieu-nguoi-my-chiu-can-nang-nong-nhu-thieu-dot - Copy - Copy.webp ",
-    "hon-khoai-vien-ngoc-xanh-giua-troi-nam-to-quoc - Copy - Copy.webp ",
-    "khongh-ngay-24-07-bo-giao-duc-cong-bo-diem-thi-tot-nghiep - Copy - Copy.webp ",
-    "ky-thu-truot-thac-bach-ma-trong-mua - Copy - Copy.webp ",
-    "lang-gom-thanh-ha-diem-to-net-dep - Copy - Copy.webp ",
-    "luat-su-bao-chua-cho-cac-bi-cao-de-nghi-vo-toi-voi-cac-bi-cao - Copy - Copy.webp ",
-    "ma-tuy-han-quoc - Copy - Copy.webp ",
-    "miwon-phu-tho - Copy - Copy.webp ",
-    "MSB-tang-von-len-20000-ty - Copy - Copy.webp ",
-   " nang-nong-tai-anh-khien-may-chu-ngung-hoat-dong - Copy - Copy.webp ",
-    "nghi-pham-vu-nguoi-phu-nu-tu-vung-thi-the-khong-nguyen-ven - Copy - Copy.webp ",
-    "ngo-ngang-ve-dep-me-hoac-cua-canh-dong-dien-gio-tren-bien-quy-nhon - Copy - Copy.webp ",
-    "ngoi-chua-dat-vang-co-lich-su-hon-600-nam-o-tra-vinh-nguy-nga-nhu-cung-dien - Copy - Copy.webp ",
-    "ngoi-nha-tien-ty - Copy - Copy.webp ",
-    "ngoi-nha-tien-ty-2 - Copy - Copy.webp ",
-    "ngoi-nha-tien-ty-3 - Copy - Copy.webp ",
-   " ngoi-nha-tien-ty-4 - Copy - Copy.webp ",
-   " nguy-co-chet-nguoi-tu-trao-luu-lam-mat-tren-tik-tok - Copy - Copy.webp ",
-   " nhung-doi-vo-chong-cung-lam-viec-thien - Copy - Copy.webp ",
-   " nhung-hinh-anh-dau-tien-cua-4-ngu-dan-o-binh-thuan - Copy - Copy.webp ",
-   " nong-huong-dan-moi-nhat-ve-thoi-gian-tiem-vaccine-covid-19 - Copy - Copy.webp ",
-    "phao-tu-hanh-nga-1 - Copy - Copy.webp ",
-    "phao-tu-hanh-nga-2 - Copy - Copy.webp ",
-    "phao-tu-hanh-nga-3 - Copy - Copy.webp ",
-    "phao-tu-hanh-nga-4 - Copy - Copy.webp ",
-    "phi-cong-anh-16-tuoi-lai-may-bay-toi-viet-nam-trong-hanh-trinh-vong-quan-the-gioi - Copy - Copy.webp ",
+     
+    
+    "phi-cong-anh-16-tuoi-lai-may-bay-toi-viet-nam-trong-hanh-trinh-vong-quan-the-gioi-Copy-Copy.webp ",
     "quen-minh-cuu-nguoi-trong-bien-lua - Copy - Copy.webp ",
    " song-sat-bien-ho-cua-ninh-thuan-ban-da-tu-ghe-tham - Copy - Copy.webp ",
    " Sri Lanka-co-tong-thong-moi - Copy - Copy.webp ",
@@ -198,7 +181,6 @@ const imgs = ["6-tau-lon-nuoc-ngoai-tham-gia-tim-kiem-thuyen-vien-binh-thuan-mat
    " xe-khach-cho-23-nguoi-lao-xuong-vuc - Copy.webp ",
     "xom-truong-tho-tai-an-giang - Copy.webp ",
     ] ;
-const cardNewsEl = document.querySelector('.bm_L');
 
 const app = {
     mergeLogo: function () {
@@ -215,14 +197,44 @@ const app = {
         }
     },
 
-    renderVideo: function () {
+    renderNewNews : function(){
+        let htmlNews = '';
+        let newNewsEl = document.querySelector('.bm_L_N');
+        
+        this.mergeImg();
+        this.mergeLogo();
+        htmlNews =  htmlNews += dataFake.map(data =>  (
+            `<div class="post-article">
+            <div class="col-infor-contrainer">
+                <a class="img-hover-zoom" href="./News-ltv.html"><img class="img-col-title-infor img-radius"
+                        src=${data.img} alt=""></a>
+            </div>
+            <div class="post-title">
+                <a href="./News-ltv.html" class="anchor-post-p anchor-post-p-left">${data.content}</a>
+                <div class="post-footer">
+                    <a href="#"><img class="img-news" src=${data.logo} alt=""></a>
+                    ${data.time!=''? `<span >${data.time} phút</span>`:''}
+                    ${data.rel!=''? `<a href="#"><span >${data.rel} </span></a>`:''}
+                    <i class="fa-thin fa-clock"></i>
+                </div>
+            </div>
+        </div>`
+        )).join('');
+        console.log(htmlNews);
+        newNewsEl.innerHTML = htmlNews
+
+    },
+
+    render: function () {
+        
+        const cardNewsEl = document.querySelector('.bm_L');
         this.mergeImg();
         let html = '';
         html = html += dataFake.map((data, index) => (
             ` <div class="bm_card d-flex">
                 <div class="bm_card_img img-hover-zoom">
                     <span>
-                        <a href="#">
+                        <a target="_blank" href="./newsDetailVideo.html">
                             <img class=""
                                 src=${data.img}
                                 alt="">
@@ -231,11 +243,11 @@ const app = {
                 </div>
                 <div class="bm_card_c">
                     <div class="bm_card_c_title">
-                        <h4><a href="#">${data.content}</a></h4>
+                        <h4><a target="_blank" href="./newsDetailVideo.html">${data.content}</a></h4>
                     </div>
             
                     <div class="bm_card_c_logo">
-                        <a href="#">
+                        <a>
                             <img src=${data.logo} alt="">
                         </a>
                         ${data.time!=''? `<span class="ml-12 fs-13 op-025 ">${data.time} phút</span>`:''}
@@ -245,15 +257,19 @@ const app = {
             </div>`
         )).join();
 
+        if (cardNewsEl) {
+            
 
         cardNewsEl.innerHTML = html
+        }
 
 
     },
 
     start:   function () {
         this.mergeLogo();
-        this.renderVideo()
+        this.render()
+        this.renderNewNews();
     }
 }
 
