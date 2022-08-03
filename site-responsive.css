@@ -53,7 +53,7 @@
         width: 100%;
         height: auto;
     }
-    .img-main-big a img,/*.img-hover-zoom img,*/.img-col-title-infor{
+    .img-main-big a img,.img-hover-zoom video,.img-col-title-infor{
         width: 100%;
         height: auto;
     }
@@ -254,7 +254,10 @@
  
     }
 
-     
+    .bm{
+        width: 100%;
+        padding:0 10% ;
+    }
     .bm_L{
         
         width: 100%;
@@ -393,13 +396,10 @@
     }
 }
 
-<<<<<<< HEAD
 
 }
  
 
-=======
->>>>>>> cc7f076fb01086df6482fa799785e88a59fdb438
 @media only screen and (max-width:739px) {
 
     

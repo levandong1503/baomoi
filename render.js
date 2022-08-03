@@ -315,11 +315,11 @@
          htmlNews = dataFake.map(data => (
              `<div class="post-article">
             <div class="col-infor-contrainer">
-                <a class="img-hover-zoom" href="./News-ltv.html"><img class="img-col-title-infor img-radius"
+                <a class="img-hover-zoom" href="./posts/News-ltv.html"><img class="img-col-title-infor img-radius"
                         src=${data.img} alt=""></a>
             </div>
             <div class="post-title">
-                <a href="./News-ltv.html" class="anchor-post-p anchor-post-p-left">${data.title}</a>
+                <a href="./posts/News-ltv.html" class="anchor-post-p anchor-post-p-left">${data.title}</a>
                 <div class="post-footer">
                     <a href="#"><img class="img-news" src=${data.logo} alt=""></a>
                     ${data.date!=''? `<span >${data.date} phút </span>`:''} 
@@ -365,7 +365,6 @@
                     </div>
                 </div>
             </div>`
-<<<<<<< HEAD
          )).join();
 
          if (cardNewsEl) {
@@ -397,7 +396,7 @@
                 ${topic.data.map(colData =>`
                         <div class="topic_content_col${topic.type} d-flex text-hover">
                             <div class="topic_content_col${topic.type}_img">
-                                <a href="#">
+                                <a href="./posts/co-gai-bat-xe-khach-giua-duong.html">
                                     <figure class="img-hover-zoom">
                                         <img class="img"
                                             src=${colData.img}
@@ -406,7 +405,7 @@
                                 </a>
                             </div>
                             <div class="topic_content_col${topic.type}_title fs-19">
-                                <a href="#">
+                                <a href="./posts/co-gai-bat-xe-khach-giua-duong.html">
                                     <h4> ${colData.title}</h4>
                                 </a>
                                 <div class="bm_card_video_c_logo d-flex">
@@ -465,29 +464,6 @@
                 </div>
 `
      html += partial;
-=======
-        )).join();
-
-
-        if(cardNewsEl){
-            cardNewsEl.innerHTML = html
-        }
-
-
-    },
-
-    start:   function () {
-        this.mergeLogo();
-        this.renderVideo()
-    }
-}
-
-
-app.start();
-
-
-
->>>>>>> cc7f076fb01086df6482fa799785e88a59fdb438
 
  });
 
