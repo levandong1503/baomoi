@@ -365,6 +365,7 @@
                     </div>
                 </div>
             </div>`
+<<<<<<< HEAD
          )).join();
 
          if (cardNewsEl) {
@@ -464,6 +465,29 @@
                 </div>
 `
      html += partial;
+=======
+        )).join();
+
+
+        if(cardNewsEl){
+            cardNewsEl.innerHTML = html
+        }
+
+
+    },
+
+    start:   function () {
+        this.mergeLogo();
+        this.renderVideo()
+    }
+}
+
+
+app.start();
+
+
+
+>>>>>>> cc7f076fb01086df6482fa799785e88a59fdb438
 
  });
 
