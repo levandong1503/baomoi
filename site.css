@@ -66,27 +66,10 @@ figure{
     color: #2fa1b3;
 }
 
-/* css icon search */
-
-#search-icon{
-    position: absolute;
-    right: 12px;
-    padding: 0 11px;
-    font-weight: 100;
-    top: 15px; 
-    width: 17px;
-    height: 17px; 
-    background-color: transparent; border: transparent;
-    
-}
-
-
 #search-icon:hover{
     font-weight: 700; 
 }
     
-
-
 /*hieu ung zoom hinh anh*/
 .img-hover-zoom{
     overflow: hidden;
@@ -101,10 +84,11 @@ figure{
     transform: scale(1.1,1.1);
 }
 .img-radius{ border-radius: 5px;
-display: inline-block; }
+display: inline-block; 
+}
 
 
-/*set thanh footer cho moi bai viet*/
+/*set thanh chan trang cho moi bai viet*/
 .post-footer {   /*can chinh thanh footer*/
     display: flex;
     margin-right: 10px;
@@ -131,7 +115,8 @@ display: inline-block; }
 .post-footer>i{
     font-size: 13px;
 }
-/*Code cho phan header tieu de cua trang web*/
+
+/*can chinh cho phan header(logo-search-login) tieu de cua trang web*/
 .top-header{
     width: 970px;
     height: 66px;
@@ -151,8 +136,6 @@ display: inline-block; }
     border: 1px solid #e9ecef;
     width: 456px;
     padding: 10px;
-    
-    
 }
 
 .Search-content input:hover,.Search-content input:focus{
@@ -168,7 +151,17 @@ display: inline-block; }
     margin-right: 10px;
 }
 
-
+#search-icon{
+    position: absolute;
+    right: 12px;
+    padding: 0 11px;
+    font-weight: 100;
+    top: 15px; 
+    width: 17px;
+    height: 17px; 
+    background-color: transparent; border: transparent;
+    
+}
 
 /*code su dung cho navbar thanh dieu huong*/
 .nav-container{
@@ -241,7 +234,7 @@ display: inline-block; }
 
 
 
-/*code su dung cho khung lien ket 3 gach*/
+/*code su dung cho khung lien ket 3 gach, dropdown*/
 .nav-supper{
     background-color: #f3f3f3;
     padding: 20px;
@@ -264,12 +257,9 @@ display: inline-block; }
 .nav-path{
     width: 194px;
     float: left;
-}
-
-.nav-path{
-    width: 194px;
     height:140px;
 }
+
 .header-path{
     color: #2b94a5;
     border-left: 3px solid #2b94a5;
@@ -367,6 +357,7 @@ display: inline-block; }
 .title-element{
     margin: 5px 0;
     font-size: 20px;
+    line-height: 22px;
 }
 .title-element:hover{
     color:#2fa1b3;
@@ -1074,6 +1065,7 @@ display: inline-block; }
         line-height: 22px;
     }
     .bt-o-right>a{
+        font-size: 18px;
         display: block;
         margin-bottom: 10px;
     }
@@ -1081,7 +1073,9 @@ display: inline-block; }
 
 /*Trang chi tiết nội dụng bài báo*/
 .link-news{
-    color: #237784;
+    display: inline-block;
+    color: #3fd4eb;
+    margin-bottom: 5px;
 }
 .link-news:hover{
     color: black;

@@ -19,8 +19,13 @@
     }
     .btn-close-drop{
         display: block;
-        border: 1px solid black; margin: 0 auto 50px auto; text-align: center; cursor: pointer;
-                                                                user-select: none; border-radius: 5px; width: 50px;
+        border: 1px solid black; 
+        margin: 15px auto 100px auto; 
+        text-align: center; 
+        cursor: pointer;
+        user-select: none; 
+        border-radius: 5px; 
+        width: 50px;
     }
 
     .content-left{
@@ -56,7 +61,7 @@
     /*fix kích thước img-bar kích thức %*/
     .img-bar-t{
         
-        height: 100% !important;
+        height: 80% !important;
     }
 
     .row-element {
@@ -378,13 +383,15 @@
     }
 
 
+    
+}
+
+
+@media only screen and (max-width:870px) {
     .ul-nav li:nth-last-child(2){
         display: none;
     }
 }
-
-
- 
 
 @media only screen and (max-width:739px) {
 
