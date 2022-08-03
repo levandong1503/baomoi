@@ -328,7 +328,7 @@
 
      renderVideo: function () {
 
-         const cardNewsEl = document.querySelector('.bm_L');
+         const cardNewsEl = document.querySelector('#renderVD');
 
          let html = '';
          html = html += dataFake.map((data, index) => (
@@ -402,8 +402,7 @@
                                 <div class="bm_card_video_c_logo d-flex">
                                     <a href="#"><img src=${colData.logo}
                                             alt=""></a>
-                                    ${colData.date!=null? `<span class="ml-12 fs-13 op-025 ">${colData.date} phút</span>`:''}
-                                    ${colData.rel!=null? `<span class="ml-12 fs-13 op-025 ">${colData.rel} liên quan</span>`:''}
+                                    ${colData.date!=null? `<span class="ml-12 fs-13 op-025 ">${colData.date} phút</span>`:''} 
 
                                 </div>
                             </div>
