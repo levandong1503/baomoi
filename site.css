@@ -514,7 +514,7 @@ display: inline-block;
 }
 
 .post-article{
-    
+    width: 100%;
     padding-bottom: 10px;
     display: flex;
     border-bottom: 1px solid #e9ecef; 
@@ -522,7 +522,7 @@ display: inline-block;
     margin-bottom: 15px;
 }
 .post-title{
-    margin-left: 15px;
+    margin-left: 15px; 
     
     position: relative;
 }
@@ -1203,7 +1203,7 @@ display: inline-block;
     color: #1c616b;
 }
 
-
+.bm_L_N,
 .bm_L{ /*dinh dang cot va can chinh*/
     width: 625px; 
     flex-wrap: wrap;

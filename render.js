@@ -1,228 +1,350 @@
-const dataFake = [{
-        "img": "https://photo-baomoi.bmcdn.me/w700_r16x9/2022_07_29_65_43302763/76861929c36b2a35737a.jpg",
-        "content": "Công an Hà Đông thông tin chi tiết vụ đâm xe liên hoàn làm 1 người chết",
-        "logo": "./logos/bao-cand.png",
-        "time": 1,
-        "rel": "43 liên quan"
-    },
-    {
-        "img": " ./Images/6-tau-lon-nuoc-ngoai-tham-gia-tim-kiem-thuyen-vien-binh-thuan-mat-tich.webp ",
-        "content": "Ông Lê Tùng Vân đề nghị trả tự do cho các bị cáo",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 2,
-        "rel": "907 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Tuyển Việt Nam vẫn được đá trên sân Mỹ Đình",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 3,
-        "rel": "1 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Bộ GTVT chỉ đạo gấp liên quan đến việc xe bị tự động đăng ký sử dụng ePass",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 4,
-        "rel": "163 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Châu Âu có lựa chọn mới về nguồn cung khí đốt tiềm năng - không phải từ Nga",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 5,
-        "rel": "170 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "'Kẻ khóc, người cười' với kết quả kinh doanh của doanh nghiệp bất động sản",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 6,
-        "rel": "2560 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Doanh nghiệp gia nhập và tái gia nhập thị trường lập kỷ lục mới",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 7,
-        "rel": "3 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Người tử vong vụ ôtô gây tai nạn liên hoàn ở Hà Nội là quân nhân",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 8,
-        "rel": "28 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Nga nêu điều kiện cho cuộc điện đàm giữa Ngoại trưởng Blinken - Lavrov",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 9,
-        "rel": "12 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Tổng Bí thư: Tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị đáp ứng yêu cầu trong giai đoạn mới",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 10,
-        "rel": "313 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Giận con gái, bố mua 15 lít xăng đốt chết 4 người trong gia đình",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 11,
-        "rel": "10 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "7 tháng năm 2022, doanh nghiệp gia nhập và quay trở lại vượt mốc 130.000",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 12,
-        "rel": "2 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "3 học sinh Hà Nội đoạt giải Nhất cuộc thi Đại sứ Văn hóa đọc năm 2022",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 13,
-        "rel": "87 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Tiết lộ không gian âm nhạc 'khủng' nơi 4 ban nhạc huyền thoại quốc tế sẽ trình diễn tại Hà Nội",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 14,
-        "rel": "6 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "7 tháng năm 2022: Xuất nhập khẩu hàng hóa đạt hơn 431 tỷ USD",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 15,
-        "rel": "1147 liên quan"
-    },
-    {
-        "img": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "content": "Công bố kết quả kỳ họp thứ III của Hội đồng Tư vấn Kinh doanh APEC",
-        "logo": "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
-        "time": 16,
-        "rel": "3 liên quan"
-    }
-]
+ var fakeData = [{
+         title: 'Công an Hà Đông thông tin chi tiết vụ đâm xe liên hoàn làm 1 người chết',
+         description: 'Đội CSGT và Trật tự của quận Hà Đông đang …khám nghiệm hiện trường để làm rõ vụ việc.',
+         date: '31/08/22',
+         thumb: 'https://photo-baomoi.bmcdn.me/w700_r16x9/2022_07_29_65_43302763/76861929c36b2a35737a.jpg',
+         publisher: {
+             logo: 'https://photo-baomoi.bmcdn.me/a1493a27e7640e3a5775.png',
+             icon: 'https://photo-baomoi.bmcdn.me/5106330fa14d4813115c.png',
+             url: '/bao-vov/p/65.epi',
+             name: 'Báo VOV'
+         }
+     },
+     {
+         title: 'Ông Lê Tùng Vân đề nghị trả tự do cho các bị cáo',
+         description: 'Ngày 29-7, ông Nguyễn Khắc Linh Duy, Thẩm …ị Cúc hay còn gọi là \'Tịnh thất Bồng Lai\'.',
+         date: '25/08/22',
+         thumb: 'https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_29_17_43303906/e06dcf702932c06c9923.jpg',
+         publisher: {
+             logo: 'https://photo-baomoi.bmcdn.me/a60983665e25b77bee34.png',
+             icon: 'https://photo-baomoi.bmcdn.me/25f7b9c75b84b2daeb95.png',
+             url: '/bao-sai-gon-giai-phong/p/17.epi',
+             name: 'Báo Sài Gòn Giải Phóng'
+         }
+     },
+     {
+         title: 'Tuyển Việt Nam vẫn được đá trên sân Mỹ Đình',
+         description: 'Tổng cục TDTT đưa ra những giải pháp tình …ng bình thường sau lệnh phong tỏa hóa đơn.',
+         date: '25/08/22',
+         thumb: 'https://photo-baomoi.bmcdn.me/w300_r3x2/2022_07_29_23_43303498/35a00904d3463a186357.jpg',
+         publisher: {
+             logo: 'https://photo-baomoi.bmcdn.me/f12dd0420d01e45fbd10.png',
+             icon: 'https://photo-baomoi.bmcdn.me/4938cd082f4bc6159f5a.png',
+             url: '/bao-phap-luat-tp-hcm/p/114.epi',
+             name: 'Báo Pháp Luật TP.HCM'
+         }
+     },
+     {
+         title: 'Châu Âu có lựa chọn mới về nguồn cung khí đốt tiềm năng - không phải từ Nga',
+         description: 'Ngày 28/7, các quốc gia sản xuất năng lượn…rong tương lai thay thế nguồn cung từ Nga.',
+         date: '24/08/22',
+         thumb: 'https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_29_194_43302872/37986336b974502a0965.jpg',
+         publisher: {
+             logo: 'https://photo-baomoi.bmcdn.me/d01baf7472379b69c226.png',
+             icon: 'https://photo-baomoi.bmcdn.me/39c239f2dbb132ef6ba0.png',
+             url: '/bao-the-gioi-viet-nam/p/194.epi',
+             name: 'Báo Thế Giới & Việt Nam'
+         }
+     },
+     {
+         title: '\'Kẻ khóc, người cười\' với kết quả kinh doanh của doanh nghiệp bất động sản',
+         description: 'Cổ phiếu bất động sản đang dần hồi phục tr…iệp thuộc lĩnh vực này còn nhiều khó khăn.',
+         date: '23/08/22',
+         thumb: 'https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_29_11_43303642/bb1f15b8cffa26a47feb.jpg',
+         publisher: {
+             logo: 'https://photo-baomoi.bmcdn.me/8ac1a1ae7ced95b3ccfc.png',
+             icon: 'https://photo-baomoi.bmcdn.me/58acc69c24dfcd8194ce.png',
+             url: '/bao-kinh-te-do-thi/p/11.epi',
+             name: 'Báo Kinh Tế Đô Thị'
+         }
+     },
+     {
+         title: 'Doanh nghiệp gia nhập và tái gia nhập thị trường lập kỷ lục mới',
+         description: 'Số doanh nghiệp gia nhập và tái gia nhập t…05.425 doanh nghiệp của cùng kỳ năm ngoái.',
+         date: '22/08/22',
+         thumb: 'https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_29_146_43303785/0ea90f08d54a3c14655b.jpg',
+         publisher: {
+             logo: 'https://photo-baomoi.bmcdn.me/e4104227a064493a1075.png',
+             icon: 'https://photo-baomoi.bmcdn.me/e4104227a064493a1075.png',
+             url: '/bao-chinh-phu/p/146.epi',
+             name: 'Báo Chính Phủ'
+         }
+     },
+     {
+         title: 'Nga nêu điều kiện cho cuộc điện đàm giữa Ngoại trưởng Blinken - Lavrov',
+         description: 'Phía Mỹ đã liên hệ Nga để sắp xếp cuộc điệ…ov nhưng nhà ngoại giao Nga chưa xác nhận.',
+         date: '22/08/22',
+         thumb: 'https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_07_29_83_43303565/f5957131ab73422d1b62.jpg',
+         publisher: {
+             logo: 'https://photo-baomoi.bmcdn.me/6eede58338c0d19e88d1.png',
+             icon: 'https://photo-baomoi.bmcdn.me/407cfe4b1c08f556ac19.png',
+             url: '/bao-vtc-news/p/83.epi',
+             name: 'Báo VTC News'
+         }
+     }
 
-const logos = ["bao-cand.png",
-    "bao-giao-du-thoi-dai.png",
-    "bao-ha-noi-moi.png",
-    "bao-infonet.png",
-    "bao-kt-dt.png",
-    "bao-mot-the-gioi.png",
-    "bao-nguoi-lao-dong.png",
-    "bao-nhan-dan.png",
-    "bao-petrol-time.png",
-    "bao-phap-luat.png",
-    "bao-qdnf.png",
-    "bao-sao-star.png",
-    "bao-suc-khoe-doi-song.png",
-    "bao-the-gioi-viet-nam.png",
-    "bao-tien-phong.png",
-    "bao-tin-tuc.png",
-    "bao-to-quoc.png",
-    "bao-tri-thuc-cuoc-song.png",
-    "bao-vietnam+.png",
-    "bao-vietnam-daily.png",
-    "bao-vietnamnet.png",
-    "bao-vtc.png",
-    "bao-zing.png",
-    "sai-gon-online.png",
-    "vov.png"
-]
+ ];
 
-const imgs = ["6-tau-lon-nuoc-ngoai-tham-gia-tim-kiem-thuyen-vien-binh-thuan-mat-tich.webp ", 
-    "7539c2d22590ccce9581.webp ",
-    "bi-an-nhung-noi-tho-tu-tam-linh-cua-ha-noi-hon-3-thap-nien-truoc.webp ",
-    "cang-odesa-trung-ten-lua.webp ",
-    "chang-phi-cong-tre-hon-10-lan-hien-mau.webp ",
-    "chong-sat-hai-vo-va-con-trai-roi-goi-dien-cong-an-dau-thu.webp ",
-    "chu-tich-binh-dinh-giao-toan-bo-vu-lan-chiem-dat.webp ",
-    "con-duong-cay-cuc-tan-an-do-dep-nhu-trang-giua-long-thu-do.webp ",
-    "dai-dien-vks-dua-ra-quann-diem-giu-nguyen-cao-trang-try-to.webp ",
-    "den-cho-hoi-an-kham-pha-thien-duong-am-thuc.webp ",
-    "den-ninh-binh-dung-chi-song-ao-voi-hang-mua-hay-trang-an-ma-bo-qua.webp ",
-    "den-quy-nhon-nam-thuyen-dao-choi-khi-rung-nuoc-dep-me-man - Copy - Copy.webp ",
-    "dich-covid19-ngay-23-07-so-ca-khoi-benh-nhieu-gap-9-lna-so-ca-mac-moi - Copy - Copy.webp ",
-    "diem-danh-nhung-toa-thap-noi-tieng-nhat-viet-nam - Copy - Copy.webp ",
-    "gia-vang-mieng-tang-lai-gan-5-trieu-dong-luong - Copy - Copy.webp ",
-   "giam-sat-ct-thu-hoi-gan-8000-hop-kem - Copy - Copy.webp",
-    "hai-anh-chang-mang-xeng - Copy - Copy.webp ",
-    "hang-ngan-tui-thuoc-dieu-tri-sot-xuat-huyet-phai-bo-trong-khi-nhieu-noi-thieu-thuoc - Copy - Copy.webp ",
-    "hoc-tap-va-lam-theo-tam-guong-dao-duc-ho-chi-minh - Copy - Copy.png",
-    "hon-100-trieu-nguoi-my-chiu-can-nang-nong-nhu-thieu-dot - Copy - Copy.webp ",
-    "hon-khoai-vien-ngoc-xanh-giua-troi-nam-to-quoc - Copy - Copy.webp ",
-    "khongh-ngay-24-07-bo-giao-duc-cong-bo-diem-thi-tot-nghiep - Copy - Copy.webp ",
-    "ky-thu-truot-thac-bach-ma-trong-mua - Copy - Copy.webp ",
-    "lang-gom-thanh-ha-diem-to-net-dep - Copy - Copy.webp ",
-    "luat-su-bao-chua-cho-cac-bi-cao-de-nghi-vo-toi-voi-cac-bi-cao - Copy - Copy.webp ",
-    "ma-tuy-han-quoc - Copy - Copy.webp ",
-    "miwon-phu-tho - Copy - Copy.webp ",
-    "MSB-tang-von-len-20000-ty - Copy - Copy.webp ",
-   " nang-nong-tai-anh-khien-may-chu-ngung-hoat-dong - Copy - Copy.webp ",
-    "nghi-pham-vu-nguoi-phu-nu-tu-vung-thi-the-khong-nguyen-ven - Copy - Copy.webp ",
-    "ngo-ngang-ve-dep-me-hoac-cua-canh-dong-dien-gio-tren-bien-quy-nhon - Copy - Copy.webp ",
-    "ngoi-chua-dat-vang-co-lich-su-hon-600-nam-o-tra-vinh-nguy-nga-nhu-cung-dien - Copy - Copy.webp ",
-    "ngoi-nha-tien-ty - Copy - Copy.webp ",
-    "ngoi-nha-tien-ty-2 - Copy - Copy.webp ",
-    "ngoi-nha-tien-ty-3 - Copy - Copy.webp ",
-   " ngoi-nha-tien-ty-4 - Copy - Copy.webp ",
-   " nguy-co-chet-nguoi-tu-trao-luu-lam-mat-tren-tik-tok - Copy - Copy.webp ",
-   " nhung-doi-vo-chong-cung-lam-viec-thien - Copy - Copy.webp ",
-   " nhung-hinh-anh-dau-tien-cua-4-ngu-dan-o-binh-thuan - Copy - Copy.webp ",
-   " nong-huong-dan-moi-nhat-ve-thoi-gian-tiem-vaccine-covid-19 - Copy - Copy.webp ",
-    "phao-tu-hanh-nga-1 - Copy - Copy.webp ",
-    "phao-tu-hanh-nga-2 - Copy - Copy.webp ",
-    "phao-tu-hanh-nga-3 - Copy - Copy.webp ",
-    "phao-tu-hanh-nga-4 - Copy - Copy.webp ",
-    "phi-cong-anh-16-tuoi-lai-may-bay-toi-viet-nam-trong-hanh-trinh-vong-quan-the-gioi - Copy - Copy.webp ",
-    "quen-minh-cuu-nguoi-trong-bien-lua - Copy - Copy.webp ",
-   " song-sat-bien-ho-cua-ninh-thuan-ban-da-tu-ghe-tham - Copy - Copy.webp ",
-   " Sri Lanka-co-tong-thong-moi - Copy - Copy.webp ",
-    "tho-sua-xe-lay-sieu-xe-ferrari-cua-khach-chay-roi-gap-nan-ai-phai-boi-thuong - Copy.webp ",
-    "thu-tuong-pmc-tham-va-lam-viec-tai-vung-san-xuat-nong-nghiep-cong-nghe-cao-tinh-na - Copy.webp ",
-    "thuyen-truong-tau-BTH-97478 - Copy.webp ",
-    "tong-bi-thu-2 - Copy.webp ",
-    "tphcm-thuong-nong-150tr-HCV-quoc-te - Copy.webp ",
-    "ve-dep-ho-thac-ba - Copy.webp ",
-    "vietnam-lao - Copy.jpg",
-    "vu-thi-the-mot-phu-nu-khong-toan-ven-nghi-pham-gay-an-da-tu-tu - Copy.webp ",
-   " xe-khach-cho-23-nguoi-lao-xuong-vuc - Copy.webp ",
-    "xom-truong-tho-tai-an-giang - Copy.webp ",
-    ] ;
-const cardNewsEl = document.querySelector('.bm_L');
 
-const app = {
-    mergeLogo: function () {
-        for (let i = 0; i < dataFake.length; i++) {
-            const element = dataFake[i];
-            element.logo = `./logos/${logos[i]}`;
-        }
-        console.log("merge", dataFake);
-    },
-    mergeImg: function(){
-        for (let i = 0; i < dataFake.length; i++) {
-            const element = dataFake[i];
-            element.img = `./imgs/${imgs[i]}`
-        }
-    },
 
-    renderVideo: function () {
-        this.mergeImg();
-        let html = '';
-        html = html += dataFake.map((data, index) => (
-            ` <div class="bm_card d-flex">
+ const dataFake = [{
+         "title": "Bắt tạm giam nguyên chủ tịch xã sai phạm tại dự án ngàn tỉ",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_15_43338306/0c313c1de75f0e01574e.jpg",
+         "date": 1,
+         "logo": "https://photo-baomoi.bmcdn.me/0b89da8919caf094a9db.png",
+         "rel": 1
+     },
+     {
+         "title": "Chủ tịch Hạ viện Mỹ Nancy Pelosi tới Malaysia",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9/2022_08_02_294_43337985/bfcbaa9b71d99887c1c8.jpg",
+         "date": 2,
+         "logo": "https://photo-baomoi.bmcdn.me/bb071048550abc54e51b.png",
+         "rel": 165
+     },
+     {
+         "title": "Tàu du lịch bốc cháy dữ dội trên sông",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_23_43337900/e41a014bda0933576a18.jpg",
+         "date": 3,
+         "logo": "https://photo-baomoi.bmcdn.me/26dc73b3aef047ae1ee1.png",
+         "rel": 5
+     },
+     {
+         "title": "NÓNG: Họp báo công bố vụ nữ sinh Ninh Thuận tử nạn",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_15_43338759/fe8072a8a9ea40b419fb.jpg",
+         "date": 4,
+         "logo": "https://photo-baomoi.bmcdn.me/0b89da8919caf094a9db.png",
+         "rel": 3
+     },
+     {
+         "title": "Hết hè vẫn đi du lịch",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_119_43338704/07ea73c2a88041de1891.jpg",
+         "date": 5,
+         "logo": "https://photo-baomoi.bmcdn.me/d59db7f26ab183efdaa0.png",
+         "rel": 1
+     },
+     {
+         "title": "Quyền Bộ trưởng Bộ Y tế: Nguy cơ dịch chồng dịch là hiện hữu!",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_114_43338743/a82a590282406b1e3251.jpg",
+         "date": 6,
+         "logo": "https://photo-baomoi.bmcdn.me/f12dd0420d01e45fbd10.png",
+         "rel": 58
+     },
+     {
+         "title": "Nga siết chặt nguồn cung khí đốt, Đức tái khởi động lại nhà máy điện than đầu tiên",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_294_43338211/a2d3fdfe26bccfe296ad.jpg",
+         "date": 7,
+         "logo": "https://photo-baomoi.bmcdn.me/bb071048550abc54e51b.png",
+         "rel": 73
+     },
+     {
+         "title": "Quyền Bộ trưởng Bộ Y tế: Tuyệt đối không mất cảnh giác, chủ quan trong phòng, chống dịch",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9/2022_08_02_72_43338499/3e363418ef5a06045f4b.jpg",
+         "date": 8,
+         "logo": "https://photo-baomoi.bmcdn.me/cf36b2596f1a8644df0b.png",
+         "rel": 7
+     },
+     {
+         "title": "Tổng cục Đường bộ lên tiếng về những hạn chế ngày đầu thu phí tự động trên cao tốc",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9/2022_08_02_20_43338106/f42291704a32a36cfa23.jpg",
+         "date": 9,
+         "logo": "https://photo-baomoi.bmcdn.me/b3a88dc75084b9dae095.png",
+         "rel": 7
+     },
+     {
+         "title": "Cá voi lưng gù trắng cực hiếm chết dạt vào bãi biển Australia",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_101_43338140/c48f26ddfd9f14c14d8e.jpg",
+         "date": 10,
+         "logo": "https://photo-baomoi.bmcdn.me/1ab14ade979d7ec3278c.png",
+         "rel": 4
+     },
+     {
+         "title": "Bí thư Thành ủy Hà Nội: 3 chiến sĩ có hành động dũng cảm, nghĩa hiệp được nhân dân cảm phục",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_94_43338801/d713e938327adb24826b.jpg",
+         "date": 11,
+         "logo": "https://photo-baomoi.bmcdn.me/87bb25544116a848f107.png",
+         "rel": 4
+     },
+     {
+         "title": "Fiat chi khoảng 300 triệu USD để dàn xếp vụ kiện hình sự về gian lận khí thải",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_294_43338092/7019f94a2208cb569219.jpg",
+         "date": 12,
+         "logo": "https://photo-baomoi.bmcdn.me/bb071048550abc54e51b.png",
+         "rel": 0
+     },
+     {
+         "title": "Cao tốc Trung Lương- Mỹ Thuận có mức thu phí mới, cao nhất 335.000 đồng/xe",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_112_43338541/0464a24b79099057c918.jpg",
+         "date": 13,
+         "logo": "https://photo-baomoi.bmcdn.me/36f7bf8535c7dc9985d6.png",
+         "rel": 446
+     },
+     {
+         "title": "ASEAN Para Games 2022: Việt Nam giành thêm 5 HCV ở môn bơi",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_294_43337652/ad8b24dfff9d16c34f8c.jpg",
+         "date": 14,
+         "logo": "https://photo-baomoi.bmcdn.me/bb071048550abc54e51b.png",
+         "rel": 8
+     },
+     {
+         "title": "Người đàn ông bị đau ngực 2 tuần, đến BV Bạch Mai khám bất ngờ phát hiện ung thư phổi đã di căn: Dấu hiệu nhận biết sớm, cần lập tức ghi nhớ!",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_101_43338251/e9b71c9ac7d82e8677c9.jpg",
+         "date": 15,
+         "logo": "https://photo-baomoi.bmcdn.me/1ab14ade979d7ec3278c.png",
+         "rel": 1
+     },
+     {
+         "title": "Bình Dương ghi nhận 2 ca nhiễm biến chủng Omicron BA.5 trong cộng đồng",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_293_43337886/2c6c3d3de67f0f21566e.jpg",
+         "date": 16,
+         "logo": "https://photo-baomoi.bmcdn.me/d1c2f8ad25eeccb095ff.png",
+         "rel": 100
+     },
+     {
+         "title": "Bộ Giáo dục và đào tạo: Khẩn trương tuyển dụng 27.850 biên chế giáo viên",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9/2022_08_02_20_43338021/89573c5bb91950470908.jpg",
+         "date": 17,
+         "logo": "https://photo-baomoi.bmcdn.me/b3a88dc75084b9dae095.png",
+         "rel": 76
+     },
+     {
+         "title": "Ecuador bồi thường hơn 300 triệu USD cho Công ty dầu mỏ Perenco",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_293_43338265/7136d01b0b59e207bb48.jpg",
+         "date": 18,
+         "logo": "https://photo-baomoi.bmcdn.me/d1c2f8ad25eeccb095ff.png",
+         "rel": 0
+     },
+     {
+         "title": "Bộ Y tế: Số ca mắc Covid-19 gia tăng trở lại",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9/2022_08_02_119_43338365/a78ceea335e1dcbf85f0.jpg",
+         "date": 19,
+         "logo": "https://photo-baomoi.bmcdn.me/d59db7f26ab183efdaa0.png",
+         "rel": 568
+     },
+     {
+         "title": "Thủ tướng Palestine cáo buộc Israel làm phức tạp thêm cuộc khủng hoảng tài chính",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_294_43338115/3f985d31b4735d2d0462.jpg",
+         "date": 20,
+         "logo": "https://photo-baomoi.bmcdn.me/bb071048550abc54e51b.png",
+         "rel": 0
+     },
+     {
+         "title": "Châu Á có 8,5 suất tham dự Vòng chung kết World Cup 2026",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_14_43337952/df538d035641bf1fe650.jpg",
+         "date": 21,
+         "logo": "https://photo-baomoi.bmcdn.me/4e023e6de32e0a70533f.png",
+         "rel": 36
+     },
+     {
+         "title": "Cán bộ địa chính đòi 100 triệu đồng để làm sổ đỏ",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_119_43338311/3d953eb9e5fb0ca555ea.jpg",
+         "date": 22,
+         "logo": "https://photo-baomoi.bmcdn.me/d59db7f26ab183efdaa0.png",
+         "rel": 14
+     },
+     {
+         "title": "Sử dụng công nghệ thực tế ảo, các bác sĩ phẫu thuật tại Anh và Brazil tách đầu thành công cặp song sinh dính liền",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_101_43337923/199093c14883a1ddf892.jpg",
+         "date": 23,
+         "logo": "https://photo-baomoi.bmcdn.me/1ab14ade979d7ec3278c.png",
+         "rel": 3
+     },
+     {
+         "title": "Thêm một bang ở Mỹ ban bố tình trạng khẩn cấp về bệnh đậu mùa khỉ",
+         "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_293_43338165/12e7c5b51ef7f7a9aee6.jpg",
+         "date": 24,
+         "logo": "https://photo-baomoi.bmcdn.me/d1c2f8ad25eeccb095ff.png",
+         "rel": 7
+     }
+ ]
+
+ let test = [{
+     type: 1,
+     data: [{
+
+         },
+         {
+
+         }
+     ]
+ }]
+
+ const app = {
+     splitTopicType: function () {
+         let dataTopic = [];
+         let types = [{
+                 type: 1,
+                 quantity: 2
+             },
+             {
+                 type: 2,
+                 quantity: 6
+             },
+             {
+                 type: 3,
+                 quantity: 3
+             }
+         ]
+         let i = 0;
+         for (; i < dataFake.length;) {
+
+             for (let j = 0; j < 3; j++) {
+                 let typeE = types[j];
+                 let arrType = {
+                     type: typeE.type,
+                     data: []
+                 }
+                 for (let k = 0; k < typeE.quantity; k++) {
+
+                     arrType.data.push({
+                         ...dataFake[i]
+                     });
+                     i++
+                 }
+                 dataTopic.push(arrType);
+             }
+
+         }
+
+         return dataTopic;
+     },
+
+     renderNewNews: function () {
+         let htmlNews = '';
+         let newNewsEl = document.querySelector('.bm_L_N');
+
+         htmlNews = dataFake.map(data => (
+             `<div class="post-article">
+            <div class="col-infor-contrainer">
+                <a class="img-hover-zoom" href="./News-ltv.html"><img class="img-col-title-infor img-radius"
+                        src=${data.img} alt=""></a>
+            </div>
+            <div class="post-title">
+                <a href="./News-ltv.html" class="anchor-post-p anchor-post-p-left">${data.title}</a>
+                <div class="post-footer">
+                    <a href="#"><img class="img-news" src=${data.logo} alt=""></a>
+                    ${data.date!=''? `<span >${data.date} phút </span>`:''} 
+                    ${data.rel!=''? `<span >${data.rel} liên quan </span>`:''}  
+                </div>
+            </div>
+        </div>`
+         )).join('');
+         if (newNewsEl) {
+
+             newNewsEl.innerHTML = htmlNews
+         }
+
+     },
+
+     renderVideo: function () {
+
+         const cardNewsEl = document.querySelector('.bm_L');
+
+         let html = '';
+         html = html += dataFake.map((data, index) => (
+             ` <div class="bm_card d-flex">
                 <div class="bm_card_img img-hover-zoom">
                     <span>
-                        <a href="#">
+                        <a target="_blank" href="./newsDetailVideo.html">
                             <img class=""
                                 src="${data.img}"
                                 alt="">
@@ -231,18 +353,119 @@ const app = {
                 </div>
                 <div class="bm_card_c">
                     <div class="bm_card_c_title">
-                        <h4><a href="#">${data.content}</a></h4>
+                        <h4><a target="_blank" href="./newsDetailVideo.html">${data.title}</a></h4>
                     </div>
             
                     <div class="bm_card_c_logo">
-                        <a href="#">
+                        <a>
                             <img src=${data.logo} alt="">
                         </a>
-                        ${data.time!=''? `<span class="ml-12 fs-13 op-025 ">${data.time} phút</span>`:''}
-                        ${data.rel!=''? `<a href="#"><span class="ml-12 fs-13 op-025 ">${data.rel} </span></a>`:''}
+                        ${data.date!=''? `<span class="ml-12 fs-13 op-025 ">${data.date} phút  </span>`:''} 
+                        ${data.rel!=''? `<span class="ml-12 fs-13 op-025 ">${data.rel} liên quan  </span>`:''} 
                     </div>
                 </div>
             </div>`
+<<<<<<< HEAD
+         )).join();
+
+         if (cardNewsEl) {
+
+
+             cardNewsEl.innerHTML = html
+         }
+
+
+     },
+
+     renderTopic: function () {
+         let dataTopicFake = this.splitTopicType();
+         let topicEl = document.querySelector('.topic_container');
+         let html = '';
+         html = dataTopicFake.map(topic => `
+                            
+                <div class="topic_card">
+                <div class="topic_card_title d-flex text">
+                    <a href="#">
+                        <h3 class="text-hover">NĂNG LƯỢNG TÍCH CỰC</h3>
+                    </a>
+                    <a class="topic_icon" href="#">
+                        <i class="fa-light fa-star"></i>
+                    </a>
+                </div>
+
+                <div class="topic_content d-flex  ">
+                ${topic.data.map(colData =>`
+                        <div class="topic_content_col${topic.type} d-flex text-hover">
+                            <div class="topic_content_col${topic.type}_img">
+                                <a href="#">
+                                    <figure class="img-hover-zoom">
+                                        <img class="img"
+                                            src=${colData.img}
+                                            alt="">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="topic_content_col${topic.type}_title fs-19">
+                                <a href="#">
+                                    <h4> ${colData.title}</h4>
+                                </a>
+                                <div class="bm_card_video_c_logo d-flex">
+                                    <a href="#"><img src=${colData.logo}
+                                            alt=""></a>
+                                    ${colData.date!=null? `<span class="ml-12 fs-13 op-025 ">${colData.date} phút</span>`:''}
+                                    ${colData.rel!=null? `<span class="ml-12 fs-13 op-025 ">${colData.rel} liên quan</span>`:''}
+
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        `).join('')}
+                    </div>
+               
+                <a class="topic_card_mb" href="#"><span>XEM THÊM ...</span></a>
+                </div>
+         `).join('')
+
+         if (topicEl != null) {
+             topicEl.innerHTML = html
+         }
+
+     },
+
+     start: function () {
+         this.renderVideo();
+         this.renderNewNews();
+         this.renderTopic();
+     }
+ }
+
+
+ app.start();
+
+
+
+
+ var html = '';
+ fakeData.forEach(element => {
+     var partial =
+         `
+                <div class="bottom-other">
+                    <div class="bt-o-img img-hover-zoom">
+                        <a href="#"><img src="${element.thumb}" alt=""></a>
+                    </div>
+                    <div class="small-cnt-pe-right">
+                        <a href="#" class="text-hover">${element.title}</a>
+                        <div class="post-footer">
+                            <a href="#"><img class="img-news " src="${element.logo}" alt=""></a>
+                            <span>${element.date}</span>
+                            <i class="fa-thin fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+`
+     html += partial;
+=======
         )).join();
 
 
@@ -264,5 +487,11 @@ app.start();
 
 
 
+>>>>>>> cc7f076fb01086df6482fa799785e88a59fdb438
 
+ });
 
+ var ElementAdd = document.querySelector(".content-pe");
+ if (ElementAdd) {
+     ElementAdd.innerHTML = ElementAdd.innerHTML + html;
+ }

@@ -27,9 +27,8 @@ nav.addEventListener('click',  function(){
         isBodyHidden = false;
 
     }
-    
-    
-}) 
+
+})
 
 window.onresize = function(){
     if(isDropNav && window.innerWidth< 970){
@@ -59,9 +58,10 @@ DropCloseBtn[0].onclick = function() {
     }
 }
 
+
 // fix nav
 let elNav = document.querySelector('.nav-container');
-let layout_drop = document.querySelector('.nav-supper');
+let layout_drop = document.querySelector('.nav-supper');    
 
 function fixNav() {
     let clsLayout = layout_drop.getAttribute("class");
@@ -83,34 +83,4 @@ function fixNav() {
 
 window.addEventListener('scroll', fixNav)
 
-//modal
-
-const topicCards = document.querySelectorAll('.topic_card');
-const closeIcon = document.querySelector('.close-icon');
-const elModal = document.querySelector('.modal');
-
-function showDetailTopic(e) {
-    if (elModal != null) {
-        if (window.innerWidth > 970) {
-            elModal.classList.add('open');
-            e.preventDefault();
-        }
-    }
-}
-
-for (const card of topicCards) {
-    card.addEventListener('click', e => showDetailTopic(e))
-
-}
-
-if (closeIcon != null) {
-
-    try{
-        closeIcon.addEventListener('click', () => elModal.classList.remove('open'));
-    }
-    catch{
-        console.error("nut close bi loi");
-    }
-}
-
-
+ 
