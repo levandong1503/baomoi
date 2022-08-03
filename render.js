@@ -256,20 +256,10 @@
          "rel": 7
      }
  ]
-
- let test = [{
-     type: 1,
-     data: [{
-
-         },
-         {
-
-         }
-     ]
- }]
-
+ 
  const app = {
      splitTopicType: function () {
+        
          let dataTopic = [];
          let types = [{
                  type: 1,
@@ -288,13 +278,14 @@
          for (; i < dataFake.length;) {
 
              for (let j = 0; j < 3; j++) {
+                
+                if(i==dataFake.length) break;
                  let typeE = types[j];
                  let arrType = {
                      type: typeE.type,
                      data: []
                  }
                  for (let k = 0; k < typeE.quantity; k++) {
-
                      arrType.data.push({
                          ...dataFake[i]
                      });
@@ -304,7 +295,7 @@
              }
 
          }
-
+         console.log(dataTopic);
          return dataTopic;
      },
 
