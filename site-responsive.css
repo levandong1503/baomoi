@@ -5,32 +5,13 @@
     .img-hover-zoom img:hover {
         transform: scale(1, 1);
     }
-
-
-    .content-layout {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .navbar {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-
-
-
-    .header {
-        width: 100%;
-    }
- 
     /*phan noi dung*/
     .content-layout{
         width: 80%;
-        margin: 0 auto;
+        margin: 10px auto 0;
     }
     .top-header{
-        width:100%;
+        width:80%;
     }
     .navbar{
         width: 80%; 
@@ -47,10 +28,6 @@
         width: 100%;
     }
 
-
-    .col-infor-contrainer,
-    .row-element>a.img-hover-zoom,
-    .img-bar>a:not(:nth-child(4)),
     .Search-content{
         display: none;
     }
@@ -64,28 +41,23 @@
         flex-direction: column;
         border-bottom: none;
     }
-
-    .img-hover-big {
-        width: 100%;
-        height: auto;
-    }
-
-    .img-hover-big a img,
-    .img-hover-zoom img,
-    .img-col-title-infor,
     .img-bar{
         display: flex;
     }
-    .img-hover-big{
+    .img-main-big{
         width: 100%;
         height: auto;
     }
-    .img-hover-big a img,/*.img-hover-zoom img,*/.img-col-title-infor{
+    .img-main-big a img,/*.img-hover-zoom img,*/.img-col-title-infor{
         width: 100%;
         height: auto;
     }
 
-
+    /*fix kích thước img-bar kích thức %*/
+    .img-bar-t{
+        
+        height: 100% !important;
+    }
 
     .row-element {
         width: 100%;
@@ -276,12 +248,19 @@
         background-color: #fdf7ea;
  
     }
+
+     
     .bm_L{
-        max-width: 100%; 
         
- 
+        width: 100%;
+        max-width: 100%; 
+        margin: auto;
     }
 
+    .topic_container{
+        max-width: 100%;
+        flex-direction: column;
+    }
 
 
     /*pe*/
@@ -292,6 +271,7 @@
         /*cục lớn bên trái */
     .big-cnt-pe{
         width: 100%;
+        height: auto;
     }
     .big-cnt-pe .img-hover-zoom,.big-cnt-pe .img-hover-zoom img{
         width: 100% !important;
@@ -343,11 +323,8 @@
     
 
 
-    .topic_container{
-        max-width: 100%;
-        flex-direction: column;
-    }
 
+@media only screen and (max-width:970px) {
     .topic_card{
         max-width: 100% ;
         width: 100%;
@@ -401,12 +378,18 @@
     }
 
 
+    .ul-nav li:nth-last-child(2){
+        display: none;
+    }
+}
+
+
 }
  
 
 @media only screen and (max-width:739px) {
 
-    .ul-nav li:nth-last-child(2),
+    
     .ul-nav li:nth-last-child(3) {
         display: none;
     }
@@ -431,7 +414,7 @@
     }
 }
 
-@media only screen and (max-width:410px) {
+@media only screen and (max-width:415px) {
 
     .ul-nav li:nth-last-child(2),
     .ul-nav li:nth-last-child(3),

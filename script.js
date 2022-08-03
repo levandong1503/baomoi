@@ -45,22 +45,22 @@ window.onresize = function(){
 }
 
 var DropCloseBtn = document.getElementsByClassName("btn-close-drop");
-if (DropCloseBtn!=null) {
-    
-DropCloseBtn[0].onclick = function() {
-    if(isDropNav){
-        var cls = dropLayout.getAttribute("class");
-        dropLayout.setAttribute("class",cls + " dropsupport");
-        isDropNav  = false;
-        if(isBodyHidden){
-            var body = document.getElementById("app");
-            body.setAttribute("style","  ");
-            isBodyHidden = false;
+if(DropCloseBtn[0]){
+    DropCloseBtn[0].onclick = function() {
+        if(isDropNav){
+            var cls = dropLayout.getAttribute("class");
+            dropLayout.setAttribute("class",cls + " dropsupport");
+            isDropNav  = false;
+            if(isBodyHidden){
+                var body = document.getElementById("app");
+                body.setAttribute("style","  ");
+                isBodyHidden = false;
+            }
         }
     }
 }
 
-}
+
 // fix nav
 let elNav = document.querySelector('.nav-container');
 let layout_drop = document.querySelector('.nav-supper');    
@@ -85,27 +85,4 @@ function fixNav() {
 
 window.addEventListener('scroll', fixNav)
 
-//modal
-
-const topicCards = document.querySelectorAll('.topic_card');
-const closeIcon = document.querySelector('.close-icon');
-const elModal = document.querySelector('.modal');
-
-function showDetailTopic() {
-        if(elModal!=null)
-        if (window.innerWidth > 970) {
-            elModal.classList.add('open');
-            
-        }
-     
-}
-
-for (const card of topicCards) {
-    card.addEventListener('click', () => showDetailTopic())
-     
-}
-
-if (closeIcon != null) {
-
-    closeIcon.addEventListener('click', () => elModal.classList.remove('open'));
-}
+ 

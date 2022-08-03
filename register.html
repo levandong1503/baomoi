@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="./site.css">
+</head>
+<body class="body-lg">
+    <div class="login-page" >
+        <div class="form" >
+          <form class="login-form">
+           <input type="text" placeholder="địa chỉ email"/>
+            <input type="text" placeholder="tên đăng nhập"/>
+            <input type="password" placeholder="mật khẩu"/>
+            <input type="password" placeholder="nhập lại mật khẩu">
+            <button>Đăng ký</button>
+            <p class="message">Đã có tài khoản rồi <a href="./login.html">Đăng nhập</a></p>
+          </form>
+        </div>
+
+       <div >
+        <img class="img-logo" src="./Images/bao-moi-logo.png" alt="">
+       </div>
+      </div>
+      <script>
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+      </script>
+</body>
+</html> 
