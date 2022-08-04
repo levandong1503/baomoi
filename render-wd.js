@@ -1348,18 +1348,7 @@
 ];
 
 
- var fakeData = [{
-        "title": "Công an Hà Đông thông tin chi tiết vụ đâm xe liên hoàn làm 1 người chết",
-        "description": "Đội CSGT và Trật tự của quận Hà Đông đang khẩn trương phối hợp với Đội Điều tra tổng hợp, Đội Kỹ thuật hình sự, Công an phường Quang Trung, Viện kiểm sát nhân dân quận Hà Đông tiếp tục khám nghiệm hiện trường để làm rõ vụ việc.",
-        "date": '01/08/22',
-        "thumb": "https://photo-baomoi.bmcdn.me/w700_r16x9/2022_07_29_65_43302763/76861929c36b2a35737a.jpg",
-        "publisher": {
-            "logo": "https://photo-baomoi.bmcdn.me/a1493a27e7640e3a5775.png",
-            "icon": "https://photo-baomoi.bmcdn.me/5106330fa14d4813115c.png",
-            "url": "/bao-vov/p/65.epi",
-            "name": "Báo VOV"
-        },
-    },
+ var fakeData = [
     {
         title: 'Công an Hà Đông thông tin chi tiết vụ đâm xe liên hoàn làm 1 người chết',
         description: 'Đội CSGT và Trật tự của quận Hà Đông đang …khám nghiệm hiện trường để làm rõ vụ việc.',
