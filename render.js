@@ -95,6 +95,13 @@
          "rel": 1
      },
      {
+        "title": "Bắt tạm giam nguyên chủ tịch xã sai phạm tại dự án ngàn tỉ",
+        "img": "https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_08_02_15_43338306/0c313c1de75f0e01574e.jpg",
+        "date": 1,
+        "logo": "https://photo-baomoi.bmcdn.me/0b89da8919caf094a9db.png",
+        "rel": 1
+    },
+     {
          "title": "Chủ tịch Hạ viện Mỹ Nancy Pelosi tới Malaysia",
          "img": "https://photo-baomoi.bmcdn.me/w700_r16x9/2022_08_02_294_43337985/bfcbaa9b71d99887c1c8.jpg",
          "date": 2,
@@ -286,6 +293,7 @@
                      data: []
                  }
                  for (let k = 0; k < typeE.quantity; k++) {
+                    if(i==dataFake.length) break;
                      arrType.data.push({
                          ...dataFake[i]
                      });
