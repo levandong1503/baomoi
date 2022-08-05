@@ -201,6 +201,8 @@
                      data: []
                  }
                  for (let k = 0; k < typeE.quantity; k++) {
+                    
+                if(i==dataFake.length) break;
                      arrType.data.push({
                          ...dataFake[i]
                      });
@@ -293,7 +295,7 @@
                 <div class="topic_card">
                 <div class="topic_card_title d-flex text">
                     <a href="#">
-                        <h3 class="text-hover">${topicTitle[idx++]}</h3>
+                        <h3 class="text-hover">${topicTitle[idx]?topicTitle[idx++]:'NĂNG LƯỢNG TÍCH CỰC'}</h3>
                     </a>
                     <a class="topic_icon" href="#">
                         <i class="fa-light fa-star"></i>

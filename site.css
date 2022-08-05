@@ -337,6 +337,7 @@ display: inline-block;
 /* bai viet tren thanh ngang ben trai*/
 .row-infor{
     /* display: flex; */
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 10px ;
     border-bottom: 1px solid #e9ecef;
