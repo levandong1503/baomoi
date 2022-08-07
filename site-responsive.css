@@ -271,7 +271,7 @@
     }
 
 
-    /*pe*/
+    /*responsive cho năng lượng tích cực*/
     .content-pe{
         flex-direction: column;
         flex-wrap: nowrap !important;
@@ -284,7 +284,11 @@
     .big-cnt-pe .img-hover-zoom,.big-cnt-pe .img-hover-zoom img{
         width: 100% !important;
     }
-        /*4 cục nhỏ bên phải*/
+         /*4 cục nhỏ bên phải*/
+    .col-right{
+            width: 100%;
+            height: auto;
+    }
     .small-cnt-pe div.img-hover-zoom img {
         width: 100%;
         height: auto;

@@ -31,6 +31,7 @@ nav.addEventListener('click',  function(){
 })
 
 window.onresize = function(){
+    
     if(isDropNav && window.innerWidth< 970){
         var body = document.getElementById("app");
        body.setAttribute("style","overflow:hidden");
@@ -65,18 +66,18 @@ let layout_drop = document.querySelector('.nav-supper');
 
 function fixNav() {
     let clsLayout = layout_drop.getAttribute("class");
-    //console.log(window.innerWidth);
+   
     if( window.scrollY >elNav.offsetTop){
         elNav.setAttribute("class","nav-container fix"); 
-        //layout_drop.setAttribute("class", clsLayout.indexOf("fix")==-1?clsLayout+" fix":clsLayout);
+        
         if(window.innerWidth > 970){
-            //layout_drop.style.position = "fixed"
+            
         }
 
     } else {
         elNav.setAttribute('class', 'nav-container');
-        //layout_drop.setAttribute("class", clsLayout.replace(" fix",""));
-        //layout_drop.style.position="absolute";
+        
+       
     }
 
 }

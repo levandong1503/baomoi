@@ -232,7 +232,15 @@ display: inline-block;
 .btn-radius:hover{
     background-color: #3fd4eb;
 }
+.dropsupport{
+    display: none;
+    width: 0;
+    transition-duration: 500ms;
 
+}
+.btn-close-drop{
+    display: none;
+}
 
 
 /*code su dung cho khung lien ket 3 gach, dropdown*/
@@ -286,15 +294,7 @@ display: inline-block;
     cursor: pointer;
 }
 
-.dropsupport{
-    display: none;
-    width: 0;
-    transition-duration: 500ms;
 
-}
-.btn-close-drop{
-    display: none;
-}
 
 /*Toan bo phan noi dung */
 .content-layout{
@@ -1010,7 +1010,7 @@ display: inline-block;
     .big-cnt-pe div.img-hover-zoom{
         width: 455px;
 
-    }
+    } 
     .big-cnt-pe div.img-hover-zoom img{ width: 455px;}
     .big-cnt-pe>a{
         font-size: 30px;
@@ -1023,14 +1023,22 @@ display: inline-block;
     }
 
     /*cục nhỏ bên phải*/
+    .col-right{
+        width: 475px;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: space-between;
+        align-content: space-between;
+    }
     .small-cnt-pe{
         width: 227px;
         height: 240px;
         padding: 10px;
         background-color: white;
         box-shadow: 0px 0px 10px 1px black;
-        margin-left: 15px;
-        margin-bottom: 20px;
+        
+        
     }
     .small-cnt-pe div.img-hover-zoom{
         height: 120px;
@@ -1038,6 +1046,7 @@ display: inline-block;
     }
     .small-cnt-pe div.img-hover-zoom img{
         width: 207px;
+        height: 100%;
     }
     .small-cnt-pe>a{
         font-size: 18px;
